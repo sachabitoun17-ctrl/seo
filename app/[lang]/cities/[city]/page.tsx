@@ -16,8 +16,10 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
 import { VisaCard } from '@/components/VisaCard';
 import { CityCard } from '@/components/CityCard';
+import { GuideCard } from '@/components/GuideCard';
 import { FaqSection } from '@/components/FaqSection';
 import { cityFaqs } from '@/lib/faq-templates';
+import { getGuidesForCity } from '@/lib/data/guides';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -54,6 +56,7 @@ export default async function CityDetailPage({ params }: Props) {
   const siblingCities = country
     ? getCitiesByCountry(country.slug).filter((c) => c.slug !== city.slug)
     : [];
+  const guides = getGuidesForCity(city.slug);
 
   const place = {
     '@context': 'https://schema.org',
@@ -143,6 +146,21 @@ export default async function CityDetailPage({ params }: Props) {
             {siblingCities.slice(0, 6).map((c) => (
               <li key={c.slug}>
                 <CityCard city={c} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {guides.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">
+            {dict.nav.guides}
+          </h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {guides.map((g) => (
+              <li key={g.slug}>
+                <GuideCard guide={g} locale={params.lang} />
               </li>
             ))}
           </ul>

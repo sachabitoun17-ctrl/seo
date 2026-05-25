@@ -36,3 +36,15 @@ export function getGuideDescription(g: Guide, locale: Locale): string {
 export function getGuidesByTopic(topic: Guide['topic']): Guide[] {
   return GUIDES.filter((g) => g.topic === topic);
 }
+
+export function getGuidesForCountry(countrySlug: string): Guide[] {
+  return GUIDES.filter((g) => g.relatedCountries?.includes(countrySlug));
+}
+
+export function getGuidesForCity(citySlug: string): Guide[] {
+  return GUIDES.filter((g) => g.relatedCities?.includes(citySlug));
+}
+
+export function getGuidesForVisa(visaSlug: string): Guide[] {
+  return GUIDES.filter((g) => g.relatedVisas?.includes(visaSlug));
+}

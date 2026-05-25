@@ -10,8 +10,10 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
 import { CityCard } from '@/components/CityCard';
 import { VisaCard } from '@/components/VisaCard';
+import { GuideCard } from '@/components/GuideCard';
 import { FaqSection } from '@/components/FaqSection';
 import { countryFaqs } from '@/lib/faq-templates';
+import { getGuidesForCountry } from '@/lib/data/guides';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -44,6 +46,7 @@ export default async function CountryDetailPage({ params }: Props) {
   const name = getCountryName(country, params.lang);
   const cities = getCitiesByCountry(country.slug);
   const visas = getVisasByCountry(country.slug);
+  const guides = getGuidesForCountry(country.slug);
 
   const placeLd = {
     '@context': 'https://schema.org',
@@ -127,6 +130,21 @@ export default async function CountryDetailPage({ params }: Props) {
             {visas.map((v) => (
               <li key={v.slug}>
                 <VisaCard visa={v} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {guides.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">
+            {dict.nav.guides} for {name}
+          </h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {guides.map((g) => (
+              <li key={g.slug}>
+                <GuideCard guide={g} locale={params.lang} />
               </li>
             ))}
           </ul>

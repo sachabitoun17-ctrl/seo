@@ -10,6 +10,8 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
 import { FaqSection } from '@/components/FaqSection';
 import { visaFaqs } from '@/lib/faq-templates';
+import { GuideCard } from '@/components/GuideCard';
+import { getGuidesForVisa } from '@/lib/data/guides';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -124,6 +126,23 @@ export default async function VisaDetailPage({ params }: Props) {
           Official application portal
         </a>
       </section>
+
+      {(() => {
+        const relatedGuides = getGuidesForVisa(visa.slug);
+        if (relatedGuides.length === 0) return null;
+        return (
+          <section className="mt-12">
+            <h2 className="text-xl font-semibold tracking-tightish">{dict.nav.guides}</h2>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedGuides.map((g) => (
+                <li key={g.slug}>
+                  <GuideCard guide={g} locale={params.lang} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })()}
 
       <PartnerStack categories={['banking', 'insurance']} heading="Set up before you apply" />
       <FaqSection faqs={visaFaqs(visa, params.lang)} />
