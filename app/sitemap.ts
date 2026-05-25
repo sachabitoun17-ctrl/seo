@@ -91,6 +91,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
       });
     }
+
+    // Cost of living pages
+    entries.push({ url: `${SITE_URL}/${lang}/cost-of-living`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 });
+    for (const c of getAllCities()) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/cost-of-living/${c.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      });
+    }
+
+    // Visa type pages
+    for (const t of ['digital-nomad', 'passive-income', 'investor', 'freelance']) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/visas/type/${t}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    }
+
+    // Glossary
+    entries.push({ url: `${SITE_URL}/${lang}/glossary`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 });
   }
 
   return entries;
