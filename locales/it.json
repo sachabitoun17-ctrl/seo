@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "countries": "Paesi",
+    "cities": "Città",
+    "visas": "Visti",
+    "guides": "Guide",
+    "about": "Chi siamo"
+  },
+  "footer": {
+    "tagline": "Guide ai paesi per nomadi che si fermano un po’.",
+    "legal": "Note legali",
+    "contact": "Contatti",
+    "rights": "Tutti i diritti riservati.",
+    "affiliateNotice": "Alcuni link sono affiliati. Riceviamo una piccola commissione senza costi aggiuntivi per te."
+  },
+  "home": {
+    "heroTitle": "Guide ai paesi per nomadi che restano.",
+    "heroSubtitle": "Visto, costo della vita, internet, clima e fiscalità base per le destinazioni che accolgono soggiorni lunghi.",
+    "exploreCountries": "Esplora paesi",
+    "exploreCities": "Esplora città"
+  },
+  "country": {
+    "overview": "Panoramica",
+    "visa": "Visto e residenza",
+    "costOfLiving": "Costo della vita",
+    "internet": "Internet e coworking",
+    "safety": "Sicurezza",
+    "weather": "Clima",
+    "keyFacts": "Dati chiave"
+  },
+  "common": {
+    "updated": "Aggiornato",
+    "loading": "Caricamento…",
+    "notFound": "Non trovato"
+  }
+}

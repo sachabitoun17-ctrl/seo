@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "countries": "Länder",
+    "cities": "Städte",
+    "visas": "Visa",
+    "guides": "Guides",
+    "about": "Über uns"
+  },
+  "footer": {
+    "tagline": "Länder-Guides für Nomaden, die etwas länger bleiben.",
+    "legal": "Impressum",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten.",
+    "affiliateNotice": "Einige Links sind Affiliate-Links. Wir erhalten eine kleine Provision ohne Mehrkosten für dich."
+  },
+  "home": {
+    "heroTitle": "Länder-Guides für Nomaden, die bleiben.",
+    "heroSubtitle": "Visum, Lebenshaltungskosten, Internet, Wetter und Steuerbasics für Orte, die Langzeitaufenthalte willkommen heißen.",
+    "exploreCountries": "Länder entdecken",
+    "exploreCities": "Städte entdecken"
+  },
+  "country": {
+    "overview": "Überblick",
+    "visa": "Visum und Aufenthalt",
+    "costOfLiving": "Lebenshaltungskosten",
+    "internet": "Internet und Coworking",
+    "safety": "Sicherheit",
+    "weather": "Wetter",
+    "keyFacts": "Eckdaten"
+  },
+  "common": {
+    "updated": "Aktualisiert",
+    "loading": "Lädt…",
+    "notFound": "Nicht gefunden"
+  }
+}

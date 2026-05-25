@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "countries": "Countries",
+    "cities": "Cities",
+    "visas": "Visas",
+    "guides": "Guides",
+    "about": "About"
+  },
+  "footer": {
+    "tagline": "Long-stay country guides for slow nomads.",
+    "legal": "Legal",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "affiliateNotice": "Some links on this site are affiliate links. We may earn a small commission at no extra cost to you."
+  },
+  "home": {
+    "heroTitle": "Country guides for nomads who stay a while.",
+    "heroSubtitle": "Visa, cost of living, internet, weather and tax basics for the places that welcome long-stay travelers.",
+    "exploreCountries": "Explore countries",
+    "exploreCities": "Explore cities"
+  },
+  "country": {
+    "overview": "Overview",
+    "visa": "Visa & residency",
+    "costOfLiving": "Cost of living",
+    "internet": "Internet & coworking",
+    "safety": "Safety",
+    "weather": "Weather",
+    "keyFacts": "Key facts"
+  },
+  "common": {
+    "updated": "Updated",
+    "loading": "Loading…",
+    "notFound": "Not found"
+  }
+}

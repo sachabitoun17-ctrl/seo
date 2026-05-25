@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "countries": "Pays",
+    "cities": "Villes",
+    "visas": "Visas",
+    "guides": "Guides",
+    "about": "À propos"
+  },
+  "footer": {
+    "tagline": "Guides pays pour nomades qui prennent leur temps.",
+    "legal": "Mentions légales",
+    "contact": "Contact",
+    "rights": "Tous droits réservés.",
+    "affiliateNotice": "Certains liens sur ce site sont affiliés. Nous touchons une petite commission sans coût supplémentaire pour vous."
+  },
+  "home": {
+    "heroTitle": "Guides pays pour nomades qui restent un moment.",
+    "heroSubtitle": "Visa, coût de la vie, internet, météo et fiscalité de base pour les destinations qui accueillent les longs séjours.",
+    "exploreCountries": "Explorer les pays",
+    "exploreCities": "Explorer les villes"
+  },
+  "country": {
+    "overview": "Vue d’ensemble",
+    "visa": "Visa et résidence",
+    "costOfLiving": "Coût de la vie",
+    "internet": "Internet et coworking",
+    "safety": "Sécurité",
+    "weather": "Météo",
+    "keyFacts": "Chiffres clés"
+  },
+  "common": {
+    "updated": "Mis à jour",
+    "loading": "Chargement…",
+    "notFound": "Introuvable"
+  }
+}

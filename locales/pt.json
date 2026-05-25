@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "countries": "Países",
+    "cities": "Cidades",
+    "visas": "Vistos",
+    "guides": "Guias",
+    "about": "Sobre"
+  },
+  "footer": {
+    "tagline": "Guias de países para nómadas que ficam mais tempo.",
+    "legal": "Aviso legal",
+    "contact": "Contacto",
+    "rights": "Todos os direitos reservados.",
+    "affiliateNotice": "Alguns links são de afiliação. Recebemos uma pequena comissão sem custo adicional para ti."
+  },
+  "home": {
+    "heroTitle": "Guias de países para nómadas que ficam.",
+    "heroSubtitle": "Visto, custo de vida, internet, clima e fiscalidade básica para destinos que acolhem estadias longas.",
+    "exploreCountries": "Explorar países",
+    "exploreCities": "Explorar cidades"
+  },
+  "country": {
+    "overview": "Visão geral",
+    "visa": "Visto e residência",
+    "costOfLiving": "Custo de vida",
+    "internet": "Internet e coworking",
+    "safety": "Segurança",
+    "weather": "Clima",
+    "keyFacts": "Dados-chave"
+  },
+  "common": {
+    "updated": "Atualizado",
+    "loading": "A carregar…",
+    "notFound": "Não encontrado"
+  }
+}
