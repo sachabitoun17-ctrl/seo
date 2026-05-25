@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
   title: {
-    default: 'Slowmad — Country guides for slow nomads',
+    default: 'Slowmad: country guides for slow nomads',
     template: '%s · Slowmad',
   },
   description: 'Long-stay country and city guides for digital nomads who travel slowly.',

@@ -1,27 +1,984 @@
 [
-  {"slug":"best-digital-nomad-visas-2026","topic":"visas","title":{"en":"Best Digital Nomad Visas in 2026: Complete Ranking","fr":"Meilleurs visas de nomade digital en 2026 : classement complet","es":"Mejores visados de nómada digital 2026: ranking completo","pt":"Melhores vistos de nómada digital 2026: ranking completo","it":"Migliori visti per nomadi digitali 2026: classifica completa","de":"Beste Digital-Nomad-Visa 2026: vollständiges Ranking","pl":"Najlepsze wizy nomady cyfrowego 2026: pełny ranking"},"description":{"en":"50+ countries now offer digital nomad visas. Here are the 10 worth your application time in 2026, ranked by tax, cost, and ease.","fr":"Plus de 50 pays offrent un visa nomade digital. Voici les 10 qui méritent vraiment votre dossier en 2026.","es":"Más de 50 países ofrecen visado de nómada digital. Aquí los 10 que valen la pena en 2026.","pt":"Mais de 50 países oferecem visto de nómada digital. Eis os 10 que valem a pena em 2026.","it":"Oltre 50 paesi offrono un visto per nomadi digitali. Ecco i 10 che valgono la candidatura nel 2026.","de":"50+ Länder bieten Digital-Nomad-Visa. Hier sind die 10 lohnenswertesten 2026.","pl":"Ponad 50 krajów oferuje wizy nomady cyfrowego. Oto 10 wartych aplikacji w 2026."},"relatedVisas":["portugal-d8","spain-digital-nomad","greece-digital-nomad","colombia-digital-nomad","croatia-digital-nomad","thailand-dtv","uae-dubai-remote-work","barbados-welcome-stamp","japan-digital-nomad","montenegro-digital-nomad"],"faq":[{"q":"Which digital nomad visa is easiest to get?","a":"Colombia (€900/month income, online process) and Mexico (no income threshold, granted at consulate) are the easiest globally. Hungary White Card has the lowest EU threshold at €2,000/month."},{"q":"Which DNV has the lowest tax burden?","a":"UAE Dubai Remote Work Visa (0% personal income tax), Croatia (0% if not a tax resident), and Greece (50% tax break for 7 years) are the most tax-favorable."},{"q":"Can family members come with me?","a":"Most DNVs allow spouse + dependent children, with an income threshold increase of 25-75% per dependent. Hungary White Card and Argentina are exceptions."}]},
-  {"slug":"cheapest-countries-digital-nomads-2026","topic":"cost","title":{"en":"Cheapest Countries for Digital Nomads in 2026","fr":"Pays les moins chers pour nomades digitaux en 2026","es":"Países más baratos para nómadas digitales en 2026","pt":"Países mais baratos para nómadas digitais em 2026","it":"Paesi più economici per nomadi digitali nel 2026","de":"Die günstigsten Länder für digitale Nomaden 2026","pl":"Najtańsze kraje dla cyfrowych nomadów w 2026"},"description":{"en":"Live well on under €1,200/month: the 10 countries where your euro stretches furthest in 2026, with verified rent and food costs.","fr":"Vivez bien à moins de 1 200 €/mois : les 10 pays où votre euro va le plus loin en 2026.","es":"Vivir bien con menos de 1.200 €/mes: los 10 países donde tu euro rinde más en 2026.","pt":"Viver bem com menos de 1 200 €/mês: os 10 países onde o euro rende mais em 2026.","it":"Vivere bene con meno di 1.200 €/mese: i 10 paesi dove l'euro rende di più nel 2026.","de":"Gut leben unter 1.200 €/Monat: die 10 günstigsten Länder 2026.","pl":"Żyj dobrze za mniej niż 1200 €/mies.: 10 najtańszych krajów 2026."},"relatedCountries":["vietnam","georgia","colombia","thailand","mexico","indonesia","sri-lanka","albania","turkey","bulgaria"],"faq":[{"q":"What's the cheapest country to live as a digital nomad in 2026?","a":"Vietnam (Da Nang $700/month all-in), Georgia (Tbilisi $850), and Sri Lanka ($800) sit at the bottom of the cost ranking with reliable internet."},{"q":"How much do I need per month?","a":"Solo nomad: €800-1,200 in SEA/LATAM/Eastern Europe, €1,500-2,500 in Southern Europe, €3,000+ in Western Europe and East Asia."}]},
-  {"slug":"best-wifi-countries-2026","topic":"infrastructure","title":{"en":"Best WiFi Countries for Remote Work in 2026","fr":"Meilleurs pays WiFi pour le télétravail en 2026","es":"Mejores países WiFi para teletrabajo en 2026","pt":"Melhores países WiFi para teletrabalho em 2026","it":"Migliori paesi WiFi per il telelavoro nel 2026","de":"Die besten WLAN-Länder für Remote Work 2026","pl":"Najlepsze kraje WiFi do pracy zdalnej 2026"},"description":{"en":"Internet speed kills the day before lunch if it dips. Here are the 10 countries with the most reliable home and café WiFi in 2026.","fr":"Une connexion qui flanche tue la journée. Voici les 10 pays au WiFi le plus fiable en 2026.","es":"Un internet inestable arruina el día. Los 10 países con WiFi más fiable en 2026.","pt":"Internet instável arruína o dia. Os 10 países com WiFi mais fiável em 2026.","it":"Una connessione instabile rovina la giornata. I 10 paesi con WiFi più affidabile nel 2026.","de":"Eine instabile Verbindung ruiniert den Tag. Die 10 Länder mit dem zuverlässigsten WLAN 2026.","pl":"Niestabilny internet rujnuje dzień. 10 krajów z najbardziej niezawodnym WiFi 2026."},"relatedCountries":["south-korea","uae","romania","japan","thailand","chile","spain","taiwan","hungary","bulgaria"],"faq":[{"q":"Which country has the fastest internet in 2026?","a":"South Korea (280 Mbps avg mobile + fiber), UAE (270 Mbps 5G everywhere), and Chile (225 Mbps fiber) lead Ookla rankings."},{"q":"Is Bali's internet good enough for remote work?","a":"In Canggu/Ubud yes (40-100 Mbps in coworking and most villas), but rural Bali drops to 10-20 Mbps. Always get an Airalo eSIM as backup."}]},
-  {"slug":"tax-residency-digital-nomads","topic":"tax","title":{"en":"Tax Residency for Digital Nomads Explained","fr":"Résidence fiscale du nomade digital expliquée","es":"Residencia fiscal del nómada digital explicada","pt":"Residência fiscal do nómada digital explicada","it":"Residenza fiscale del nomade digitale spiegata","de":"Steuerresidenz für digitale Nomaden erklärt","pl":"Rezydencja podatkowa cyfrowego nomada"},"description":{"en":"The 183-day rule, ties tests, and how to legally pay 0% or 9% as a nomad. No legal advice, just the framework.","fr":"La règle des 183 jours, les critères de rattachement, et comment payer 0 ou 9 % en toute légalité.","es":"La regla de los 183 días, criterios de vínculo y cómo pagar legalmente 0% o 9% como nómada.","pt":"A regra dos 183 dias, critérios de vínculo e como pagar legalmente 0% ou 9% como nómada.","it":"La regola dei 183 giorni, i criteri di legame e come pagare legalmente 0% o 9% da nomade.","de":"Die 183-Tage-Regel, Bindungstests und wie man legal 0% oder 9% zahlt.","pl":"Reguła 183 dni, kryteria więzi i jak legalnie płacić 0% lub 9%."},"relatedCountries":["portugal","uae","panama","georgia","costa-rica","montenegro","cyprus","malta","paraguay","greece"],"faq":[{"q":"Can I be a tax resident of no country?","a":"Technically yes, if you spend <183 days in any country and have no permanent ties anywhere. In practice, most banks and brokers require a tax residency declaration."},{"q":"What is the 183-day rule?","a":"Most countries consider you a tax resident if you spend 183 days or more in their territory in any 12-month period. Some (UK, US) have additional ties-based tests."}]},
-  {"slug":"how-to-get-portugal-d8-visa","topic":"visas","title":{"en":"How to Get the Portugal D8 Digital Nomad Visa (2026)","fr":"Comment obtenir le visa D8 nomade digital du Portugal (2026)","es":"Cómo obtener el visado D8 nómada digital de Portugal (2026)","pt":"Como obter o visto D8 nómada digital de Portugal (2026)","it":"Come ottenere il visto D8 nomade digitale del Portogallo (2026)","de":"Wie man das Portugal D8 Digital-Nomad-Visum bekommt (2026)","pl":"Jak uzyskać wizę D8 nomada cyfrowego w Portugalii (2026)"},"description":{"en":"The complete D8 application: income threshold, documents, processing, and the NHR successor tax regime. Updated for 2026.","fr":"Le dossier D8 complet : revenus, documents, traitement, et le régime fiscal successeur du RNH. Mis à jour 2026.","es":"La solicitud D8 completa: ingresos, documentos, plazos y régimen fiscal sucesor del RNH. Actualizado 2026.","pt":"O pedido D8 completo: rendimentos, documentos, prazos e regime fiscal sucessor do RNH. Atualizado 2026.","it":"La domanda D8 completa: reddito, documenti, tempi e regime fiscale successore del RNH. Aggiornato 2026.","de":"Der komplette D8-Antrag: Einkommen, Dokumente, Bearbeitung und das NHR-Nachfolgeregime. Aktualisiert 2026.","pl":"Kompletna aplikacja D8: dochód, dokumenty, czas, następca NHR. Aktualizacja 2026."},"relatedVisas":["portugal-d8","portugal-d7"],"relatedCountries":["portugal"],"faq":[{"q":"What is the minimum income for the Portugal D8 visa?","a":"€3,480 per month (4 times the Portuguese minimum wage), with +50% for a spouse and +30% per child."},{"q":"How long does the D8 visa take to process?","a":"60-90 days from consulate appointment. Add 2-3 months for the residence permit conversion after arrival."}]},
-  {"slug":"how-to-get-spain-digital-nomad-visa","topic":"visas","title":{"en":"How to Get the Spain Digital Nomad Visa (2026)","fr":"Comment obtenir le visa nomade digital de l'Espagne (2026)","es":"Cómo obtener el visado nómada digital de España (2026)","pt":"Como obter o visto nómada digital de Espanha (2026)","it":"Come ottenere il visto nomade digitale della Spagna (2026)","de":"Wie man das Spanien Digital-Nomad-Visum bekommt (2026)","pl":"Jak uzyskać wizę nomada cyfrowego w Hiszpanii (2026)"},"description":{"en":"Spain's DNV with the Beckham law: 24% flat tax for 6 years, family included, fastest EU processing. Step by step.","fr":"Le DNV espagnol avec la loi Beckham : 24 % d'impôt forfaitaire pendant 6 ans, famille incluse, traitement le plus rapide de l'UE.","es":"El DNV español con la ley Beckham: 24% fijo durante 6 años, familia incluida, el trámite más rápido de la UE.","pt":"O DNV espanhol com a lei Beckham: 24% fixo durante 6 anos, família incluída, o trâmite mais rápido da UE.","it":"Il DNV spagnolo con la legge Beckham: 24% fisso per 6 anni, famiglia inclusa, l'iter più rapido dell'UE.","de":"Das spanische DNV mit dem Beckham-Gesetz: 24% Pauschalsteuer für 6 Jahre, Familie inklusive, schnellste EU-Bearbeitung.","pl":"Hiszpańskie DNV z prawem Beckhama: 24% płaski podatek przez 6 lat, rodzina w komplecie, najszybsze procesowanie w UE."},"relatedVisas":["spain-digital-nomad"],"relatedCountries":["spain"],"faq":[{"q":"What is the income threshold for the Spain DNV?","a":"€2,762 per month (200% of Spain's minimum wage), with +75% for the first dependent and +25% for each additional."},{"q":"What is the Beckham law in Spain?","a":"A special tax regime allowing non-residents to pay 24% flat tax (instead of progressive up to 47%) on Spanish-source income for 6 years."}]},
-  {"slug":"bali-digital-nomad-guide-2026","topic":"city-guide","title":{"en":"Bali as a Digital Nomad: The 2026 Guide","fr":"Bali pour nomades digitaux : le guide 2026","es":"Bali para nómadas digitales: la guía 2026","pt":"Bali para nómadas digitais: o guia 2026","it":"Bali per nomadi digitali: la guida 2026","de":"Bali für digitale Nomaden: der 2026-Guide","pl":"Bali dla cyfrowych nomadów: przewodnik 2026"},"description":{"en":"Where to stay, work, eat and visa-up in Bali in 2026: Canggu vs Ubud vs Uluwatu, coworking, monthly budgets.","fr":"Où loger, travailler, manger et faire son visa à Bali en 2026 : Canggu vs Ubud vs Uluwatu, coworking, budgets.","es":"Dónde alojarse, trabajar, comer y tramitar visado en Bali 2026: Canggu vs Ubud vs Uluwatu, coworking y presupuestos.","pt":"Onde ficar, trabalhar, comer e tirar visto em Bali 2026: Canggu vs Ubud vs Uluwatu, coworking e orçamentos.","it":"Dove alloggiare, lavorare, mangiare e fare il visto a Bali nel 2026: Canggu vs Ubud vs Uluwatu, coworking, budget.","de":"Wo wohnen, arbeiten, essen und Visum machen auf Bali 2026: Canggu vs Ubud vs Uluwatu, Coworking, Budgets.","pl":"Gdzie spać, pracować, jeść i robić wizę na Bali 2026: Canggu vs Ubud vs Uluwatu, coworking, budżety."},"relatedCities":["bali","ubud"],"relatedCountries":["indonesia"],"faq":[{"q":"Where should a digital nomad stay in Bali in 2026?","a":"Canggu for surf + nomad bars + ride-or-die social life. Ubud for jungle, yoga, vegan food, less traffic. Uluwatu for cliff villas, premium coworking, fewer crowds."},{"q":"What's the monthly budget for Bali in 2026?","a":"$1,400-2,200/month all-in for one person: $700-1,200 villa rent, $250 food, $150 scooter, $150 coworking, rest for travel and fun."}]},
-  {"slug":"lisbon-digital-nomad-guide-2026","topic":"city-guide","title":{"en":"Lisbon as a Digital Nomad: The 2026 Guide","fr":"Lisbonne pour nomades digitaux : le guide 2026","es":"Lisboa para nómadas digitales: la guía 2026","pt":"Lisboa para nómadas digitais: o guia 2026","it":"Lisbona per nomadi digitali: la guida 2026","de":"Lissabon für digitale Nomaden: der 2026-Guide","pl":"Lizbona dla cyfrowych nomadów: przewodnik 2026"},"description":{"en":"Visa, neighborhoods, coworking and monthly budgets in Europe's nomad capital. Updated for 2026 rents.","fr":"Visa, quartiers, coworking et budgets mensuels dans la capitale nomade de l'Europe. Mis à jour 2026.","es":"Visado, barrios, coworking y presupuestos en la capital nómada de Europa. Actualizado 2026.","pt":"Visto, bairros, coworking e orçamentos na capital nómada da Europa. Atualizado 2026.","it":"Visto, quartieri, coworking e budget nella capitale nomade d'Europa. Aggiornato 2026.","de":"Visum, Viertel, Coworking und Budgets in Europas Nomadenhauptstadt. Aktualisiert 2026.","pl":"Wiza, dzielnice, coworking i budżety w nomadzkiej stolicy Europy. Aktualizacja 2026."},"relatedCities":["lisbon","porto","madeira"],"relatedCountries":["portugal"],"faq":[{"q":"What's the monthly budget for Lisbon in 2026?","a":"€2,000-3,200/month for one person: €1,000-1,800 1BR rent, €500 food, €100 transport, €200 coworking, rest for going out."},{"q":"Which Lisbon neighborhood is best for nomads?","a":"Príncipe Real and Cais do Sodré for cafés and social life, Alfama for charm but tourists, LX Factory district for creative crowd. Avoid Bairro Alto for sleep."}]},
-  {"slug":"mexico-city-digital-nomad-guide-2026","topic":"city-guide","title":{"en":"Mexico City as a Digital Nomad: The 2026 Guide","fr":"Mexico pour nomades digitaux : le guide 2026","es":"Ciudad de México para nómadas digitales: la guía 2026","pt":"Cidade do México para nómadas digitais: o guia 2026","it":"Città del Messico per nomadi digitali: la guida 2026","de":"Mexiko-Stadt für digitale Nomaden: der 2026-Guide","pl":"Meksyk dla cyfrowych nomadów: przewodnik 2026"},"description":{"en":"Where to live (Roma vs Condesa vs Juárez), coworking, safety, and a $1,800/month base plan.","fr":"Où vivre (Roma vs Condesa vs Juárez), coworking, sécurité, et un plan à 1 800 $/mois.","es":"Dónde vivir (Roma vs Condesa vs Juárez), coworking, seguridad y un plan a 1 800 USD/mes.","pt":"Onde viver (Roma vs Condesa vs Juárez), coworking, segurança e plano a 1 800 USD/mês.","it":"Dove vivere (Roma vs Condesa vs Juárez), coworking, sicurezza e un piano a 1.800 $/mese.","de":"Wo wohnen (Roma vs Condesa vs Juárez), Coworking, Sicherheit und ein Budget von 1.800 $/Monat.","pl":"Gdzie mieszkać (Roma vs Condesa vs Juárez), coworking, bezpieczeństwo i plan 1800 $/mies."},"relatedCities":["mexico-city","oaxaca","playa-del-carmen"],"relatedCountries":["mexico"],"faq":[{"q":"Is Mexico City safe for digital nomads?","a":"Roma, Condesa, Polanco, Juárez and Coyoacán are very safe day and night. Avoid Tepito and Iztapalapa. General urban-cautious rules apply."},{"q":"What's the monthly budget for Mexico City in 2026?","a":"$1,500-2,500/month: $700-1,300 1BR in Roma/Condesa, $300 food, $80 transport, $180 coworking, plus weekends out."}]},
-  {"slug":"best-esim-digital-nomads","topic":"tools","title":{"en":"Best eSIM for Digital Nomads in 2026","fr":"Meilleures eSIM pour nomades digitaux en 2026","es":"Mejores eSIM para nómadas digitales en 2026","pt":"Melhores eSIM para nómadas digitais em 2026","it":"Migliori eSIM per nomadi digitali nel 2026","de":"Beste eSIMs für digitale Nomaden 2026","pl":"Najlepsze eSIM dla cyfrowych nomadów 2026"},"description":{"en":"Airalo, Holafly, Saily compared: speeds, pricing, country coverage, and which one wins by region in 2026.","fr":"Airalo, Holafly, Saily comparées : vitesses, prix, couverture par pays, et laquelle gagne par région.","es":"Airalo, Holafly, Saily comparadas: velocidades, precios, cobertura por país y cuál gana por región.","pt":"Airalo, Holafly, Saily comparadas: velocidades, preços, cobertura e qual ganha por região.","it":"Airalo, Holafly, Saily a confronto: velocità, prezzi, copertura per paese e quale vince per regione.","de":"Airalo, Holafly, Saily im Vergleich: Geschwindigkeit, Preis, Länderabdeckung und Sieger pro Region.","pl":"Airalo, Holafly, Saily porównane: prędkość, ceny, kraje i zwycięzca w każdym regionie."},"faq":[{"q":"Which eSIM is best for digital nomads?","a":"Airalo wins on country coverage (200+) and price flexibility. Holafly is better for unlimited daily plans. Saily (Nord Security) for safety/VPN bundling."},{"q":"Can I use one eSIM in multiple countries?","a":"Yes. Airalo has regional plans (Asia 15-country, Europe 35-country) that auto-switch carriers. Cheaper than buying separate single-country eSIMs if hopping a lot."}]},
-  {"slug":"best-banks-digital-nomads","topic":"tools","title":{"en":"Best Banks and Multi-Currency Accounts for Nomads in 2026","fr":"Meilleures banques et comptes multi-devises pour nomades en 2026","es":"Mejores bancos y cuentas multidivisa para nómadas en 2026","pt":"Melhores bancos e contas multimoeda para nómadas em 2026","it":"Migliori banche e conti multivaluta per nomadi nel 2026","de":"Beste Banken und Multi-Währungskonten für Nomaden 2026","pl":"Najlepsze banki i konta wielowalutowe dla nomadów 2026"},"description":{"en":"Wise, Revolut, N26 and the rest: real FX rates, ATM fees, account limits, supported residencies in 2026.","fr":"Wise, Revolut, N26 et autres : taux FX réels, frais DAB, plafonds, résidences supportées en 2026.","es":"Wise, Revolut, N26 y otros: tipos FX reales, comisiones cajero, límites y residencias soportadas 2026.","pt":"Wise, Revolut, N26 e outros: taxas FX reais, comissões ATM, limites e residências aceites em 2026.","it":"Wise, Revolut, N26 e altri: tassi FX reali, commissioni ATM, limiti e residenze supportate nel 2026.","de":"Wise, Revolut, N26 und mehr: echte FX-Kurse, ATM-Gebühren, Limits, unterstützte Wohnsitze 2026.","pl":"Wise, Revolut, N26 i inne: realne kursy FX, prowizje ATM, limity, akceptowane rezydencje 2026."},"faq":[{"q":"Which bank account is best for digital nomads in 2026?","a":"Wise for multi-currency receiving (40+ currencies, real exchange rate). Revolut for EU spending and crypto. N26 for permanent EU residents only."},{"q":"Can I keep my US bank account as a nomad?","a":"Yes, as long as you keep a US address (family, mail forwarder). Charles Schwab and Fidelity are nomad-friendly with global ATM rebates."}]},
-  {"slug":"health-insurance-digital-nomads","topic":"tools","title":{"en":"Health Insurance for Digital Nomads in 2026","fr":"Assurance santé pour nomades digitaux en 2026","es":"Seguro de salud para nómadas digitales en 2026","pt":"Seguro de saúde para nómadas digitais em 2026","it":"Assicurazione sanitaria per nomadi digitali nel 2026","de":"Krankenversicherung für digitale Nomaden 2026","pl":"Ubezpieczenie zdrowotne dla cyfrowych nomadów 2026"},"description":{"en":"SafetyWing, Genki, Cigna Global compared: coverage, exclusions, cost by age, US coverage option.","fr":"SafetyWing, Genki, Cigna Global comparées : couverture, exclusions, prix par âge, option USA.","es":"SafetyWing, Genki, Cigna Global comparadas: cobertura, exclusiones, precio por edad, opción EEUU.","pt":"SafetyWing, Genki, Cigna Global comparadas: cobertura, exclusões, preço por idade, opção EUA.","it":"SafetyWing, Genki, Cigna Global a confronto: copertura, esclusioni, costo per età, opzione USA.","de":"SafetyWing, Genki, Cigna Global im Vergleich: Deckung, Ausschlüsse, Preis nach Alter, USA-Option.","pl":"SafetyWing, Genki, Cigna Global porównane: zakres, wyłączenia, cena, opcja USA."},"faq":[{"q":"What is the cheapest nomad health insurance in 2026?","a":"SafetyWing Nomad Insurance starts at $45.08/month for under-40 with $250 deductible. Genki starts at €88/month with no deductible."},{"q":"Does nomad insurance cover home country?","a":"SafetyWing covers your home country 30 days per 90-day period. Genki: 6 weeks per year. Cigna Global: optional add-on."}]},
-  {"slug":"digital-nomad-packing-list-2026","topic":"tools","title":{"en":"Digital Nomad Packing List 2026: Carry-On Only","fr":"Liste de bagages nomade digital 2026 : cabine uniquement","es":"Lista de equipaje nómada digital 2026: solo cabina","pt":"Lista de bagagem nómada digital 2026: só cabine","it":"Lista bagaglio nomade digitale 2026: solo cabina","de":"Digital-Nomad-Packliste 2026: nur Handgepäck","pl":"Lista bagażowa cyfrowego nomada 2026: tylko bagaż podręczny"},"description":{"en":"The minimalist 7 kg setup that works for 12+ months on the road: tech, clothes, toiletries, and what to leave behind.","fr":"Le setup minimaliste 7 kg pour 12 mois sur la route : tech, fringues, trousse, et ce qu'il faut laisser.","es":"El setup minimalista de 7 kg para 12+ meses en ruta: tech, ropa, neceser y qué dejar atrás.","pt":"O setup minimalista de 7 kg para 12+ meses na estrada: tech, roupa, necessaire e o que deixar.","it":"Il setup minimalista da 7 kg per 12+ mesi in viaggio: tech, vestiti, beauty, e cosa lasciare.","de":"Das minimalistische 7-kg-Setup für 12+ Monate unterwegs: Tech, Kleidung, Toiletten und was bleibt.","pl":"Minimalistyczny setup 7 kg na 12+ miesięcy w drodze: tech, ubrania, kosmetyki, co zostawić."},"faq":[{"q":"What backpack do most digital nomads use?","a":"Tortuga Travel Backpack 40L (carry-on max), Peak Design Travel 45L for photographers, Osprey Farpoint 40 for budget."},{"q":"Can I really nomad with carry-on only?","a":"Yes, indefinitely. The trick is doing laundry every 5-7 days and accepting 3 outfits is enough. Add merino wool socks/tees that need less washing."}]},
-  {"slug":"chiang-mai-vs-bangkok-where-to-base","topic":"city-guide","title":{"en":"Chiang Mai vs Bangkok: Where to Base as a Nomad in 2026","fr":"Chiang Mai vs Bangkok : où s'installer en 2026 ?","es":"Chiang Mai vs Bangkok: dónde basarse en 2026","pt":"Chiang Mai vs Bangkok: onde basear-se em 2026","it":"Chiang Mai vs Bangkok: dove basarsi nel 2026","de":"Chiang Mai vs Bangkok: wo Basis machen 2026?","pl":"Chiang Mai vs Bangkok: gdzie się osiedlić w 2026?"},"description":{"en":"The eternal Thailand nomad debate, settled with 2026 data: cost, community, internet, vibe and trade-offs.","fr":"Le débat nomade éternel sur la Thaïlande, tranché avec les données 2026 : coût, communauté, internet, vibes.","es":"El eterno debate nómada de Tailandia, resuelto con datos 2026: coste, comunidad, internet, vibe.","pt":"O eterno debate nómada da Tailândia resolvido com dados 2026: custo, comunidade, internet, vibe.","it":"L'eterno dibattito nomade della Thailandia risolto con dati 2026: costo, community, internet, vibe.","de":"Die ewige Thailand-Nomadendebatte, mit 2026-Daten entschieden: Kosten, Community, Internet, Vibe.","pl":"Wieczna debata nomadów Tajlandii, rozstrzygnięta danymi 2026: koszt, społeczność, internet, klimat."},"relatedCities":["chiang-mai","bangkok"],"relatedCountries":["thailand"],"faq":[{"q":"Which is cheaper, Chiang Mai or Bangkok?","a":"Chiang Mai is ~30% cheaper overall: $400 vs $700 1BR rent, $5 vs $10 dinner, $80 vs $130 coworking. But Bangkok salaries and tech jobs make up for it if you're earning local."},{"q":"Where do digital nomads stay longer?","a":"Chiang Mai for 3-12 months sit-ins. Bangkok for 1-3 month bursts. The community in Chiang Mai is tighter and more 'home'."}]},
-  {"slug":"cost-of-living-lisbon-2026","topic":"cost","title":{"en":"Cost of Living in Lisbon 2026: Real Monthly Numbers","fr":"Coût de la vie à Lisbonne 2026 : les vrais chiffres mensuels","es":"Coste de vida en Lisboa 2026: cifras mensuales reales","pt":"Custo de vida em Lisboa 2026: números mensais reais","it":"Costo della vita a Lisbona 2026: i numeri mensili reali","de":"Lebenshaltungskosten Lissabon 2026: echte Monatszahlen","pl":"Koszty życia w Lizbonie 2026: realne miesięczne kwoty"},"description":{"en":"€2,400/month all-in for a solo nomad in 2026. Rent, food, coworking, transport, plus how to do it for €1,800.","fr":"2 400 €/mois tout compris pour un nomade solo en 2026. Loyer, bouffe, coworking, transport, et comment faire à 1 800 €.","es":"2.400 €/mes todo incluido para nómada solo en 2026. Alquiler, comida, coworking, transporte, y cómo bajar a 1.800 €.","pt":"2 400 €/mês tudo incluído para nómada solo em 2026. Renda, comida, coworking, transporte, e como fazer com 1 800 €.","it":"2.400 €/mese tutto compreso per nomade solo nel 2026. Affitto, cibo, coworking, trasporto, e come farlo con 1.800 €.","de":"2.400 €/Monat all-in für einen Solo-Nomaden 2026. Miete, Essen, Coworking, Verkehr und wie es mit 1.800 € geht.","pl":"2400 €/mies. dla samotnego nomada w 2026. Czynsz, jedzenie, coworking, transport i jak żyć za 1800 €."},"relatedCities":["lisbon"],"relatedCountries":["portugal"],"faq":[{"q":"How much does it cost to live in Lisbon in 2026?","a":"Solo nomad: €2,000-3,200/month. Couple: €3,000-4,500/month. Family of 4: €4,500-6,500/month."},{"q":"How can I live in Lisbon for under €2,000?","a":"Live in Almada or Marvila instead of Príncipe Real, shared apartment instead of 1BR, cook 5 days/week, free coworking via Selina membership."}]},
-  {"slug":"best-digital-nomad-visa-for-families-2026","topic":"visas","title":{"en":"Best Digital Nomad Visas for Families in 2026","fr":"Meilleurs visas nomades digitaux pour familles en 2026","es":"Mejores visados de nómada digital para familias en 2026","pt":"Melhores vistos de nómada digital para famílias em 2026","it":"Migliori visti per nomadi digitali per famiglie nel 2026","de":"Beste Digital-Nomad-Visa für Familien 2026","pl":"Najlepsze wizy nomady cyfrowego dla rodzin 2026"},"description":{"en":"The 8 DNVs that work for couples with kids: family-eligible, schoolable, healthcare-included. Income thresholds compared.","fr":"Les 8 visas DNV qui marchent pour les couples avec enfants : famille éligible, scolarisable, santé incluse.","es":"Los 8 DNV que funcionan para parejas con hijos: familia elegible, escolarizable, sanidad incluida.","pt":"Os 8 DNV que funcionam para casais com filhos: família elegível, escolarizável, saúde incluída.","it":"Gli 8 DNV che funzionano per coppie con figli: famiglia ammessa, scolarizzabile, sanità inclusa.","de":"Die 8 DNVs für Familien mit Kindern: familienberechtigt, schulpflichtig, Gesundheitsversorgung inklusive.","pl":"8 DNV dla rodzin z dziećmi: kwalifikuje rodzinę, edukacja dostępna, opieka zdrowotna w pakiecie."},"relatedVisas":["portugal-d8","portugal-d7","spain-digital-nomad","italy-digital-nomad","greece-digital-nomad","mexico-temporary-resident","costa-rica-rentista","barbados-welcome-stamp"],"faq":[{"q":"Which DNV is best for families?","a":"Portugal D8 (€3,480 + 50% spouse + 30% per child, full schooling access) and Spain DNV (€2,762 + 75% per dependent, Beckham law for the earner) lead the pack."},{"q":"Can my kids go to school on a DNV?","a":"Yes. Portugal, Spain, Greece, Italy include access to public schools. Most LATAM DNVs (Mexico, Costa Rica, Colombia) also allow school enrollment."}]},
-  {"slug":"tax-free-countries-digital-nomads-2026","topic":"tax","title":{"en":"Tax-Free Countries for Digital Nomads in 2026","fr":"Pays sans impôt sur le revenu pour nomades digitaux en 2026","es":"Países sin impuestos para nómadas digitales en 2026","pt":"Países sem impostos para nómadas digitais em 2026","it":"Paesi senza tasse per nomadi digitali nel 2026","de":"Steuerfreie Länder für digitale Nomaden 2026","pl":"Kraje wolne od podatku dla cyfrowych nomadów 2026"},"description":{"en":"UAE, Bahamas, Monaco, Vanuatu and 6 more: where remote income is legally 0% taxed in 2026. Residency requirements compared.","fr":"EAU, Bahamas, Monaco, Vanuatu et 6 autres : où les revenus distants sont légalement taxés à 0 % en 2026.","es":"EAU, Bahamas, Mónaco, Vanuatu y 6 más: dónde la renta remota se grava al 0% legalmente en 2026.","pt":"EAU, Baamas, Mónaco, Vanuatu e mais 6: onde o rendimento remoto é tributado a 0% em 2026.","it":"EAU, Bahamas, Monaco, Vanuatu e altri 6: dove il reddito remoto è tassato allo 0% nel 2026.","de":"VAE, Bahamas, Monaco, Vanuatu und 6 mehr: wo Remote-Einkommen 2026 legal 0% besteuert wird.","pl":"ZEA, Bahamy, Monako, Vanuatu i 6 innych: gdzie zdalny dochód jest legalnie opodatkowany na 0% w 2026."},"relatedCountries":["uae","panama","costa-rica","barbados","mauritius"],"relatedVisas":["uae-dubai-remote-work","barbados-welcome-stamp","mauritius-premium"],"faq":[{"q":"Which country has zero personal income tax in 2026?","a":"UAE, Bahamas, Bahrain, Brunei, Cayman Islands, Kuwait, Maldives, Monaco, Oman, Qatar, Saudi Arabia, Vanuatu — but most still tax local-source income or require specific residency status."},{"q":"Can I keep my home country citizenship while paying 0% tax abroad?","a":"Most countries yes. Notable exception: the US, which taxes citizens worldwide. US nomads need the FEIE (€126k exclusion in 2026) or to renounce citizenship."}]},
-  {"slug":"cheapest-digital-nomad-visa-2026","topic":"visas","title":{"en":"The Cheapest Digital Nomad Visas in 2026","fr":"Visas nomades digitaux les moins chers en 2026","es":"Visados de nómada digital más baratos en 2026","pt":"Vistos de nómada digital mais baratos em 2026","it":"I visti per nomadi digitali più economici nel 2026","de":"Die günstigsten Digital-Nomad-Visa 2026","pl":"Najtańsze wizy nomady cyfrowego 2026"},"description":{"en":"Lowest income thresholds + fastest processing + smallest fees. Colombia €900, Hungary €2,000, Argentina no minimum. Full ranking.","fr":"Seuils de revenu les plus bas + traitement le plus rapide + frais minimes. Colombie 900 €, Hongrie 2 000 €, Argentine sans minimum.","es":"Umbrales mínimos + trámite más rápido + tarifas mínimas. Colombia 900 €, Hungría 2.000 €, Argentina sin mínimo.","pt":"Limites mais baixos + tramitação mais rápida + taxas mínimas. Colômbia 900 €, Hungria 2.000 €, Argentina sem mínimo.","it":"Soglie più basse + iter più veloce + tasse minime. Colombia 900 €, Ungheria 2.000 €, Argentina senza minimo.","de":"Niedrigste Schwellen + schnellste Bearbeitung + minimale Gebühren. Kolumbien 900 €, Ungarn 2.000 €, Argentinien ohne Minimum.","pl":"Najniższe progi + najszybsze procesowanie + minimalne opłaty. Kolumbia 900 €, Węgry 2000 €, Argentyna bez minimum."},"relatedVisas":["colombia-digital-nomad","hungary-white-card","argentina-digital-nomad","uruguay-digital-nomad","mexico-temporary-resident","brazil-digital-nomad","cape-verde-remote-working","montenegro-digital-nomad"],"faq":[{"q":"Which digital nomad visa has the lowest income threshold?","a":"Colombia (€900/month) is the lowest with formal verification. Argentina and Uruguay have no disclosed minimum but require bank statements."},{"q":"How much does a digital nomad visa cost in fees?","a":"€50-300 for most: Hungary €50, Portugal €83, Spain €80, Estonia €100, Croatia €100, Greece €70. Some (Thailand DTV) charge €450."}]},
-  {"slug":"spain-beckham-law-2026","topic":"tax","title":{"en":"Spain Beckham Law 2026: Flat 24% Tax for Remote Workers","fr":"Loi Beckham Espagne 2026 : 24 % d'impôt forfaitaire pour télétravailleurs","es":"Ley Beckham España 2026: 24% fijo para teletrabajadores","pt":"Lei Beckham Espanha 2026: 24% fixo para teletrabalhadores","it":"Legge Beckham Spagna 2026: 24% fisso per i lavoratori da remoto","de":"Spanien Beckham-Gesetz 2026: 24% Pauschalsteuer für Remote-Worker","pl":"Hiszpańskie prawo Beckhama 2026: 24% płaski podatek dla pracowników zdalnych"},"description":{"en":"How the Beckham regime works in 2026, who qualifies, the 6-year clock, and how it stacks with the Digital Nomad Visa.","fr":"Comment marche le régime Beckham en 2026, qui est éligible, la règle des 6 ans, et l'empilement avec le visa nomade digital.","es":"Cómo funciona el régimen Beckham en 2026, quién aplica, el reloj de 6 años, y cómo se combina con el visado DNV.","pt":"Como funciona o regime Beckham em 2026, quem aplica, o relógio de 6 anos, e como combina com o visto DNV.","it":"Come funziona il regime Beckham nel 2026, chi può applicare, il termine di 6 anni, e come si combina con il DNV.","de":"So funktioniert das Beckham-Regime 2026, wer berechtigt ist, die 6-Jahres-Uhr, und das Zusammenspiel mit dem DNV.","pl":"Jak działa reżim Beckhama w 2026, kto się kwalifikuje, zegar 6-letni, i jak łączy się z DNV."},"relatedVisas":["spain-digital-nomad","spain-non-lucrative"],"relatedCountries":["spain"],"faq":[{"q":"What is the Spain Beckham Law?","a":"A special tax regime allowing newly-arrived workers to pay 24% flat tax on Spanish-source income (instead of progressive up to 47%) for the year of arrival + 5 more years."},{"q":"Who qualifies for the Beckham law in 2026?","a":"Anyone who became a Spanish tax resident in 2026 after not being one for the prior 5 years, holding an employment contract or DNV-based remote work agreement."},{"q":"Does Beckham law apply to crypto and dividends?","a":"It applies to employment income only. Capital gains, dividends and crypto are taxed at standard non-resident rates (19-23%)."}]},
-  {"slug":"portugal-nhr-successor-2026","topic":"tax","title":{"en":"Portugal NHR Successor (IFICI) 2026: How It Works","fr":"Successeur du RNH au Portugal (IFICI) 2026 : comment ça marche","es":"Sucesor del RNH en Portugal (IFICI) 2026: cómo funciona","pt":"Sucessor do RNH em Portugal (IFICI) 2026: como funciona","it":"Successore del RNH in Portogallo (IFICI) 2026: come funziona","de":"Portugals NHR-Nachfolger (IFICI) 2026: so funktioniert es","pl":"Następca NHR w Portugalii (IFICI) 2026: jak to działa"},"description":{"en":"Portugal closed NHR but launched IFICI for high-skilled remote workers in 2024-2026. 20% flat tax + foreign income exemption.","fr":"Le Portugal a fermé le RNH mais lancé l'IFICI pour télétravailleurs qualifiés en 2024-2026. 20 % forfaitaire + exonération étrangère.","es":"Portugal cerró el NHR pero lanzó el IFICI para teletrabajadores cualificados en 2024-2026. 20% fijo + exención extranjera.","pt":"Portugal fechou o RNH mas lançou o IFICI para teletrabalhadores qualificados em 2024-2026. 20% fixo + isenção estrangeira.","it":"Il Portogallo ha chiuso il RNH ma ha lanciato l'IFICI per lavoratori qualificati nel 2024-2026. 20% fisso + esenzione estera.","de":"Portugal hat NHR geschlossen, aber IFICI für qualifizierte Remote-Worker 2024-2026 eingeführt. 20% Pauschale + Auslandsbefreiung.","pl":"Portugalia zamknęła NHR ale uruchomiła IFICI dla wykwalifikowanych pracowników zdalnych 2024-2026. 20% płaski + zwolnienie zagraniczne."},"relatedVisas":["portugal-d8","portugal-d7"],"relatedCountries":["portugal"],"faq":[{"q":"Is the Portugal NHR still available in 2026?","a":"The original NHR closed for new entrants in 2024. Its successor IFICI launched in 2024 with stricter eligibility (specific high-skilled professions and STEM/PhD criteria)."},{"q":"What is the tax rate under IFICI?","a":"20% flat on Portuguese-source professional income for 10 years, plus exemption on most foreign-source income, similar to old NHR but narrower scope."}]},
-  {"slug":"how-to-file-taxes-digital-nomad-2026","topic":"tax","title":{"en":"How to File Taxes as a Digital Nomad in 2026","fr":"Comment déclarer ses impôts en tant que nomade digital en 2026","es":"Cómo declarar impuestos como nómada digital en 2026","pt":"Como declarar impostos como nómada digital em 2026","it":"Come dichiarare le tasse come nomade digitale nel 2026","de":"Steuererklärung als digitaler Nomade 2026","pl":"Jak rozliczać podatki jako cyfrowy nomad w 2026"},"description":{"en":"Tax residency, treaties, FEIE, deductions: the framework for nomads filing taxes in 2026, without the legal jargon.","fr":"Résidence fiscale, conventions, FEIE, déductions : le cadre pour nomades qui déclarent en 2026, sans jargon.","es":"Residencia fiscal, tratados, FEIE, deducciones: el marco para nómadas en 2026, sin jerga legal.","pt":"Residência fiscal, tratados, FEIE, deduções: o quadro para nómadas em 2026, sem jargão.","it":"Residenza fiscale, trattati, FEIE, deduzioni: il quadro per nomadi nel 2026, senza gergo.","de":"Steuerresidenz, Abkommen, FEIE, Abzüge: der Rahmen für Nomaden 2026, ohne Juristen-Jargon.","pl":"Rezydencja, traktaty, FEIE, odliczenia: ramy podatkowe dla nomadów 2026."},"relatedCountries":["portugal","uae","panama","georgia"],"faq":[{"q":"Do US citizens pay taxes while traveling abroad?","a":"Yes. The US taxes citizens worldwide. The Foreign Earned Income Exclusion (FEIE) lets US nomads exclude up to $126,500 of foreign-earned income in 2026 if they pass either the Bona Fide Residence or Physical Presence test."},{"q":"What happens if I have no tax residency?","a":"Technically possible but practically risky. Most banks, brokers and DNV applications require declaring a tax residency. Statelessness on paper leads to issues with mortgages, retirement accounts and audits."}]},
-  {"slug":"best-coliving-spaces-digital-nomads-2026","topic":"tools","title":{"en":"Best Co-Living Spaces for Digital Nomads in 2026","fr":"Meilleurs co-livings pour nomades digitaux en 2026","es":"Mejores co-livings para nómadas digitales en 2026","pt":"Melhores co-livings para nómadas digitais em 2026","it":"Migliori co-living per nomadi digitali nel 2026","de":"Beste Co-Livings für digitale Nomaden 2026","pl":"Najlepsze co-livingi dla cyfrowych nomadów 2026"},"description":{"en":"Selina, Outsite, Sun and Co. compared. The 10 best co-living chains and standalone spots across 30+ cities in 2026.","fr":"Selina, Outsite, Sun and Co. comparés. Les 10 meilleurs co-livings et adresses indépendantes dans 30+ villes en 2026.","es":"Selina, Outsite, Sun and Co. comparados. Los 10 mejores co-livings en 30+ ciudades en 2026.","pt":"Selina, Outsite, Sun and Co. comparados. Os 10 melhores co-livings em 30+ cidades em 2026.","it":"Selina, Outsite, Sun and Co. a confronto. I 10 migliori co-living in 30+ città nel 2026.","de":"Selina, Outsite, Sun and Co. im Vergleich. Die 10 besten Co-Livings in 30+ Städten 2026.","pl":"Selina, Outsite, Sun and Co. porównane. 10 najlepszych co-livingów w 30+ miastach 2026."},"relatedCities":["lisbon","bali","mexico-city","medellin","chiang-mai"],"faq":[{"q":"How much do co-living spaces cost in 2026?","a":"Budget chains (Selina) $30-60/night, mid-tier (Sun and Co., Outsite) $80-150/night, premium (Borderless) $200+/night. Monthly rates typically 30-50% off nightly."},{"q":"Is co-living worth it as a digital nomad?","a":"Yes for the first 1-3 months in a new city: instant community, no setup, fast wifi guaranteed. Beyond that, renting your own place is cheaper and quieter."}]},
-  {"slug":"solo-female-digital-nomad-guide-2026","topic":"city-guide","title":{"en":"Solo Female Digital Nomad Guide 2026","fr":"Guide nomade digital pour femme solo en 2026","es":"Guía nómada digital para mujer sola 2026","pt":"Guia nómada digital para mulher solo 2026","it":"Guida nomade digitale per donna sola 2026","de":"Solo-Frauen Digital-Nomad-Guide 2026","pl":"Przewodnik samotnej kobiety cyfrowego nomada 2026"},"description":{"en":"Safest cities, best community, smart routines: the 2026 framework for women going nomad alone for the first time.","fr":"Villes les plus sûres, meilleures communautés, routines malines : le cadre 2026 pour partir seule pour la première fois.","es":"Ciudades más seguras, mejor comunidad, rutinas inteligentes: el marco 2026 para mujeres que se vuelven nómadas solas.","pt":"Cidades mais seguras, melhor comunidade, rotinas inteligentes: o quadro 2026 para mulheres que se tornam nómadas sozinhas.","it":"Città più sicure, migliore community, routine intelligenti: il quadro 2026 per donne nomadi sole.","de":"Sicherste Städte, beste Community, smarte Routinen: der 2026-Rahmen für Solo-Nomaden-Einsteigerinnen.","pl":"Najbezpieczniejsze miasta, najlepsza społeczność, mądre rutyny: ramy 2026 dla samotnych kobiet-nomadów."},"relatedCities":["lisbon","chiang-mai","tbilisi","mexico-city","medellin","valencia"],"faq":[{"q":"What are the safest cities for solo female digital nomads?","a":"Top picks: Lisbon (Portugal), Chiang Mai (Thailand), Tbilisi (Georgia), Valencia (Spain), Tokyo (Japan), Tallinn (Estonia). Avoid: Johannesburg, Caracas, Manila."},{"q":"Where is the best female nomad community?","a":"Lisbon, Bali (Canggu), Chiang Mai and Mexico City have the largest established female nomad communities. Hello Landing, Nomad Sisters and SafetyWing Remote Year all run women-only retreats."}]},
-  {"slug":"best-1-month-nomad-destinations-2026","topic":"city-guide","title":{"en":"Best 1-Month Digital Nomad Destinations in 2026","fr":"Meilleures destinations nomades digitales pour 1 mois en 2026","es":"Mejores destinos nómadas digitales para 1 mes en 2026","pt":"Melhores destinos nómadas digitais para 1 mês em 2026","it":"Migliori destinazioni nomadi digitali per 1 mese nel 2026","de":"Beste 1-Monats-Nomad-Destinationen 2026","pl":"Najlepsze 1-miesięczne destynacje cyfrowych nomadów 2026"},"description":{"en":"Where to land for exactly 4 weeks without setup pain: visa-free, fast internet, instant community. The 10 best 1-month sit-ins.","fr":"Où atterrir pour 4 semaines pile sans douleur de setup : sans visa, internet rapide, communauté immédiate.","es":"Dónde aterrizar 4 semanas sin dolor de setup: sin visado, internet rápido, comunidad inmediata.","pt":"Onde aterrar 4 semanas sem dor de setup: sem visto, internet rápida, comunidade imediata.","it":"Dove atterrare per 4 settimane esatte senza dolore di setup: senza visto, internet rapido, community immediata.","de":"Wohin für genau 4 Wochen ohne Setup-Aufwand: visumfrei, schnelles Internet, sofortige Community.","pl":"Gdzie wylądować na 4 tygodnie bez bólu z konfiguracją: bez wizy, szybki internet, natychmiastowa społeczność."},"relatedCities":["lisbon","bali","chiang-mai","mexico-city","medellin","tbilisi","dubai","istanbul"],"faq":[{"q":"What's the best 1-month digital nomad destination in 2026?","a":"Lisbon, Bali, Chiang Mai, Medellín, Tbilisi, Mexico City and Dubai. Each is visa-free for 30+ days for most nationalities, has fast internet, and a dense established nomad community."},{"q":"Can I work remotely on a tourist visa?","a":"Most countries officially require a work visa, but enforcement against remote-only nomads (working for foreign employers) is rare in the 30+ countries above. Always check the latest rules."}]},
-  {"slug":"how-to-find-apartments-digital-nomad-2026","topic":"tools","title":{"en":"How to Find Apartments as a Digital Nomad in 2026","fr":"Comment trouver un logement en tant que nomade digital en 2026","es":"Cómo encontrar apartamento como nómada digital en 2026","pt":"Como encontrar apartamento como nómada digital em 2026","it":"Come trovare un appartamento da nomade digitale nel 2026","de":"So findest du als Digitalnomade Wohnungen 2026","pl":"Jak znaleźć mieszkanie jako cyfrowy nomad 2026"},"description":{"en":"Airbnb monthly, Idealista, Facebook groups, local agents: the playbook for finding 1-6 month rentals without paying tourist rates.","fr":"Airbnb mensuel, Idealista, groupes Facebook, agents locaux : la stratégie pour des locations 1-6 mois sans tarif touriste.","es":"Airbnb mensual, Idealista, grupos Facebook, agentes locales: estrategia para alquileres 1-6 meses sin precio turista.","pt":"Airbnb mensal, Idealista, grupos Facebook, agentes locais: estratégia para arrendamentos 1-6 meses sem preço turista.","it":"Airbnb mensile, Idealista, gruppi Facebook, agenti locali: la strategia per affitti 1-6 mesi senza prezzo turistico.","de":"Airbnb monatlich, Idealista, Facebook-Gruppen, lokale Makler: die Strategie für 1-6-Monats-Mieten ohne Touristenpreis.","pl":"Airbnb miesięczny, Idealista, grupy FB, lokalni agenci: strategia na wynajem 1-6 miesięcy bez ceny turystycznej."},"faq":[{"q":"Where do digital nomads find monthly rentals in 2026?","a":"Airbnb (with monthly discount filter), Idealista (Spain/Portugal/Italy), Facebook groups ('Lisbon Digital Nomads', 'Bali Long Stays'), Nomad Rental, Flatio, Spotahome, local rental agencies for stays >3 months."},{"q":"How much should I budget for monthly rent as a nomad?","a":"As a baseline: $500-800/month in Vietnam/Georgia/Thailand, $800-1,500 in Mexico/Colombia/Portugal, $1,500-2,500 in Spain/Italy, $2,500+ in Western Europe."}]}
+  {
+    "slug": "best-digital-nomad-visas-2026",
+    "topic": "visas",
+    "title": {
+      "en": "Best Digital Nomad Visas in 2026: Complete Ranking",
+      "fr": "Meilleurs visas de nomade digital en 2026 : classement complet",
+      "es": "Mejores visados de nómada digital 2026: ranking completo",
+      "pt": "Melhores vistos de nómada digital 2026: ranking completo",
+      "it": "Migliori visti per nomadi digitali 2026: classifica completa",
+      "de": "Beste Digital-Nomad-Visa 2026: vollständiges Ranking",
+      "pl": "Najlepsze wizy nomady cyfrowego 2026: pełny ranking"
+    },
+    "description": {
+      "en": "50+ countries now offer digital nomad visas. Here are the 10 worth your application time in 2026, ranked by tax, cost, and ease.",
+      "fr": "Plus de 50 pays offrent un visa nomade digital. Voici les 10 qui méritent vraiment votre dossier en 2026.",
+      "es": "Más de 50 países ofrecen visado de nómada digital. Aquí los 10 que valen la pena en 2026.",
+      "pt": "Mais de 50 países oferecem visto de nómada digital. Eis os 10 que valem a pena em 2026.",
+      "it": "Oltre 50 paesi offrono un visto per nomadi digitali. Ecco i 10 che valgono la candidatura nel 2026.",
+      "de": "50+ Länder bieten Digital-Nomad-Visa. Hier sind die 10 lohnenswertesten 2026.",
+      "pl": "Ponad 50 krajów oferuje wizy nomady cyfrowego. Oto 10 wartych aplikacji w 2026."
+    },
+    "relatedVisas": [
+      "portugal-d8",
+      "spain-digital-nomad",
+      "greece-digital-nomad",
+      "colombia-digital-nomad",
+      "croatia-digital-nomad",
+      "thailand-dtv",
+      "uae-dubai-remote-work",
+      "barbados-welcome-stamp",
+      "japan-digital-nomad",
+      "montenegro-digital-nomad"
+    ],
+    "faq": [
+      {
+        "q": "Which digital nomad visa is easiest to get?",
+        "a": "Colombia (€900/month income, online process) and Mexico (no income threshold, granted at consulate) are the easiest globally. Hungary White Card has the lowest EU threshold at €2,000/month."
+      },
+      {
+        "q": "Which DNV has the lowest tax burden?",
+        "a": "UAE Dubai Remote Work Visa (0% personal income tax), Croatia (0% if not a tax resident), and Greece (50% tax break for 7 years) are the most tax-favorable."
+      },
+      {
+        "q": "Can family members come with me?",
+        "a": "Most DNVs allow spouse + dependent children, with an income threshold increase of 25-75% per dependent. Hungary White Card and Argentina are exceptions."
+      }
+    ]
+  },
+  {
+    "slug": "cheapest-countries-digital-nomads-2026",
+    "topic": "cost",
+    "title": {
+      "en": "Cheapest Countries for Digital Nomads in 2026",
+      "fr": "Pays les moins chers pour nomades digitaux en 2026",
+      "es": "Países más baratos para nómadas digitales en 2026",
+      "pt": "Países mais baratos para nómadas digitais em 2026",
+      "it": "Paesi più economici per nomadi digitali nel 2026",
+      "de": "Die günstigsten Länder für digitale Nomaden 2026",
+      "pl": "Najtańsze kraje dla cyfrowych nomadów w 2026"
+    },
+    "description": {
+      "en": "Live well on under €1,200/month: the 10 countries where your euro stretches furthest in 2026, with verified rent and food costs.",
+      "fr": "Vivez bien à moins de 1 200 €/mois : les 10 pays où votre euro va le plus loin en 2026.",
+      "es": "Vivir bien con menos de 1.200 €/mes: los 10 países donde tu euro rinde más en 2026.",
+      "pt": "Viver bem com menos de 1 200 €/mês: os 10 países onde o euro rende mais em 2026.",
+      "it": "Vivere bene con meno di 1.200 €/mese: i 10 paesi dove l'euro rende di più nel 2026.",
+      "de": "Gut leben unter 1.200 €/Monat: die 10 günstigsten Länder 2026.",
+      "pl": "Żyj dobrze za mniej niż 1200 €/mies.: 10 najtańszych krajów 2026."
+    },
+    "relatedCountries": [
+      "vietnam",
+      "georgia",
+      "colombia",
+      "thailand",
+      "mexico",
+      "indonesia",
+      "sri-lanka",
+      "albania",
+      "turkey",
+      "bulgaria"
+    ],
+    "faq": [
+      {
+        "q": "What's the cheapest country to live as a digital nomad in 2026?",
+        "a": "Vietnam (Da Nang $700/month all-in), Georgia (Tbilisi $850), and Sri Lanka ($800) sit at the bottom of the cost ranking with reliable internet."
+      },
+      {
+        "q": "How much do I need per month?",
+        "a": "Solo nomad: €800-1,200 in SEA/LATAM/Eastern Europe, €1,500-2,500 in Southern Europe, €3,000+ in Western Europe and East Asia."
+      }
+    ]
+  },
+  {
+    "slug": "best-wifi-countries-2026",
+    "topic": "infrastructure",
+    "title": {
+      "en": "Best WiFi Countries for Remote Work in 2026",
+      "fr": "Meilleurs pays WiFi pour le télétravail en 2026",
+      "es": "Mejores países WiFi para teletrabajo en 2026",
+      "pt": "Melhores países WiFi para teletrabalho em 2026",
+      "it": "Migliori paesi WiFi per il telelavoro nel 2026",
+      "de": "Die besten WLAN-Länder für Remote Work 2026",
+      "pl": "Najlepsze kraje WiFi do pracy zdalnej 2026"
+    },
+    "description": {
+      "en": "Internet speed kills the day before lunch if it dips. Here are the 10 countries with the most reliable home and café WiFi in 2026.",
+      "fr": "Une connexion qui flanche tue la journée. Voici les 10 pays au WiFi le plus fiable en 2026.",
+      "es": "Un internet inestable arruina el día. Los 10 países con WiFi más fiable en 2026.",
+      "pt": "Internet instável arruína o dia. Os 10 países com WiFi mais fiável em 2026.",
+      "it": "Una connessione instabile rovina la giornata. I 10 paesi con WiFi più affidabile nel 2026.",
+      "de": "Eine instabile Verbindung ruiniert den Tag. Die 10 Länder mit dem zuverlässigsten WLAN 2026.",
+      "pl": "Niestabilny internet rujnuje dzień. 10 krajów z najbardziej niezawodnym WiFi 2026."
+    },
+    "relatedCountries": [
+      "south-korea",
+      "uae",
+      "romania",
+      "japan",
+      "thailand",
+      "chile",
+      "spain",
+      "taiwan",
+      "hungary",
+      "bulgaria"
+    ],
+    "faq": [
+      {
+        "q": "Which country has the fastest internet in 2026?",
+        "a": "South Korea (280 Mbps avg mobile + fiber), UAE (270 Mbps 5G everywhere), and Chile (225 Mbps fiber) lead Ookla rankings."
+      },
+      {
+        "q": "Is Bali's internet good enough for remote work?",
+        "a": "In Canggu/Ubud yes (40-100 Mbps in coworking and most villas), but rural Bali drops to 10-20 Mbps. Always get an Airalo eSIM as backup."
+      }
+    ]
+  },
+  {
+    "slug": "tax-residency-digital-nomads",
+    "topic": "tax",
+    "title": {
+      "en": "Tax Residency for Digital Nomads Explained",
+      "fr": "Résidence fiscale du nomade digital expliquée",
+      "es": "Residencia fiscal del nómada digital explicada",
+      "pt": "Residência fiscal do nómada digital explicada",
+      "it": "Residenza fiscale del nomade digitale spiegata",
+      "de": "Steuerresidenz für digitale Nomaden erklärt",
+      "pl": "Rezydencja podatkowa cyfrowego nomada"
+    },
+    "description": {
+      "en": "The 183-day rule, ties tests, and how to legally pay 0% or 9% as a nomad. No legal advice, just the framework.",
+      "fr": "La règle des 183 jours, les critères de rattachement, et comment payer 0 ou 9 % en toute légalité.",
+      "es": "La regla de los 183 días, criterios de vínculo y cómo pagar legalmente 0% o 9% como nómada.",
+      "pt": "A regra dos 183 dias, critérios de vínculo e como pagar legalmente 0% ou 9% como nómada.",
+      "it": "La regola dei 183 giorni, i criteri di legame e come pagare legalmente 0% o 9% da nomade.",
+      "de": "Die 183-Tage-Regel, Bindungstests und wie man legal 0% oder 9% zahlt.",
+      "pl": "Reguła 183 dni, kryteria więzi i jak legalnie płacić 0% lub 9%."
+    },
+    "relatedCountries": [
+      "portugal",
+      "uae",
+      "panama",
+      "georgia",
+      "costa-rica",
+      "montenegro",
+      "cyprus",
+      "malta",
+      "paraguay",
+      "greece"
+    ],
+    "faq": [
+      {
+        "q": "Can I be a tax resident of no country?",
+        "a": "Technically yes, if you spend <183 days in any country and have no permanent ties anywhere. In practice, most banks and brokers require a tax residency declaration."
+      },
+      {
+        "q": "What is the 183-day rule?",
+        "a": "Most countries consider you a tax resident if you spend 183 days or more in their territory in any 12-month period. Some (UK, US) have additional ties-based tests."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-get-portugal-d8-visa",
+    "topic": "visas",
+    "title": {
+      "en": "How to Get the Portugal D8 Digital Nomad Visa (2026)",
+      "fr": "Comment obtenir le visa D8 nomade digital du Portugal (2026)",
+      "es": "Cómo obtener el visado D8 nómada digital de Portugal (2026)",
+      "pt": "Como obter o visto D8 nómada digital de Portugal (2026)",
+      "it": "Come ottenere il visto D8 nomade digitale del Portogallo (2026)",
+      "de": "Wie man das Portugal D8 Digital-Nomad-Visum bekommt (2026)",
+      "pl": "Jak uzyskać wizę D8 nomada cyfrowego w Portugalii (2026)"
+    },
+    "description": {
+      "en": "The complete D8 application: income threshold, documents, processing, and the NHR successor tax regime. Updated for 2026.",
+      "fr": "Le dossier D8 complet : revenus, documents, traitement, et le régime fiscal successeur du RNH. Mis à jour 2026.",
+      "es": "La solicitud D8 completa: ingresos, documentos, plazos y régimen fiscal sucesor del RNH. Actualizado 2026.",
+      "pt": "O pedido D8 completo: rendimentos, documentos, prazos e regime fiscal sucessor do RNH. Atualizado 2026.",
+      "it": "La domanda D8 completa: reddito, documenti, tempi e regime fiscale successore del RNH. Aggiornato 2026.",
+      "de": "Der komplette D8-Antrag: Einkommen, Dokumente, Bearbeitung und das NHR-Nachfolgeregime. Aktualisiert 2026.",
+      "pl": "Kompletna aplikacja D8: dochód, dokumenty, czas, następca NHR. Aktualizacja 2026."
+    },
+    "relatedVisas": [
+      "portugal-d8",
+      "portugal-d7"
+    ],
+    "relatedCountries": [
+      "portugal"
+    ],
+    "faq": [
+      {
+        "q": "What is the minimum income for the Portugal D8 visa?",
+        "a": "€3,480 per month (4 times the Portuguese minimum wage), with +50% for a spouse and +30% per child."
+      },
+      {
+        "q": "How long does the D8 visa take to process?",
+        "a": "60-90 days from consulate appointment. Add 2-3 months for the residence permit conversion after arrival."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-get-spain-digital-nomad-visa",
+    "topic": "visas",
+    "title": {
+      "en": "How to Get the Spain Digital Nomad Visa (2026)",
+      "fr": "Comment obtenir le visa nomade digital de l'Espagne (2026)",
+      "es": "Cómo obtener el visado nómada digital de España (2026)",
+      "pt": "Como obter o visto nómada digital de Espanha (2026)",
+      "it": "Come ottenere il visto nomade digitale della Spagna (2026)",
+      "de": "Wie man das Spanien Digital-Nomad-Visum bekommt (2026)",
+      "pl": "Jak uzyskać wizę nomada cyfrowego w Hiszpanii (2026)"
+    },
+    "description": {
+      "en": "Spain's DNV with the Beckham law: 24% flat tax for 6 years, family included, fastest EU processing. Step by step.",
+      "fr": "Le DNV espagnol avec la loi Beckham : 24 % d'impôt forfaitaire pendant 6 ans, famille incluse, traitement le plus rapide de l'UE.",
+      "es": "El DNV español con la ley Beckham: 24% fijo durante 6 años, familia incluida, el trámite más rápido de la UE.",
+      "pt": "O DNV espanhol com a lei Beckham: 24% fixo durante 6 anos, família incluída, o trâmite mais rápido da UE.",
+      "it": "Il DNV spagnolo con la legge Beckham: 24% fisso per 6 anni, famiglia inclusa, l'iter più rapido dell'UE.",
+      "de": "Das spanische DNV mit dem Beckham-Gesetz: 24% Pauschalsteuer für 6 Jahre, Familie inklusive, schnellste EU-Bearbeitung.",
+      "pl": "Hiszpańskie DNV z prawem Beckhama: 24% płaski podatek przez 6 lat, rodzina w komplecie, najszybsze procesowanie w UE."
+    },
+    "relatedVisas": [
+      "spain-digital-nomad"
+    ],
+    "relatedCountries": [
+      "spain"
+    ],
+    "faq": [
+      {
+        "q": "What is the income threshold for the Spain DNV?",
+        "a": "€2,762 per month (200% of Spain's minimum wage), with +75% for the first dependent and +25% for each additional."
+      },
+      {
+        "q": "What is the Beckham law in Spain?",
+        "a": "A special tax regime allowing non-residents to pay 24% flat tax (instead of progressive up to 47%) on Spanish-source income for 6 years."
+      }
+    ]
+  },
+  {
+    "slug": "bali-digital-nomad-guide-2026",
+    "topic": "city-guide",
+    "title": {
+      "en": "Bali as a Digital Nomad: The 2026 Guide",
+      "fr": "Bali pour nomades digitaux : le guide 2026",
+      "es": "Bali para nómadas digitales: la guía 2026",
+      "pt": "Bali para nómadas digitais: o guia 2026",
+      "it": "Bali per nomadi digitali: la guida 2026",
+      "de": "Bali für digitale Nomaden: der 2026-Guide",
+      "pl": "Bali dla cyfrowych nomadów: przewodnik 2026"
+    },
+    "description": {
+      "en": "Where to stay, work, eat and visa-up in Bali in 2026: Canggu vs Ubud vs Uluwatu, coworking, monthly budgets.",
+      "fr": "Où loger, travailler, manger et faire son visa à Bali en 2026 : Canggu vs Ubud vs Uluwatu, coworking, budgets.",
+      "es": "Dónde alojarse, trabajar, comer y tramitar visado en Bali 2026: Canggu vs Ubud vs Uluwatu, coworking y presupuestos.",
+      "pt": "Onde ficar, trabalhar, comer e tirar visto em Bali 2026: Canggu vs Ubud vs Uluwatu, coworking e orçamentos.",
+      "it": "Dove alloggiare, lavorare, mangiare e fare il visto a Bali nel 2026: Canggu vs Ubud vs Uluwatu, coworking, budget.",
+      "de": "Wo wohnen, arbeiten, essen und Visum machen auf Bali 2026: Canggu vs Ubud vs Uluwatu, Coworking, Budgets.",
+      "pl": "Gdzie spać, pracować, jeść i robić wizę na Bali 2026: Canggu vs Ubud vs Uluwatu, coworking, budżety."
+    },
+    "relatedCities": [
+      "bali",
+      "ubud"
+    ],
+    "relatedCountries": [
+      "indonesia"
+    ],
+    "faq": [
+      {
+        "q": "Where should a digital nomad stay in Bali in 2026?",
+        "a": "Canggu for surf + nomad bars + ride-or-die social life. Ubud for jungle, yoga, vegan food, less traffic. Uluwatu for cliff villas, premium coworking, fewer crowds."
+      },
+      {
+        "q": "What's the monthly budget for Bali in 2026?",
+        "a": "$1,400-2,200/month all-in for one person: $700-1,200 villa rent, $250 food, $150 scooter, $150 coworking, rest for travel and fun."
+      }
+    ]
+  },
+  {
+    "slug": "lisbon-digital-nomad-guide-2026",
+    "topic": "city-guide",
+    "title": {
+      "en": "Lisbon as a Digital Nomad: The 2026 Guide",
+      "fr": "Lisbonne pour nomades digitaux : le guide 2026",
+      "es": "Lisboa para nómadas digitales: la guía 2026",
+      "pt": "Lisboa para nómadas digitais: o guia 2026",
+      "it": "Lisbona per nomadi digitali: la guida 2026",
+      "de": "Lissabon für digitale Nomaden: der 2026-Guide",
+      "pl": "Lizbona dla cyfrowych nomadów: przewodnik 2026"
+    },
+    "description": {
+      "en": "Visa, neighborhoods, coworking and monthly budgets in Europe's nomad capital. Updated for 2026 rents.",
+      "fr": "Visa, quartiers, coworking et budgets mensuels dans la capitale nomade de l'Europe. Mis à jour 2026.",
+      "es": "Visado, barrios, coworking y presupuestos en la capital nómada de Europa. Actualizado 2026.",
+      "pt": "Visto, bairros, coworking e orçamentos na capital nómada da Europa. Atualizado 2026.",
+      "it": "Visto, quartieri, coworking e budget nella capitale nomade d'Europa. Aggiornato 2026.",
+      "de": "Visum, Viertel, Coworking und Budgets in Europas Nomadenhauptstadt. Aktualisiert 2026.",
+      "pl": "Wiza, dzielnice, coworking i budżety w nomadzkiej stolicy Europy. Aktualizacja 2026."
+    },
+    "relatedCities": [
+      "lisbon",
+      "porto",
+      "madeira"
+    ],
+    "relatedCountries": [
+      "portugal"
+    ],
+    "faq": [
+      {
+        "q": "What's the monthly budget for Lisbon in 2026?",
+        "a": "€2,000-3,200/month for one person: €1,000-1,800 1BR rent, €500 food, €100 transport, €200 coworking, rest for going out."
+      },
+      {
+        "q": "Which Lisbon neighborhood is best for nomads?",
+        "a": "Príncipe Real and Cais do Sodré for cafés and social life, Alfama for charm but tourists, LX Factory district for creative crowd. Avoid Bairro Alto for sleep."
+      }
+    ]
+  },
+  {
+    "slug": "mexico-city-digital-nomad-guide-2026",
+    "topic": "city-guide",
+    "title": {
+      "en": "Mexico City as a Digital Nomad: The 2026 Guide",
+      "fr": "Mexico pour nomades digitaux : le guide 2026",
+      "es": "Ciudad de México para nómadas digitales: la guía 2026",
+      "pt": "Cidade do México para nómadas digitais: o guia 2026",
+      "it": "Città del Messico per nomadi digitali: la guida 2026",
+      "de": "Mexiko-Stadt für digitale Nomaden: der 2026-Guide",
+      "pl": "Meksyk dla cyfrowych nomadów: przewodnik 2026"
+    },
+    "description": {
+      "en": "Where to live (Roma vs Condesa vs Juárez), coworking, safety, and a $1,800/month base plan.",
+      "fr": "Où vivre (Roma vs Condesa vs Juárez), coworking, sécurité, et un plan à 1 800 $/mois.",
+      "es": "Dónde vivir (Roma vs Condesa vs Juárez), coworking, seguridad y un plan a 1 800 USD/mes.",
+      "pt": "Onde viver (Roma vs Condesa vs Juárez), coworking, segurança e plano a 1 800 USD/mês.",
+      "it": "Dove vivere (Roma vs Condesa vs Juárez), coworking, sicurezza e un piano a 1.800 $/mese.",
+      "de": "Wo wohnen (Roma vs Condesa vs Juárez), Coworking, Sicherheit und ein Budget von 1.800 $/Monat.",
+      "pl": "Gdzie mieszkać (Roma vs Condesa vs Juárez), coworking, bezpieczeństwo i plan 1800 $/mies."
+    },
+    "relatedCities": [
+      "mexico-city",
+      "oaxaca",
+      "playa-del-carmen"
+    ],
+    "relatedCountries": [
+      "mexico"
+    ],
+    "faq": [
+      {
+        "q": "Is Mexico City safe for digital nomads?",
+        "a": "Roma, Condesa, Polanco, Juárez and Coyoacán are very safe day and night. Avoid Tepito and Iztapalapa. General urban-cautious rules apply."
+      },
+      {
+        "q": "What's the monthly budget for Mexico City in 2026?",
+        "a": "$1,500-2,500/month: $700-1,300 1BR in Roma/Condesa, $300 food, $80 transport, $180 coworking, plus weekends out."
+      }
+    ]
+  },
+  {
+    "slug": "best-esim-digital-nomads",
+    "topic": "tools",
+    "title": {
+      "en": "Best eSIM for Digital Nomads in 2026",
+      "fr": "Meilleures eSIM pour nomades digitaux en 2026",
+      "es": "Mejores eSIM para nómadas digitales en 2026",
+      "pt": "Melhores eSIM para nómadas digitais em 2026",
+      "it": "Migliori eSIM per nomadi digitali nel 2026",
+      "de": "Beste eSIMs für digitale Nomaden 2026",
+      "pl": "Najlepsze eSIM dla cyfrowych nomadów 2026"
+    },
+    "description": {
+      "en": "Airalo, Holafly, Saily compared: speeds, pricing, country coverage, and which one wins by region in 2026.",
+      "fr": "Airalo, Holafly, Saily comparées : vitesses, prix, couverture par pays, et laquelle gagne par région.",
+      "es": "Airalo, Holafly, Saily comparadas: velocidades, precios, cobertura por país y cuál gana por región.",
+      "pt": "Airalo, Holafly, Saily comparadas: velocidades, preços, cobertura e qual ganha por região.",
+      "it": "Airalo, Holafly, Saily a confronto: velocità, prezzi, copertura per paese e quale vince per regione.",
+      "de": "Airalo, Holafly, Saily im Vergleich: Geschwindigkeit, Preis, Länderabdeckung und Sieger pro Region.",
+      "pl": "Airalo, Holafly, Saily porównane: prędkość, ceny, kraje i zwycięzca w każdym regionie."
+    },
+    "faq": [
+      {
+        "q": "Which eSIM is best for digital nomads?",
+        "a": "Airalo wins on country coverage (200+) and price flexibility. Holafly is better for unlimited daily plans. Saily (Nord Security) for safety/VPN bundling."
+      },
+      {
+        "q": "Can I use one eSIM in multiple countries?",
+        "a": "Yes. Airalo has regional plans (Asia 15-country, Europe 35-country) that auto-switch carriers. Cheaper than buying separate single-country eSIMs if hopping a lot."
+      }
+    ]
+  },
+  {
+    "slug": "best-banks-digital-nomads",
+    "topic": "tools",
+    "title": {
+      "en": "Best Banks and Multi-Currency Accounts for Nomads in 2026",
+      "fr": "Meilleures banques et comptes multi-devises pour nomades en 2026",
+      "es": "Mejores bancos y cuentas multidivisa para nómadas en 2026",
+      "pt": "Melhores bancos e contas multimoeda para nómadas em 2026",
+      "it": "Migliori banche e conti multivaluta per nomadi nel 2026",
+      "de": "Beste Banken und Multi-Währungskonten für Nomaden 2026",
+      "pl": "Najlepsze banki i konta wielowalutowe dla nomadów 2026"
+    },
+    "description": {
+      "en": "Wise, Revolut, N26 and the rest: real FX rates, ATM fees, account limits, supported residencies in 2026.",
+      "fr": "Wise, Revolut, N26 et autres : taux FX réels, frais DAB, plafonds, résidences supportées en 2026.",
+      "es": "Wise, Revolut, N26 y otros: tipos FX reales, comisiones cajero, límites y residencias soportadas 2026.",
+      "pt": "Wise, Revolut, N26 e outros: taxas FX reais, comissões ATM, limites e residências aceites em 2026.",
+      "it": "Wise, Revolut, N26 e altri: tassi FX reali, commissioni ATM, limiti e residenze supportate nel 2026.",
+      "de": "Wise, Revolut, N26 und mehr: echte FX-Kurse, ATM-Gebühren, Limits, unterstützte Wohnsitze 2026.",
+      "pl": "Wise, Revolut, N26 i inne: realne kursy FX, prowizje ATM, limity, akceptowane rezydencje 2026."
+    },
+    "faq": [
+      {
+        "q": "Which bank account is best for digital nomads in 2026?",
+        "a": "Wise for multi-currency receiving (40+ currencies, real exchange rate). Revolut for EU spending and crypto. N26 for permanent EU residents only."
+      },
+      {
+        "q": "Can I keep my US bank account as a nomad?",
+        "a": "Yes, as long as you keep a US address (family, mail forwarder). Charles Schwab and Fidelity are nomad-friendly with global ATM rebates."
+      }
+    ]
+  },
+  {
+    "slug": "health-insurance-digital-nomads",
+    "topic": "tools",
+    "title": {
+      "en": "Health Insurance for Digital Nomads in 2026",
+      "fr": "Assurance santé pour nomades digitaux en 2026",
+      "es": "Seguro de salud para nómadas digitales en 2026",
+      "pt": "Seguro de saúde para nómadas digitais em 2026",
+      "it": "Assicurazione sanitaria per nomadi digitali nel 2026",
+      "de": "Krankenversicherung für digitale Nomaden 2026",
+      "pl": "Ubezpieczenie zdrowotne dla cyfrowych nomadów 2026"
+    },
+    "description": {
+      "en": "SafetyWing, Genki, Cigna Global compared: coverage, exclusions, cost by age, US coverage option.",
+      "fr": "SafetyWing, Genki, Cigna Global comparées : couverture, exclusions, prix par âge, option USA.",
+      "es": "SafetyWing, Genki, Cigna Global comparadas: cobertura, exclusiones, precio por edad, opción EEUU.",
+      "pt": "SafetyWing, Genki, Cigna Global comparadas: cobertura, exclusões, preço por idade, opção EUA.",
+      "it": "SafetyWing, Genki, Cigna Global a confronto: copertura, esclusioni, costo per età, opzione USA.",
+      "de": "SafetyWing, Genki, Cigna Global im Vergleich: Deckung, Ausschlüsse, Preis nach Alter, USA-Option.",
+      "pl": "SafetyWing, Genki, Cigna Global porównane: zakres, wyłączenia, cena, opcja USA."
+    },
+    "faq": [
+      {
+        "q": "What is the cheapest nomad health insurance in 2026?",
+        "a": "SafetyWing Nomad Insurance starts at $45.08/month for under-40 with $250 deductible. Genki starts at €88/month with no deductible."
+      },
+      {
+        "q": "Does nomad insurance cover home country?",
+        "a": "SafetyWing covers your home country 30 days per 90-day period. Genki: 6 weeks per year. Cigna Global: optional add-on."
+      }
+    ]
+  },
+  {
+    "slug": "digital-nomad-packing-list-2026",
+    "topic": "tools",
+    "title": {
+      "en": "Digital Nomad Packing List 2026: Carry-On Only",
+      "fr": "Liste de bagages nomade digital 2026 : cabine uniquement",
+      "es": "Lista de equipaje nómada digital 2026: solo cabina",
+      "pt": "Lista de bagagem nómada digital 2026: só cabine",
+      "it": "Lista bagaglio nomade digitale 2026: solo cabina",
+      "de": "Digital-Nomad-Packliste 2026: nur Handgepäck",
+      "pl": "Lista bagażowa cyfrowego nomada 2026: tylko bagaż podręczny"
+    },
+    "description": {
+      "en": "The minimalist 7 kg setup that works for 12+ months on the road: tech, clothes, toiletries, and what to leave behind.",
+      "fr": "Le setup minimaliste 7 kg pour 12 mois sur la route : tech, fringues, trousse, et ce qu'il faut laisser.",
+      "es": "El setup minimalista de 7 kg para 12+ meses en ruta: tech, ropa, neceser y qué dejar atrás.",
+      "pt": "O setup minimalista de 7 kg para 12+ meses na estrada: tech, roupa, necessaire e o que deixar.",
+      "it": "Il setup minimalista da 7 kg per 12+ mesi in viaggio: tech, vestiti, beauty, e cosa lasciare.",
+      "de": "Das minimalistische 7-kg-Setup für 12+ Monate unterwegs: Tech, Kleidung, Toiletten und was bleibt.",
+      "pl": "Minimalistyczny setup 7 kg na 12+ miesięcy w drodze: tech, ubrania, kosmetyki, co zostawić."
+    },
+    "faq": [
+      {
+        "q": "What backpack do most digital nomads use?",
+        "a": "Tortuga Travel Backpack 40L (carry-on max), Peak Design Travel 45L for photographers, Osprey Farpoint 40 for budget."
+      },
+      {
+        "q": "Can I really nomad with carry-on only?",
+        "a": "Yes, indefinitely. The trick is doing laundry every 5-7 days and accepting 3 outfits is enough. Add merino wool socks/tees that need less washing."
+      }
+    ]
+  },
+  {
+    "slug": "chiang-mai-vs-bangkok-where-to-base",
+    "topic": "city-guide",
+    "title": {
+      "en": "Chiang Mai vs Bangkok: Where to Base as a Nomad in 2026",
+      "fr": "Chiang Mai vs Bangkok : où s'installer en 2026 ?",
+      "es": "Chiang Mai vs Bangkok: dónde basarse en 2026",
+      "pt": "Chiang Mai vs Bangkok: onde basear-se em 2026",
+      "it": "Chiang Mai vs Bangkok: dove basarsi nel 2026",
+      "de": "Chiang Mai vs Bangkok: wo Basis machen 2026?",
+      "pl": "Chiang Mai vs Bangkok: gdzie się osiedlić w 2026?"
+    },
+    "description": {
+      "en": "The eternal Thailand nomad debate, settled with 2026 data: cost, community, internet, vibe and trade-offs.",
+      "fr": "Le débat nomade éternel sur la Thaïlande, tranché avec les données 2026 : coût, communauté, internet, vibes.",
+      "es": "El eterno debate nómada de Tailandia, resuelto con datos 2026: coste, comunidad, internet, vibe.",
+      "pt": "O eterno debate nómada da Tailândia resolvido com dados 2026: custo, comunidade, internet, vibe.",
+      "it": "L'eterno dibattito nomade della Thailandia risolto con dati 2026: costo, community, internet, vibe.",
+      "de": "Die ewige Thailand-Nomadendebatte, mit 2026-Daten entschieden: Kosten, Community, Internet, Vibe.",
+      "pl": "Wieczna debata nomadów Tajlandii, rozstrzygnięta danymi 2026: koszt, społeczność, internet, klimat."
+    },
+    "relatedCities": [
+      "chiang-mai",
+      "bangkok"
+    ],
+    "relatedCountries": [
+      "thailand"
+    ],
+    "faq": [
+      {
+        "q": "Which is cheaper, Chiang Mai or Bangkok?",
+        "a": "Chiang Mai is ~30% cheaper overall: $400 vs $700 1BR rent, $5 vs $10 dinner, $80 vs $130 coworking. But Bangkok salaries and tech jobs make up for it if you're earning local."
+      },
+      {
+        "q": "Where do digital nomads stay longer?",
+        "a": "Chiang Mai for 3-12 months sit-ins. Bangkok for 1-3 month bursts. The community in Chiang Mai is tighter and more 'home'."
+      }
+    ]
+  },
+  {
+    "slug": "cost-of-living-lisbon-2026",
+    "topic": "cost",
+    "title": {
+      "en": "Cost of Living in Lisbon 2026: Real Monthly Numbers",
+      "fr": "Coût de la vie à Lisbonne 2026 : les vrais chiffres mensuels",
+      "es": "Coste de vida en Lisboa 2026: cifras mensuales reales",
+      "pt": "Custo de vida em Lisboa 2026: números mensais reais",
+      "it": "Costo della vita a Lisbona 2026: i numeri mensili reali",
+      "de": "Lebenshaltungskosten Lissabon 2026: echte Monatszahlen",
+      "pl": "Koszty życia w Lizbonie 2026: realne miesięczne kwoty"
+    },
+    "description": {
+      "en": "€2,400/month all-in for a solo nomad in 2026. Rent, food, coworking, transport, plus how to do it for €1,800.",
+      "fr": "2 400 €/mois tout compris pour un nomade solo en 2026. Loyer, bouffe, coworking, transport, et comment faire à 1 800 €.",
+      "es": "2.400 €/mes todo incluido para nómada solo en 2026. Alquiler, comida, coworking, transporte, y cómo bajar a 1.800 €.",
+      "pt": "2 400 €/mês tudo incluído para nómada solo em 2026. Renda, comida, coworking, transporte, e como fazer com 1 800 €.",
+      "it": "2.400 €/mese tutto compreso per nomade solo nel 2026. Affitto, cibo, coworking, trasporto, e come farlo con 1.800 €.",
+      "de": "2.400 €/Monat all-in für einen Solo-Nomaden 2026. Miete, Essen, Coworking, Verkehr und wie es mit 1.800 € geht.",
+      "pl": "2400 €/mies. dla samotnego nomada w 2026. Czynsz, jedzenie, coworking, transport i jak żyć za 1800 €."
+    },
+    "relatedCities": [
+      "lisbon"
+    ],
+    "relatedCountries": [
+      "portugal"
+    ],
+    "faq": [
+      {
+        "q": "How much does it cost to live in Lisbon in 2026?",
+        "a": "Solo nomad: €2,000-3,200/month. Couple: €3,000-4,500/month. Family of 4: €4,500-6,500/month."
+      },
+      {
+        "q": "How can I live in Lisbon for under €2,000?",
+        "a": "Live in Almada or Marvila instead of Príncipe Real, shared apartment instead of 1BR, cook 5 days/week, free coworking via Selina membership."
+      }
+    ]
+  },
+  {
+    "slug": "best-digital-nomad-visa-for-families-2026",
+    "topic": "visas",
+    "title": {
+      "en": "Best Digital Nomad Visas for Families in 2026",
+      "fr": "Meilleurs visas nomades digitaux pour familles en 2026",
+      "es": "Mejores visados de nómada digital para familias en 2026",
+      "pt": "Melhores vistos de nómada digital para famílias em 2026",
+      "it": "Migliori visti per nomadi digitali per famiglie nel 2026",
+      "de": "Beste Digital-Nomad-Visa für Familien 2026",
+      "pl": "Najlepsze wizy nomady cyfrowego dla rodzin 2026"
+    },
+    "description": {
+      "en": "The 8 DNVs that work for couples with kids: family-eligible, schoolable, healthcare-included. Income thresholds compared.",
+      "fr": "Les 8 visas DNV qui marchent pour les couples avec enfants : famille éligible, scolarisable, santé incluse.",
+      "es": "Los 8 DNV que funcionan para parejas con hijos: familia elegible, escolarizable, sanidad incluida.",
+      "pt": "Os 8 DNV que funcionam para casais com filhos: família elegível, escolarizável, saúde incluída.",
+      "it": "Gli 8 DNV che funzionano per coppie con figli: famiglia ammessa, scolarizzabile, sanità inclusa.",
+      "de": "Die 8 DNVs für Familien mit Kindern: familienberechtigt, schulpflichtig, Gesundheitsversorgung inklusive.",
+      "pl": "8 DNV dla rodzin z dziećmi: kwalifikuje rodzinę, edukacja dostępna, opieka zdrowotna w pakiecie."
+    },
+    "relatedVisas": [
+      "portugal-d8",
+      "portugal-d7",
+      "spain-digital-nomad",
+      "italy-digital-nomad",
+      "greece-digital-nomad",
+      "mexico-temporary-resident",
+      "costa-rica-rentista",
+      "barbados-welcome-stamp"
+    ],
+    "faq": [
+      {
+        "q": "Which DNV is best for families?",
+        "a": "Portugal D8 (€3,480 + 50% spouse + 30% per child, full schooling access) and Spain DNV (€2,762 + 75% per dependent, Beckham law for the earner) lead the pack."
+      },
+      {
+        "q": "Can my kids go to school on a DNV?",
+        "a": "Yes. Portugal, Spain, Greece, Italy include access to public schools. Most LATAM DNVs (Mexico, Costa Rica, Colombia) also allow school enrollment."
+      }
+    ]
+  },
+  {
+    "slug": "tax-free-countries-digital-nomads-2026",
+    "topic": "tax",
+    "title": {
+      "en": "Tax-Free Countries for Digital Nomads in 2026",
+      "fr": "Pays sans impôt sur le revenu pour nomades digitaux en 2026",
+      "es": "Países sin impuestos para nómadas digitales en 2026",
+      "pt": "Países sem impostos para nómadas digitais em 2026",
+      "it": "Paesi senza tasse per nomadi digitali nel 2026",
+      "de": "Steuerfreie Länder für digitale Nomaden 2026",
+      "pl": "Kraje wolne od podatku dla cyfrowych nomadów 2026"
+    },
+    "description": {
+      "en": "UAE, Bahamas, Monaco, Vanuatu and 6 more: where remote income is legally 0% taxed in 2026. Residency requirements compared.",
+      "fr": "EAU, Bahamas, Monaco, Vanuatu et 6 autres : où les revenus distants sont légalement taxés à 0 % en 2026.",
+      "es": "EAU, Bahamas, Mónaco, Vanuatu y 6 más: dónde la renta remota se grava al 0% legalmente en 2026.",
+      "pt": "EAU, Baamas, Mónaco, Vanuatu e mais 6: onde o rendimento remoto é tributado a 0% em 2026.",
+      "it": "EAU, Bahamas, Monaco, Vanuatu e altri 6: dove il reddito remoto è tassato allo 0% nel 2026.",
+      "de": "VAE, Bahamas, Monaco, Vanuatu und 6 mehr: wo Remote-Einkommen 2026 legal 0% besteuert wird.",
+      "pl": "ZEA, Bahamy, Monako, Vanuatu i 6 innych: gdzie zdalny dochód jest legalnie opodatkowany na 0% w 2026."
+    },
+    "relatedCountries": [
+      "uae",
+      "panama",
+      "costa-rica",
+      "barbados",
+      "mauritius"
+    ],
+    "relatedVisas": [
+      "uae-dubai-remote-work",
+      "barbados-welcome-stamp",
+      "mauritius-premium"
+    ],
+    "faq": [
+      {
+        "q": "Which country has zero personal income tax in 2026?",
+        "a": "UAE, Bahamas, Bahrain, Brunei, Cayman Islands, Kuwait, Maldives, Monaco, Oman, Qatar, Saudi Arabia, Vanuatu . but most still tax local-source income or require specific residency status."
+      },
+      {
+        "q": "Can I keep my home country citizenship while paying 0% tax abroad?",
+        "a": "Most countries yes. Notable exception: the US, which taxes citizens worldwide. US nomads need the FEIE (€126k exclusion in 2026) or to renounce citizenship."
+      }
+    ]
+  },
+  {
+    "slug": "cheapest-digital-nomad-visa-2026",
+    "topic": "visas",
+    "title": {
+      "en": "The Cheapest Digital Nomad Visas in 2026",
+      "fr": "Visas nomades digitaux les moins chers en 2026",
+      "es": "Visados de nómada digital más baratos en 2026",
+      "pt": "Vistos de nómada digital mais baratos em 2026",
+      "it": "I visti per nomadi digitali più economici nel 2026",
+      "de": "Die günstigsten Digital-Nomad-Visa 2026",
+      "pl": "Najtańsze wizy nomady cyfrowego 2026"
+    },
+    "description": {
+      "en": "Lowest income thresholds + fastest processing + smallest fees. Colombia €900, Hungary €2,000, Argentina no minimum. Full ranking.",
+      "fr": "Seuils de revenu les plus bas + traitement le plus rapide + frais minimes. Colombie 900 €, Hongrie 2 000 €, Argentine sans minimum.",
+      "es": "Umbrales mínimos + trámite más rápido + tarifas mínimas. Colombia 900 €, Hungría 2.000 €, Argentina sin mínimo.",
+      "pt": "Limites mais baixos + tramitação mais rápida + taxas mínimas. Colômbia 900 €, Hungria 2.000 €, Argentina sem mínimo.",
+      "it": "Soglie più basse + iter più veloce + tasse minime. Colombia 900 €, Ungheria 2.000 €, Argentina senza minimo.",
+      "de": "Niedrigste Schwellen + schnellste Bearbeitung + minimale Gebühren. Kolumbien 900 €, Ungarn 2.000 €, Argentinien ohne Minimum.",
+      "pl": "Najniższe progi + najszybsze procesowanie + minimalne opłaty. Kolumbia 900 €, Węgry 2000 €, Argentyna bez minimum."
+    },
+    "relatedVisas": [
+      "colombia-digital-nomad",
+      "hungary-white-card",
+      "argentina-digital-nomad",
+      "uruguay-digital-nomad",
+      "mexico-temporary-resident",
+      "brazil-digital-nomad",
+      "cape-verde-remote-working",
+      "montenegro-digital-nomad"
+    ],
+    "faq": [
+      {
+        "q": "Which digital nomad visa has the lowest income threshold?",
+        "a": "Colombia (€900/month) is the lowest with formal verification. Argentina and Uruguay have no disclosed minimum but require bank statements."
+      },
+      {
+        "q": "How much does a digital nomad visa cost in fees?",
+        "a": "€50-300 for most: Hungary €50, Portugal €83, Spain €80, Estonia €100, Croatia €100, Greece €70. Some (Thailand DTV) charge €450."
+      }
+    ]
+  },
+  {
+    "slug": "spain-beckham-law-2026",
+    "topic": "tax",
+    "title": {
+      "en": "Spain Beckham Law 2026: Flat 24% Tax for Remote Workers",
+      "fr": "Loi Beckham Espagne 2026 : 24 % d'impôt forfaitaire pour télétravailleurs",
+      "es": "Ley Beckham España 2026: 24% fijo para teletrabajadores",
+      "pt": "Lei Beckham Espanha 2026: 24% fixo para teletrabalhadores",
+      "it": "Legge Beckham Spagna 2026: 24% fisso per i lavoratori da remoto",
+      "de": "Spanien Beckham-Gesetz 2026: 24% Pauschalsteuer für Remote-Worker",
+      "pl": "Hiszpańskie prawo Beckhama 2026: 24% płaski podatek dla pracowników zdalnych"
+    },
+    "description": {
+      "en": "How the Beckham regime works in 2026, who qualifies, the 6-year clock, and how it stacks with the Digital Nomad Visa.",
+      "fr": "Comment marche le régime Beckham en 2026, qui est éligible, la règle des 6 ans, et l'empilement avec le visa nomade digital.",
+      "es": "Cómo funciona el régimen Beckham en 2026, quién aplica, el reloj de 6 años, y cómo se combina con el visado DNV.",
+      "pt": "Como funciona o regime Beckham em 2026, quem aplica, o relógio de 6 anos, e como combina com o visto DNV.",
+      "it": "Come funziona il regime Beckham nel 2026, chi può applicare, il termine di 6 anni, e come si combina con il DNV.",
+      "de": "So funktioniert das Beckham-Regime 2026, wer berechtigt ist, die 6-Jahres-Uhr, und das Zusammenspiel mit dem DNV.",
+      "pl": "Jak działa reżim Beckhama w 2026, kto się kwalifikuje, zegar 6-letni, i jak łączy się z DNV."
+    },
+    "relatedVisas": [
+      "spain-digital-nomad",
+      "spain-non-lucrative"
+    ],
+    "relatedCountries": [
+      "spain"
+    ],
+    "faq": [
+      {
+        "q": "What is the Spain Beckham Law?",
+        "a": "A special tax regime allowing newly-arrived workers to pay 24% flat tax on Spanish-source income (instead of progressive up to 47%) for the year of arrival + 5 more years."
+      },
+      {
+        "q": "Who qualifies for the Beckham law in 2026?",
+        "a": "Anyone who became a Spanish tax resident in 2026 after not being one for the prior 5 years, holding an employment contract or DNV-based remote work agreement."
+      },
+      {
+        "q": "Does Beckham law apply to crypto and dividends?",
+        "a": "It applies to employment income only. Capital gains, dividends and crypto are taxed at standard non-resident rates (19-23%)."
+      }
+    ]
+  },
+  {
+    "slug": "portugal-nhr-successor-2026",
+    "topic": "tax",
+    "title": {
+      "en": "Portugal NHR Successor (IFICI) 2026: How It Works",
+      "fr": "Successeur du RNH au Portugal (IFICI) 2026 : comment ça marche",
+      "es": "Sucesor del RNH en Portugal (IFICI) 2026: cómo funciona",
+      "pt": "Sucessor do RNH em Portugal (IFICI) 2026: como funciona",
+      "it": "Successore del RNH in Portogallo (IFICI) 2026: come funziona",
+      "de": "Portugals NHR-Nachfolger (IFICI) 2026: so funktioniert es",
+      "pl": "Następca NHR w Portugalii (IFICI) 2026: jak to działa"
+    },
+    "description": {
+      "en": "Portugal closed NHR but launched IFICI for high-skilled remote workers in 2024-2026. 20% flat tax + foreign income exemption.",
+      "fr": "Le Portugal a fermé le RNH mais lancé l'IFICI pour télétravailleurs qualifiés en 2024-2026. 20 % forfaitaire + exonération étrangère.",
+      "es": "Portugal cerró el NHR pero lanzó el IFICI para teletrabajadores cualificados en 2024-2026. 20% fijo + exención extranjera.",
+      "pt": "Portugal fechou o RNH mas lançou o IFICI para teletrabalhadores qualificados em 2024-2026. 20% fixo + isenção estrangeira.",
+      "it": "Il Portogallo ha chiuso il RNH ma ha lanciato l'IFICI per lavoratori qualificati nel 2024-2026. 20% fisso + esenzione estera.",
+      "de": "Portugal hat NHR geschlossen, aber IFICI für qualifizierte Remote-Worker 2024-2026 eingeführt. 20% Pauschale + Auslandsbefreiung.",
+      "pl": "Portugalia zamknęła NHR ale uruchomiła IFICI dla wykwalifikowanych pracowników zdalnych 2024-2026. 20% płaski + zwolnienie zagraniczne."
+    },
+    "relatedVisas": [
+      "portugal-d8",
+      "portugal-d7"
+    ],
+    "relatedCountries": [
+      "portugal"
+    ],
+    "faq": [
+      {
+        "q": "Is the Portugal NHR still available in 2026?",
+        "a": "The original NHR closed for new entrants in 2024. Its successor IFICI launched in 2024 with stricter eligibility (specific high-skilled professions and STEM/PhD criteria)."
+      },
+      {
+        "q": "What is the tax rate under IFICI?",
+        "a": "20% flat on Portuguese-source professional income for 10 years, plus exemption on most foreign-source income, similar to old NHR but narrower scope."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-file-taxes-digital-nomad-2026",
+    "topic": "tax",
+    "title": {
+      "en": "How to File Taxes as a Digital Nomad in 2026",
+      "fr": "Comment déclarer ses impôts en tant que nomade digital en 2026",
+      "es": "Cómo declarar impuestos como nómada digital en 2026",
+      "pt": "Como declarar impostos como nómada digital em 2026",
+      "it": "Come dichiarare le tasse come nomade digitale nel 2026",
+      "de": "Steuererklärung als digitaler Nomade 2026",
+      "pl": "Jak rozliczać podatki jako cyfrowy nomad w 2026"
+    },
+    "description": {
+      "en": "Tax residency, treaties, FEIE, deductions: the framework for nomads filing taxes in 2026, without the legal jargon.",
+      "fr": "Résidence fiscale, conventions, FEIE, déductions : le cadre pour nomades qui déclarent en 2026, sans jargon.",
+      "es": "Residencia fiscal, tratados, FEIE, deducciones: el marco para nómadas en 2026, sin jerga legal.",
+      "pt": "Residência fiscal, tratados, FEIE, deduções: o quadro para nómadas em 2026, sem jargão.",
+      "it": "Residenza fiscale, trattati, FEIE, deduzioni: il quadro per nomadi nel 2026, senza gergo.",
+      "de": "Steuerresidenz, Abkommen, FEIE, Abzüge: der Rahmen für Nomaden 2026, ohne Juristen-Jargon.",
+      "pl": "Rezydencja, traktaty, FEIE, odliczenia: ramy podatkowe dla nomadów 2026."
+    },
+    "relatedCountries": [
+      "portugal",
+      "uae",
+      "panama",
+      "georgia"
+    ],
+    "faq": [
+      {
+        "q": "Do US citizens pay taxes while traveling abroad?",
+        "a": "Yes. The US taxes citizens worldwide. The Foreign Earned Income Exclusion (FEIE) lets US nomads exclude up to $126,500 of foreign-earned income in 2026 if they pass either the Bona Fide Residence or Physical Presence test."
+      },
+      {
+        "q": "What happens if I have no tax residency?",
+        "a": "Technically possible but practically risky. Most banks, brokers and DNV applications require declaring a tax residency. Statelessness on paper leads to issues with mortgages, retirement accounts and audits."
+      }
+    ]
+  },
+  {
+    "slug": "best-coliving-spaces-digital-nomads-2026",
+    "topic": "tools",
+    "title": {
+      "en": "Best Co-Living Spaces for Digital Nomads in 2026",
+      "fr": "Meilleurs co-livings pour nomades digitaux en 2026",
+      "es": "Mejores co-livings para nómadas digitales en 2026",
+      "pt": "Melhores co-livings para nómadas digitais em 2026",
+      "it": "Migliori co-living per nomadi digitali nel 2026",
+      "de": "Beste Co-Livings für digitale Nomaden 2026",
+      "pl": "Najlepsze co-livingi dla cyfrowych nomadów 2026"
+    },
+    "description": {
+      "en": "Selina, Outsite, Sun and Co. compared. The 10 best co-living chains and standalone spots across 30+ cities in 2026.",
+      "fr": "Selina, Outsite, Sun and Co. comparés. Les 10 meilleurs co-livings et adresses indépendantes dans 30+ villes en 2026.",
+      "es": "Selina, Outsite, Sun and Co. comparados. Los 10 mejores co-livings en 30+ ciudades en 2026.",
+      "pt": "Selina, Outsite, Sun and Co. comparados. Os 10 melhores co-livings em 30+ cidades em 2026.",
+      "it": "Selina, Outsite, Sun and Co. a confronto. I 10 migliori co-living in 30+ città nel 2026.",
+      "de": "Selina, Outsite, Sun and Co. im Vergleich. Die 10 besten Co-Livings in 30+ Städten 2026.",
+      "pl": "Selina, Outsite, Sun and Co. porównane. 10 najlepszych co-livingów w 30+ miastach 2026."
+    },
+    "relatedCities": [
+      "lisbon",
+      "bali",
+      "mexico-city",
+      "medellin",
+      "chiang-mai"
+    ],
+    "faq": [
+      {
+        "q": "How much do co-living spaces cost in 2026?",
+        "a": "Budget chains (Selina) $30-60/night, mid-tier (Sun and Co., Outsite) $80-150/night, premium (Borderless) $200+/night. Monthly rates typically 30-50% off nightly."
+      },
+      {
+        "q": "Is co-living worth it as a digital nomad?",
+        "a": "Yes for the first 1-3 months in a new city: instant community, no setup, fast wifi guaranteed. Beyond that, renting your own place is cheaper and quieter."
+      }
+    ]
+  },
+  {
+    "slug": "solo-female-digital-nomad-guide-2026",
+    "topic": "city-guide",
+    "title": {
+      "en": "Solo Female Digital Nomad Guide 2026",
+      "fr": "Guide nomade digital pour femme solo en 2026",
+      "es": "Guía nómada digital para mujer sola 2026",
+      "pt": "Guia nómada digital para mulher solo 2026",
+      "it": "Guida nomade digitale per donna sola 2026",
+      "de": "Solo-Frauen Digital-Nomad-Guide 2026",
+      "pl": "Przewodnik samotnej kobiety cyfrowego nomada 2026"
+    },
+    "description": {
+      "en": "Safest cities, best community, smart routines: the 2026 framework for women going nomad alone for the first time.",
+      "fr": "Villes les plus sûres, meilleures communautés, routines malines : le cadre 2026 pour partir seule pour la première fois.",
+      "es": "Ciudades más seguras, mejor comunidad, rutinas inteligentes: el marco 2026 para mujeres que se vuelven nómadas solas.",
+      "pt": "Cidades mais seguras, melhor comunidade, rotinas inteligentes: o quadro 2026 para mulheres que se tornam nómadas sozinhas.",
+      "it": "Città più sicure, migliore community, routine intelligenti: il quadro 2026 per donne nomadi sole.",
+      "de": "Sicherste Städte, beste Community, smarte Routinen: der 2026-Rahmen für Solo-Nomaden-Einsteigerinnen.",
+      "pl": "Najbezpieczniejsze miasta, najlepsza społeczność, mądre rutyny: ramy 2026 dla samotnych kobiet-nomadów."
+    },
+    "relatedCities": [
+      "lisbon",
+      "chiang-mai",
+      "tbilisi",
+      "mexico-city",
+      "medellin",
+      "valencia"
+    ],
+    "faq": [
+      {
+        "q": "What are the safest cities for solo female digital nomads?",
+        "a": "Top picks: Lisbon (Portugal), Chiang Mai (Thailand), Tbilisi (Georgia), Valencia (Spain), Tokyo (Japan), Tallinn (Estonia). Avoid: Johannesburg, Caracas, Manila."
+      },
+      {
+        "q": "Where is the best female nomad community?",
+        "a": "Lisbon, Bali (Canggu), Chiang Mai and Mexico City have the largest established female nomad communities. Hello Landing, Nomad Sisters and SafetyWing Remote Year all run women-only retreats."
+      }
+    ]
+  },
+  {
+    "slug": "best-1-month-nomad-destinations-2026",
+    "topic": "city-guide",
+    "title": {
+      "en": "Best 1-Month Digital Nomad Destinations in 2026",
+      "fr": "Meilleures destinations nomades digitales pour 1 mois en 2026",
+      "es": "Mejores destinos nómadas digitales para 1 mes en 2026",
+      "pt": "Melhores destinos nómadas digitais para 1 mês em 2026",
+      "it": "Migliori destinazioni nomadi digitali per 1 mese nel 2026",
+      "de": "Beste 1-Monats-Nomad-Destinationen 2026",
+      "pl": "Najlepsze 1-miesięczne destynacje cyfrowych nomadów 2026"
+    },
+    "description": {
+      "en": "Where to land for exactly 4 weeks without setup pain: visa-free, fast internet, instant community. The 10 best 1-month sit-ins.",
+      "fr": "Où atterrir pour 4 semaines pile sans douleur de setup : sans visa, internet rapide, communauté immédiate.",
+      "es": "Dónde aterrizar 4 semanas sin dolor de setup: sin visado, internet rápido, comunidad inmediata.",
+      "pt": "Onde aterrar 4 semanas sem dor de setup: sem visto, internet rápida, comunidade imediata.",
+      "it": "Dove atterrare per 4 settimane esatte senza dolore di setup: senza visto, internet rapido, community immediata.",
+      "de": "Wohin für genau 4 Wochen ohne Setup-Aufwand: visumfrei, schnelles Internet, sofortige Community.",
+      "pl": "Gdzie wylądować na 4 tygodnie bez bólu z konfiguracją: bez wizy, szybki internet, natychmiastowa społeczność."
+    },
+    "relatedCities": [
+      "lisbon",
+      "bali",
+      "chiang-mai",
+      "mexico-city",
+      "medellin",
+      "tbilisi",
+      "dubai",
+      "istanbul"
+    ],
+    "faq": [
+      {
+        "q": "What's the best 1-month digital nomad destination in 2026?",
+        "a": "Lisbon, Bali, Chiang Mai, Medellín, Tbilisi, Mexico City and Dubai. Each is visa-free for 30+ days for most nationalities, has fast internet, and a dense established nomad community."
+      },
+      {
+        "q": "Can I work remotely on a tourist visa?",
+        "a": "Most countries officially require a work visa, but enforcement against remote-only nomads (working for foreign employers) is rare in the 30+ countries above. Always check the latest rules."
+      }
+    ]
+  },
+  {
+    "slug": "how-to-find-apartments-digital-nomad-2026",
+    "topic": "tools",
+    "title": {
+      "en": "How to Find Apartments as a Digital Nomad in 2026",
+      "fr": "Comment trouver un logement en tant que nomade digital en 2026",
+      "es": "Cómo encontrar apartamento como nómada digital en 2026",
+      "pt": "Como encontrar apartamento como nómada digital em 2026",
+      "it": "Come trovare un appartamento da nomade digitale nel 2026",
+      "de": "So findest du als Digitalnomade Wohnungen 2026",
+      "pl": "Jak znaleźć mieszkanie jako cyfrowy nomad 2026"
+    },
+    "description": {
+      "en": "Airbnb monthly, Idealista, Facebook groups, local agents: the playbook for finding 1-6 month rentals without paying tourist rates.",
+      "fr": "Airbnb mensuel, Idealista, groupes Facebook, agents locaux : la stratégie pour des locations 1-6 mois sans tarif touriste.",
+      "es": "Airbnb mensual, Idealista, grupos Facebook, agentes locales: estrategia para alquileres 1-6 meses sin precio turista.",
+      "pt": "Airbnb mensal, Idealista, grupos Facebook, agentes locais: estratégia para arrendamentos 1-6 meses sem preço turista.",
+      "it": "Airbnb mensile, Idealista, gruppi Facebook, agenti locali: la strategia per affitti 1-6 mesi senza prezzo turistico.",
+      "de": "Airbnb monatlich, Idealista, Facebook-Gruppen, lokale Makler: die Strategie für 1-6-Monats-Mieten ohne Touristenpreis.",
+      "pl": "Airbnb miesięczny, Idealista, grupy FB, lokalni agenci: strategia na wynajem 1-6 miesięcy bez ceny turystycznej."
+    },
+    "faq": [
+      {
+        "q": "Where do digital nomads find monthly rentals in 2026?",
+        "a": "Airbnb (with monthly discount filter), Idealista (Spain/Portugal/Italy), Facebook groups ('Lisbon Digital Nomads', 'Bali Long Stays'), Nomad Rental, Flatio, Spotahome, local rental agencies for stays >3 months."
+      },
+      {
+        "q": "How much should I budget for monthly rent as a nomad?",
+        "a": "As a baseline: $500-800/month in Vietnam/Georgia/Thailand, $800-1,500 in Mexico/Colombia/Portugal, $1,500-2,500 in Spain/Italy, $2,500+ in Western Europe."
+      }
+    ]
+  }
 ]

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 import { SITE_NAME } from '@/lib/seo';
 
 export const runtime = 'edge';
-export const alt = 'Slowmad — country guides for slow nomads';
+export const alt = 'Slowmad: country guides for slow nomads';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 

@@ -29,13 +29,13 @@
   {"slug":"georgia-vs-armenia","a":"georgia","b":"armenia","type":"country","verdict":"Georgia for 1-year visa-free + bigger nomad community in Tbilisi. Armenia for 180-day visa-free + even lower costs in Yerevan."},
   {"slug":"dubai-vs-lisbon","a":"dubai","b":"lisbon","type":"city","verdict":"Dubai for 0% tax, 5G everywhere, and tax-residency leverage. Lisbon for European lifestyle, ocean walks, and a real café culture."},
   {"slug":"cape-town-vs-bali","a":"cape-town","b":"bali","type":"city","verdict":"Cape Town for mountains + ocean + Western infrastructure at SEA prices. Bali for island life, bigger nomad community, year-round warmth."},
-  {"slug":"singapore-vs-kuala-lumpur","a":"kuala-lumpur","b":"bangkok","type":"city","verdict":"KL for cost (30% cheaper than Singapore) and DE Rantau visa. Singapore for safety, healthcare, and Asia regional hub status — but visas are restrictive."},
+  {"slug":"singapore-vs-kuala-lumpur","a":"singapore","b":"kuala-lumpur","type":"city","verdict":"Singapore for safety, healthcare, and Asia regional hub status (visas restrictive). KL for 30% lower cost and the DE Rantau nomad visa."},
   {"slug":"mexico-vs-costa-rica","a":"mexico","b":"costa-rica","type":"country","verdict":"Mexico for 5× the city options, deeper food culture, lower cost. Costa Rica for nature, safety, and a more predictable expat experience."},
   {"slug":"romania-vs-bulgaria","a":"romania","b":"bulgaria","type":"country","verdict":"Romania for 190 Mbps internet (EU's fastest) and Cluj-Napoca tech scene. Bulgaria for the cheapest EU capital (Sofia) and Black Sea beaches."},
   {"slug":"japan-vs-south-korea","a":"japan","b":"south-korea","type":"country","verdict":"Japan for safety, food, and 6-month DNV. South Korea for 12-month Workation Visa, fastest internet on earth, and 24-hour cafés."},
   {"slug":"lisbon-vs-barcelona","a":"lisbon","b":"barcelona","type":"city","verdict":"Lisbon for cheaper rent, easier visa, slower pace. Barcelona for beach + mountains + tech jobs + Mediterranean food density."},
   {"slug":"thailand-vs-portugal","a":"thailand","b":"portugal","type":"country","verdict":"Thailand for cost, weather, and 5-year DTV. Portugal for EU citizenship path, ocean, and proximity to friends back home."},
   {"slug":"tulum-vs-playa-del-carmen","a":"tulum","b":"playa-del-carmen","type":"city","verdict":"Tulum for boho jungle vibes. Playa del Carmen for actual nomad infrastructure (coworking, gyms, supermarkets) at 20% lower cost."},
-  {"slug":"madeira-vs-tenerife","a":"madeira","b":"barcelona","type":"city","verdict":"Madeira for the Nomad Village community + eternal spring. Tenerife for bigger expat scene + more flight connections."},
+  {"slug":"madeira-vs-bali","a":"madeira","b":"bali","type":"city","verdict":"Madeira for Atlantic island life + Nomad Village + Schengen access. Bali for warmer year-round + bigger nomad community + lower costs."},
   {"slug":"oaxaca-vs-merida","a":"oaxaca","b":"merida","type":"city","verdict":"Oaxaca for food, culture, and walkability. Mérida for safety (#1 safe big city in Mexico), heat tolerance, and lower rent."}
 ]
