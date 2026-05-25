@@ -7,6 +7,7 @@ import { getAllVisas } from '@/lib/data/visas';
 import { getAllComparisons } from '@/lib/data/comparisons';
 import { getAllGuides } from '@/lib/data/guides';
 import { getAllRegions } from '@/lib/data/regions';
+import { getAllCriteria } from '@/lib/data/criteria';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -78,6 +79,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: 'monthly',
         priority: 0.6,
+      });
+    }
+    // Best-by-criterion pages
+    entries.push({ url: `${SITE_URL}/${lang}/best`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 });
+    for (const c of getAllCriteria()) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/best/${c.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.7,
       });
     }
   }
