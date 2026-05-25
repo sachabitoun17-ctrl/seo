@@ -5,6 +5,8 @@ import { getAllVisas } from '@/lib/data/visas';
 import { VisaCard } from '@/components/VisaCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

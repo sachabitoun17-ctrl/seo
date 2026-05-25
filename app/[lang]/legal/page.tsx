@@ -3,6 +3,8 @@ import { getDictionary, type Locale } from '@/lib/i18n';
 import { buildPageMetadata, SITE_NAME } from '@/lib/seo';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

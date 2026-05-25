@@ -5,6 +5,8 @@ import { buildPageMetadata } from '@/lib/seo';
 import { getAllCities, getCityName } from '@/lib/data/cities';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

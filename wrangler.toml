@@ -2,8 +2,3 @@ name = "slowmadly"
 compatibility_date = "2024-10-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
-
-# Cron triggers (optional, used by Workers if separated). For Pages,
-# the weekly data refresh runs via GitHub Actions hitting a deploy hook.
-[triggers]
-crons = ["0 3 * * 0"]

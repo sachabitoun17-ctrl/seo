@@ -5,6 +5,8 @@ import { getAllRegions } from '@/lib/data/regions';
 import { RegionCard } from '@/components/RegionCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

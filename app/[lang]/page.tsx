@@ -11,6 +11,8 @@ import { VisaCard } from '@/components/VisaCard';
 import { GuideCard } from '@/components/GuideCard';
 import { JsonLd } from '@/components/JsonLd';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

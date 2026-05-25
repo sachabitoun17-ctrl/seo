@@ -5,6 +5,8 @@ import { getAllGuides } from '@/lib/data/guides';
 import { GuideCard } from '@/components/GuideCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

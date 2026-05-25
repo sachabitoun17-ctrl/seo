@@ -5,6 +5,8 @@ import { getAllComparisons } from '@/lib/data/comparisons';
 import { CompareCard } from '@/components/CompareCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

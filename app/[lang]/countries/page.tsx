@@ -4,6 +4,8 @@ import { buildPageMetadata } from '@/lib/seo';
 import { getAllCountries } from '@/lib/data/countries';
 import { CountryCard } from '@/components/CountryCard';
 
+export const runtime = 'edge';
+
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
