@@ -37,7 +37,7 @@ export default async function OpenGraphImage() {
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div style={{ width: 12, height: 12, borderRadius: 6, background: '#c46f4d' }} />
-          <div style={{ fontSize: 24, color: '#6b6660' }}>slowmad</div>
+          <div style={{ fontSize: 24, color: '#6b6660' }}>slowmadly.com</div>
         </div>
       </div>
     ),

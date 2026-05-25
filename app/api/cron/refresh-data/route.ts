@@ -1,10 +1,11 @@
-// Weekly cron entry point. Triggered by Vercel cron defined in vercel.json.
-// For now this is a stub. When data sources (Numbeo, REST Countries, Speedtest)
-// are wired, this route fetches them, writes data/*.json, and commits via the
-// GitHub API to trigger a Vercel rebuild.
+// Weekly cron entry point. On Cloudflare Pages, this runs as an edge
+// function. Triggered by GitHub Actions weekly which posts a Bearer
+// token to this endpoint. When data sources (Numbeo, REST Countries,
+// Speedtest) are wired, this route fetches them, writes data/*.json,
+// and commits via the GitHub API to trigger a Pages rebuild.
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
-export const maxDuration = 60;
 
 export async function GET(req: Request) {
   const auth = req.headers.get('Authorization');

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { LOCALES, type Locale } from './i18n';
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com';
-export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Slowmad';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://slowmadly.com';
+export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Slowmadly';
 
 type AlternateBuilder = (locale: Locale) => string;
 
