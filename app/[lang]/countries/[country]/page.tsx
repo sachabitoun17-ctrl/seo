@@ -10,6 +10,8 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
 import { CityCard } from '@/components/CityCard';
 import { VisaCard } from '@/components/VisaCard';
+import { FaqSection } from '@/components/FaqSection';
+import { countryFaqs } from '@/lib/faq-templates';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -132,6 +134,7 @@ export default async function CountryDetailPage({ params }: Props) {
       )}
 
       <PartnerStack />
+      <FaqSection faqs={countryFaqs(country, name, params.lang)} />
       <JsonLd data={placeLd} />
     </article>
   );

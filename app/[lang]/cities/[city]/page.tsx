@@ -16,6 +16,8 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
 import { VisaCard } from '@/components/VisaCard';
 import { CityCard } from '@/components/CityCard';
+import { FaqSection } from '@/components/FaqSection';
+import { cityFaqs } from '@/lib/faq-templates';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -148,6 +150,7 @@ export default async function CityDetailPage({ params }: Props) {
       )}
 
       <PartnerStack />
+      <FaqSection faqs={cityFaqs(city, name, params.lang)} />
       <JsonLd data={place} />
     </article>
   );

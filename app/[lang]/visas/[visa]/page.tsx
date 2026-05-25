@@ -8,6 +8,8 @@ import { getCountry, getCountryName } from '@/lib/data/countries';
 import { PartnerStack } from '@/components/PartnerStack';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JsonLd } from '@/components/JsonLd';
+import { FaqSection } from '@/components/FaqSection';
+import { visaFaqs } from '@/lib/faq-templates';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -124,6 +126,7 @@ export default async function VisaDetailPage({ params }: Props) {
       </section>
 
       <PartnerStack categories={['banking', 'insurance']} heading="Set up before you apply" />
+      <FaqSection faqs={visaFaqs(visa, params.lang)} />
       <JsonLd data={govPermit} />
     </article>
   );
