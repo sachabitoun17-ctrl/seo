@@ -1,0 +1,147 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
+import { buildPageMetadata } from '@/lib/seo';
+import {
+  getAllGuides,
+  getGuide,
+  getGuideTitle,
+  getGuideDescription,
+} from '@/lib/data/guides';
+import { getCountry, getCountryName } from '@/lib/data/countries';
+import { getCity, getCityName } from '@/lib/data/cities';
+import { getVisa } from '@/lib/data/visas';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { JsonLd } from '@/components/JsonLd';
+import { PartnerStack } from '@/components/PartnerStack';
+import { CountryCard } from '@/components/CountryCard';
+import { CityCard } from '@/components/CityCard';
+import { VisaCard } from '@/components/VisaCard';
+
+export const dynamicParams = false;
+export const revalidate = false;
+
+type Props = { params: { lang: Locale; guide: string } };
+
+export function generateStaticParams() {
+  const guides = getAllGuides();
+  return LOCALES.flatMap((lang) =>
+    guides.map((g) => ({ lang, guide: g.slug })),
+  );
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const guide = getGuide(params.guide);
+  if (!guide) return {};
+  return buildPageMetadata({
+    locale: params.lang,
+    title: getGuideTitle(guide, params.lang),
+    description: getGuideDescription(guide, params.lang),
+    pathForLocale: (l) => `/${l}/guides/${guide.slug}`,
+  });
+}
+
+export default async function GuideDetailPage({ params }: Props) {
+  const guide = getGuide(params.guide);
+  if (!guide) notFound();
+  const dict = await getDictionary(params.lang);
+  const title = getGuideTitle(guide, params.lang);
+  const description = getGuideDescription(guide, params.lang);
+
+  const faqLd = guide.faq.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: guide.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
+  const relatedCountries = (guide.relatedCountries || [])
+    .map(getCountry)
+    .filter((c): c is NonNullable<typeof c> => Boolean(c));
+  const relatedCities = (guide.relatedCities || [])
+    .map(getCity)
+    .filter((c): c is NonNullable<typeof c> => Boolean(c));
+  const relatedVisas = (guide.relatedVisas || [])
+    .map(getVisa)
+    .filter((v): v is NonNullable<typeof v> => Boolean(v));
+
+  return (
+    <article className="py-14">
+      <Breadcrumbs items={[
+        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}/guides`, label: dict.nav.guides },
+        { href: `/${params.lang}/guides/${guide.slug}`, label: title },
+      ]} />
+
+      <header className="max-w-3xl mt-4">
+        <p className="text-xs uppercase tracking-widest text-muted">{guide.topic}</p>
+        <h1 className="mt-2 text-3xl sm:text-5xl font-semibold tracking-tightish leading-[1.1]">
+          {title}
+        </h1>
+        <p className="mt-4 text-lg text-muted leading-relaxed">{description}</p>
+      </header>
+
+      {guide.faq.length > 0 && (
+        <section className="mt-12 max-w-3xl">
+          <h2 className="text-xl font-semibold tracking-tightish">Frequently asked</h2>
+          <dl className="mt-6 space-y-6">
+            {guide.faq.map((f) => (
+              <div key={f.q} className="border-b border-line pb-6 last:border-0">
+                <dt className="font-semibold">{f.q}</dt>
+                <dd className="mt-2 text-muted leading-relaxed">{f.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
+      {relatedCountries.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">Related countries</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedCountries.map((c) => (
+              <li key={c.slug}>
+                <CountryCard country={c} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {relatedCities.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">Related cities</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedCities.map((c) => (
+              <li key={c.slug}>
+                <CityCard city={c} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {relatedVisas.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">Related visas</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {relatedVisas.map((v) => (
+              <li key={v.slug}>
+                <VisaCard visa={v} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <PartnerStack />
+      {faqLd && <JsonLd data={faqLd} />}
+    </article>
+  );
+}

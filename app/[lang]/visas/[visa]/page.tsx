@@ -1,0 +1,130 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
+import { buildPageMetadata } from '@/lib/seo';
+import { getAllVisas, getVisa } from '@/lib/data/visas';
+import { getCountry, getCountryName } from '@/lib/data/countries';
+import { PartnerStack } from '@/components/PartnerStack';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { JsonLd } from '@/components/JsonLd';
+
+export const dynamicParams = false;
+export const revalidate = false;
+
+type Props = { params: { lang: Locale; visa: string } };
+
+export function generateStaticParams() {
+  const visas = getAllVisas();
+  return LOCALES.flatMap((lang) =>
+    visas.map((v) => ({ lang, visa: v.slug })),
+  );
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const visa = getVisa(params.visa);
+  if (!visa) return {};
+  const country = getCountry(visa.country);
+  const cName = country ? getCountryName(country, params.lang) : visa.country;
+  const incomeStr = visa.minIncomeMonthlyEur
+    ? `from €${visa.minIncomeMonthlyEur.toLocaleString()}/mo`
+    : 'no income minimum';
+  return buildPageMetadata({
+    locale: params.lang,
+    title: `${visa.name}: requirements, cost, how to apply (2026)`,
+    description: `${cName} ${visa.type.replace('-', ' ')} visa, ${incomeStr}, ${visa.durationMonths} months. Tax, family, processing time.`,
+    pathForLocale: (l) => `/${l}/visas/${visa.slug}`,
+  });
+}
+
+export default async function VisaDetailPage({ params }: Props) {
+  const visa = getVisa(params.visa);
+  if (!visa) notFound();
+  const dict = await getDictionary(params.lang);
+  const country = getCountry(visa.country);
+  const cName = country ? getCountryName(country, params.lang) : visa.country;
+
+  const govPermit = {
+    '@context': 'https://schema.org',
+    '@type': 'GovernmentPermit',
+    name: visa.name,
+    issuedBy: country ? { '@type': 'Country', name: cName } : undefined,
+    permitAudience: {
+      '@type': 'Audience',
+      audienceType: 'Digital nomads and remote workers',
+    },
+    validFor: `P${visa.durationMonths}M`,
+    url: visa.officialUrl,
+  };
+
+  const facts = [
+    { label: 'Minimum income', value: visa.minIncomeMonthlyEur ? `€${visa.minIncomeMonthlyEur.toLocaleString()} / month` : 'No threshold' },
+    { label: 'Duration', value: `${visa.durationMonths} months` },
+    { label: 'Renewable', value: visa.renewable ? 'Yes' : 'No' },
+    { label: 'Family eligible', value: visa.familyEligible ? 'Yes' : 'No' },
+    { label: 'Processing', value: `~${visa.processingDays} days` },
+    { label: 'Tax residency', value: visa.taxResidency.replace('-', ' ') },
+  ];
+
+  return (
+    <article className="py-14">
+      <Breadcrumbs items={[
+        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}/visas`, label: dict.nav.visas },
+        { href: `/${params.lang}/visas/${visa.slug}`, label: visa.name },
+      ]} />
+
+      <header className="max-w-3xl mt-4">
+        {country && (
+          <Link
+            href={`/${params.lang}/countries/${country.slug}`}
+            className="text-sm uppercase tracking-widest text-muted hover:text-ink"
+          >
+            {cName}
+          </Link>
+        )}
+        <h1 className="mt-2 text-4xl sm:text-5xl font-semibold tracking-tightish">
+          {visa.name}
+        </h1>
+        <p className="mt-3 text-sm text-muted uppercase tracking-widest">
+          {visa.type.replace('-', ' ')} visa
+        </p>
+      </header>
+
+      <section className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {facts.map((f) => (
+          <div key={f.label} className="rounded-lg border border-line px-4 py-3">
+            <p className="text-xs uppercase tracking-widest text-muted">{f.label}</p>
+            <p className="mt-1 font-semibold capitalize">{f.value}</p>
+          </div>
+        ))}
+      </section>
+
+      <section className="mt-12 max-w-3xl">
+        <h2 className="text-xl font-semibold tracking-tightish">Why this visa</h2>
+        <ul className="mt-4 space-y-2 text-sm">
+          {visa.highlights.map((h) => (
+            <li key={h} className="flex gap-3">
+              <span aria-hidden className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0" />
+              <span>{h}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mt-10 max-w-3xl">
+        <a
+          href={visa.officialUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center rounded-md bg-ink text-cream px-5 py-2.5 text-sm font-medium hover:bg-ink/90 transition-colors"
+        >
+          Official application portal
+        </a>
+      </section>
+
+      <PartnerStack categories={['banking', 'insurance']} heading="Set up before you apply" />
+      <JsonLd data={govPermit} />
+    </article>
+  );
+}

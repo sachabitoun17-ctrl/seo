@@ -13,8 +13,8 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/countries`, label: dict.nav.countries },
     { href: `/${locale}/cities`, label: dict.nav.cities },
     { href: `/${locale}/visas`, label: dict.nav.visas },
+    { href: `/${locale}/compare`, label: dict.nav.compare },
     { href: `/${locale}/guides`, label: dict.nav.guides },
-    { href: `/${locale}/about`, label: dict.nav.about },
   ];
   return (
     <header className="sticky top-0 z-30 bg-cream/95 border-b border-line">

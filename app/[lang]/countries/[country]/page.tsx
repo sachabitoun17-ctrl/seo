@@ -1,9 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
-import { buildPageMetadata } from '@/lib/seo';
+import { buildPageMetadata, SITE_URL } from '@/lib/seo';
 import { getAllCountries, getCountry, getCountryName } from '@/lib/data/countries';
+import { getCitiesByCountry } from '@/lib/data/cities';
+import { getVisasByCountry } from '@/lib/data/visas';
 import { PartnerStack } from '@/components/PartnerStack';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { JsonLd } from '@/components/JsonLd';
+import { CityCard } from '@/components/CityCard';
+import { VisaCard } from '@/components/VisaCard';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -20,12 +26,11 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const country = getCountry(params.country);
   if (!country) return {};
-  const dict = await getDictionary(params.lang);
   const name = getCountryName(country, params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: `${name} — ${dict.country.overview}`,
-    description: `${name}: ${dict.country.visa.toLowerCase()}, ${dict.country.costOfLiving.toLowerCase()}, ${dict.country.internet.toLowerCase()}.`,
+    title: `${name} for digital nomads 2026: visa, cost, internet`,
+    description: `Living in ${name} as a nomad: visa options, cost of living, internet speed, safety, weather, top cities.`,
     pathForLocale: (l) => `/${l}/countries/${country.slug}`,
   });
 }
@@ -35,6 +40,16 @@ export default async function CountryDetailPage({ params }: Props) {
   if (!country) notFound();
   const dict = await getDictionary(params.lang);
   const name = getCountryName(country, params.lang);
+  const cities = getCitiesByCountry(country.slug);
+  const visas = getVisasByCountry(country.slug);
+
+  const placeLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Country',
+    name,
+    url: `${SITE_URL}/${params.lang}/countries/${country.slug}`,
+    description: `Digital nomad guide to ${name}: visa, cost of living, internet, safety.`,
+  };
 
   const stats = [
     { label: dict.country.costOfLiving, value: `Index ${country.costIndex} / 100` },
@@ -45,7 +60,13 @@ export default async function CountryDetailPage({ params }: Props) {
 
   return (
     <article className="py-14">
-      <header className="max-w-3xl">
+      <Breadcrumbs items={[
+        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}/countries`, label: dict.nav.countries },
+        { href: `/${params.lang}/countries/${country.slug}`, label: name },
+      ]} />
+
+      <header className="max-w-3xl mt-4">
         <p className="text-sm uppercase tracking-widest text-muted">{country.region}</p>
         <h1 className="mt-3 text-4xl sm:text-5xl font-semibold tracking-tightish">{name}</h1>
         <p className="mt-3 text-muted">
@@ -80,7 +101,38 @@ export default async function CountryDetailPage({ params }: Props) {
         </dl>
       </section>
 
+      {cities.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">
+            {dict.nav.cities} in {name}
+          </h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {cities.map((c) => (
+              <li key={c.slug}>
+                <CityCard city={c} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {visas.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">
+            {dict.nav.visas} for {name}
+          </h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {visas.map((v) => (
+              <li key={v.slug}>
+                <VisaCard visa={v} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <PartnerStack />
+      <JsonLd data={placeLd} />
     </article>
   );
 }

@@ -30,6 +30,8 @@ export type Dictionary = {
     cities: string;
     visas: string;
     guides: string;
+    compare: string;
+    regions: string;
     about: string;
   };
   footer: {
