@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
-import { buildPageMetadata } from '@/lib/seo';
+import { buildPageMetadata, SITE_NAME, SITE_URL } from '@/lib/seo';
 import {
   getAllGuides,
   getGuide,
@@ -60,6 +60,20 @@ export default async function GuideDetailPage({ params }: Props) {
         })),
       }
     : null;
+
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    inLanguage: params.lang,
+    url: `${SITE_URL}/${params.lang}/guides/${guide.slug}`,
+    datePublished: '2026-01-01',
+    dateModified: new Date().toISOString().slice(0, 10),
+    author: { '@type': 'Organization', name: SITE_NAME },
+    publisher: { '@type': 'Organization', name: SITE_NAME },
+    articleSection: guide.topic,
+  };
 
   const relatedCountries = (guide.relatedCountries || [])
     .map(getCountry)
@@ -141,6 +155,7 @@ export default async function GuideDetailPage({ params }: Props) {
       )}
 
       <PartnerStack />
+      <JsonLd data={articleLd} />
       {faqLd && <JsonLd data={faqLd} />}
     </article>
   );
