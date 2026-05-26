@@ -9,6 +9,7 @@ import { getAllGuides } from '@/lib/data/guides';
 import { getAllRegions } from '@/lib/data/regions';
 import { getAllCriteria } from '@/lib/data/criteria';
 import { getAllThemes } from '@/lib/data/themes';
+import { getAllNationalities } from '@/lib/data/nationalities';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -125,6 +126,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: 'monthly',
         priority: 0.7,
+      });
+    }
+
+    // Nationality-specific visa pages
+    entries.push({ url: `${SITE_URL}/${lang}/visas/for`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 });
+    for (const n of getAllNationalities()) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/visas/for/${n.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.8,
       });
     }
   }

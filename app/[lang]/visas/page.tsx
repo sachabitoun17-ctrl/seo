@@ -37,6 +37,18 @@ export default async function VisasIndexPage({ params }: Props) {
           {visas.length} digital nomad and freelance visa programs, ranked by income threshold and ease.
         </p>
       </header>
+      <section className="mt-10 rounded-2xl border border-line bg-paper-gradient px-6 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <h2 className="text-lg font-semibold tracking-tightish">Filter by your passport</h2>
+          <p className="mt-1 text-sm text-muted">8 passport profiles. US / EU / UK / CA / AU / IN / ZA / BR.</p>
+        </div>
+        <a
+          href={`/${params.lang}/visas/for`}
+          className="rounded-md bg-ink text-cream px-5 py-2.5 text-sm font-medium hover:bg-accent-deep transition-colors"
+        >
+          See by nationality →
+        </a>
+      </section>
       <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {visas.map((v) => (
           <li key={v.slug}>
