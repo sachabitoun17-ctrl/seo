@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Dictionary, Locale } from '@/lib/i18n';
 import { Logo } from './Logo';
+import { SISTER_JOBS } from '@/lib/sister-site';
 
 type Props = {
   locale: Locale;
@@ -61,6 +62,26 @@ export function Footer({ locale, dict }: Props) {
           </div>
         ))}
       </div>
+
+      <div className="border-t border-line/70 bg-accent-soft/40">
+        <div className="max-w-container mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Looking for remote work?</p>
+            <p className="mt-1 text-base font-medium tracking-tightish">
+              {SISTER_JOBS.tagline} See our sister site.
+            </p>
+          </div>
+          <a
+            href={SISTER_JOBS.url}
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 rounded-md bg-ink text-cream px-5 py-2.5 text-sm font-medium hover:bg-accent-deep transition-colors whitespace-nowrap"
+          >
+            {SISTER_JOBS.domain} <span aria-hidden>↗</span>
+          </a>
+        </div>
+      </div>
+
       <div className="border-t border-line/70">
         <div className="max-w-container mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row gap-3 justify-between text-xs text-muted">
           <p>© {year} Slowmadly. {dict.footer.rights}</p>

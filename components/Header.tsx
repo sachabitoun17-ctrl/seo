@@ -3,6 +3,7 @@ import { LangSwitcher } from './LangSwitcher';
 import { Logo } from './Logo';
 import { MobileMenu } from './MobileMenu';
 import type { Dictionary, Locale } from '@/lib/i18n';
+import { SISTER_JOBS } from '@/lib/sister-site';
 
 type Props = {
   locale: Locale;
@@ -21,8 +22,8 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/best`, label: 'Best for…' },
     { href: `/${locale}/glossary`, label: 'Glossary' },
     { href: `/${locale}/about`, label: dict.nav.about },
+    { href: SISTER_JOBS.url, label: 'Remote jobs ↗', external: true },
   ];
-  // Desktop nav shows only the 5 first; mobile drawer shows all
   const desktop = nav.slice(0, 5);
   return (
     <header className="sticky top-0 z-30 bg-cream border-b border-line/70">
@@ -36,6 +37,14 @@ export function Header({ locale, dict }: Props) {
               {item.label}
             </Link>
           ))}
+          <a
+            href={SISTER_JOBS.url}
+            target="_blank"
+            rel="noopener"
+            className="text-accent hover:text-accent-deep transition-colors font-medium"
+          >
+            Remote jobs ↗
+          </a>
         </nav>
         <div className="flex items-center gap-2">
           <LangSwitcher currentLocale={locale} />
