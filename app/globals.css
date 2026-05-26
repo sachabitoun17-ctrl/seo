@@ -5,14 +5,16 @@
 html {
   scrollbar-gutter: stable;
   -webkit-text-size-adjust: 100%;
+  font-feature-settings: 'ss01', 'cv01', 'cv11';
 }
 
 body {
   background-color: theme('colors.cream');
   color: theme('colors.ink');
-  font-feature-settings: 'ss01', 'cv01';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -20,6 +22,31 @@ a {
   text-decoration: none;
 }
 
+/* Decorative noise / grain overlay for warmth */
+.bg-noise {
+  background-image:
+    radial-gradient(circle at 50% 20%, rgba(212, 163, 94, 0.06), transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(197, 86, 63, 0.05), transparent 50%);
+}
+
+/* Smooth focus ring */
+*:focus-visible {
+  outline: 2px solid theme('colors.accent');
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+.card-hover:hover {
+  border-color: theme('colors.ink');
+  transform: translateY(-1px);
+  box-shadow: theme('boxShadow.soft');
+}
+
+/* Prose content */
 .prose-content {
   max-width: 68ch;
   line-height: 1.65;
@@ -52,4 +79,9 @@ a {
   color: theme('colors.accent');
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* Subtle row stripe in tables */
+table.zebra tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.015);
 }

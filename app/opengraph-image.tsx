@@ -1,8 +1,7 @@
 import { ImageResponse } from 'next/og';
-import { SITE_NAME } from '@/lib/seo';
 
 export const runtime = 'edge';
-export const alt = 'Slowmad: country guides for slow nomads';
+export const alt = 'Slowmadly: country guides for slow nomads';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -13,31 +12,37 @@ export default async function OpenGraphImage() {
         style={{
           width: '100%',
           height: '100%',
-          background: '#fafaf8',
-          color: '#111113',
+          background: 'linear-gradient(135deg, #faf7f2 0%, #f5e7cc 100%)',
+          color: '#1a1a1c',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          padding: 72,
-          fontFamily: 'sans-serif',
+          padding: 80,
+          fontFamily: 'serif',
+          position: 'relative',
         }}
       >
-        <div style={{ fontSize: 32, fontWeight: 600, letterSpacing: -0.5 }}>
-          {SITE_NAME}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+          <svg width="40" height="40" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="#c5563f" strokeWidth="2" />
+            <path d="M 6 19 Q 11 14 16 19 Q 21 24 26 19" fill="none" stroke="#c5563f" strokeWidth="2.25" strokeLinecap="round" />
+            <circle cx="22" cy="11" r="2" fill="#c5563f" />
+          </svg>
+          <span style={{ fontSize: 28, fontWeight: 600, letterSpacing: -0.5 }}>slowmadly</span>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div style={{ fontSize: 64, fontWeight: 600, letterSpacing: -1.5, lineHeight: 1.05 }}>
-            Country guides for nomads
+          <div style={{ fontSize: 84, fontWeight: 600, letterSpacing: -2, lineHeight: 1.02 }}>
+            Country guides
             <br />
-            who stay a while.
+            for slow nomads.
           </div>
-          <div style={{ marginTop: 24, fontSize: 28, color: '#6b6660' }}>
-            56 countries · 65 cities · 42 nomad visas
+          <div style={{ marginTop: 32, fontSize: 26, color: '#6b6660', fontFamily: 'sans-serif' }}>
+            58 countries · 75 cities · 42 nomad visas
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 12, height: 12, borderRadius: 6, background: '#c46f4d' }} />
-          <div style={{ fontSize: 24, color: '#6b6660' }}>slowmadly.com</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: 'sans-serif' }}>
+          <div style={{ width: 8, height: 8, borderRadius: 4, background: '#c5563f' }} />
+          <div style={{ fontSize: 22, color: '#6b6660' }}>slowmadly.com</div>
         </div>
       </div>
     ),
