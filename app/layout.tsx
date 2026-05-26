@@ -20,7 +20,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const cfToken = process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN;
+  const cfToken =
+    process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ||
+    'e22d5f9e3bf74faaa2399d1a7ef53ee3';
   return (
     <html lang="en">
       <body className="min-h-screen antialiased">
