@@ -18,6 +18,7 @@ import { PartnerStack } from '@/components/PartnerStack';
 import { CountryCard } from '@/components/CountryCard';
 import { CityCard } from '@/components/CityCard';
 import { VisaCard } from '@/components/VisaCard';
+import { AiToolsCTA } from '@/components/AiToolsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -153,6 +154,8 @@ export default async function GuideDetailPage({ params }: Props) {
           </ul>
         </section>
       )}
+
+      {guide.topic === 'tools' && <AiToolsCTA />}
 
       <PartnerStack />
       <JsonLd data={articleLd} />

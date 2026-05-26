@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Dictionary, Locale } from '@/lib/i18n';
 import { Logo } from './Logo';
-import { SISTER_JOBS } from '@/lib/sister-site';
+import { SISTER_JOBS, SISTER_AI } from '@/lib/sister-site';
 
 type Props = {
   locale: Locale;
@@ -64,21 +64,35 @@ export function Footer({ locale, dict }: Props) {
       </div>
 
       <div className="border-t border-line/70 bg-accent-soft/40">
-        <div className="max-w-container mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div>
-            <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Looking for remote work?</p>
-            <p className="mt-1 text-base font-medium tracking-tightish">
-              {SISTER_JOBS.tagline} See our sister site.
-            </p>
+        <div className="max-w-container mx-auto px-5 sm:px-8 py-7 grid gap-4 sm:grid-cols-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Looking for remote work?</p>
+              <p className="mt-1 text-sm font-medium tracking-tightish">{SISTER_JOBS.tagline}</p>
+            </div>
+            <a
+              href={SISTER_JOBS.url}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-1.5 rounded-md bg-ink text-cream px-4 py-2 text-xs font-semibold hover:bg-accent-deep transition-colors whitespace-nowrap self-start"
+            >
+              {SISTER_JOBS.domain} <span aria-hidden>↗</span>
+            </a>
           </div>
-          <a
-            href={SISTER_JOBS.url}
-            target="_blank"
-            rel="noopener"
-            className="inline-flex items-center gap-2 rounded-md bg-ink text-cream px-5 py-2.5 text-sm font-medium hover:bg-accent-deep transition-colors whitespace-nowrap"
-          >
-            {SISTER_JOBS.domain} <span aria-hidden>↗</span>
-          </a>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:pl-4 sm:border-l sm:border-line/70">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Need AI tools to work?</p>
+              <p className="mt-1 text-sm font-medium tracking-tightish">{SISTER_AI.tagline}</p>
+            </div>
+            <a
+              href={SISTER_AI.url}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-1.5 rounded-md bg-ink text-cream px-4 py-2 text-xs font-semibold hover:bg-accent-deep transition-colors whitespace-nowrap self-start"
+            >
+              {SISTER_AI.domain} <span aria-hidden>↗</span>
+            </a>
+          </div>
         </div>
       </div>
 
