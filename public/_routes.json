@@ -2,9 +2,6 @@
   "version": 1,
   "include": ["/*"],
   "exclude": [
-    "/c7468c4053484ae9ba32038f762f4085.txt",
-    "/icon.svg",
-    "/sitemap.xml",
-    "/robots.txt"
+    "/c7468c4053484ae9ba32038f762f4085.txt"
   ]
 }
