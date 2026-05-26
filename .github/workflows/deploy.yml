@@ -38,11 +38,6 @@ jobs:
           NEXT_PUBLIC_AFF_VIATOR: ${{ secrets.NEXT_PUBLIC_AFF_VIATOR }}
         run: npx @cloudflare/next-on-pages@latest
 
-      - name: Ensure Pages project exists
-        run: |
-          npx wrangler@latest pages project list 2>/dev/null | grep -q "^${PROJECT_NAME} " \
-            || npx wrangler@latest pages project create "${PROJECT_NAME}" --production-branch=main
-
       - name: Deploy to Cloudflare Pages
         id: deploy
         run: |
