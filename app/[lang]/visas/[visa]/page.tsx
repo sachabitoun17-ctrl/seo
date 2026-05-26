@@ -61,6 +61,52 @@ export default async function VisaDetailPage({ params }: Props) {
     url: visa.officialUrl,
   };
 
+  const howToLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `How to apply for the ${visa.name}`,
+    description: `Step-by-step application process for the ${visa.name}.`,
+    totalTime: `PT${Math.round(visa.processingDays * 24)}H`,
+    estimatedCost: visa.minIncomeMonthlyEur
+      ? { '@type': 'MonetaryAmount', currency: 'EUR', value: 200 }
+      : undefined,
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Verify eligibility',
+        text: visa.minIncomeMonthlyEur
+          ? `Confirm you earn at least €${visa.minIncomeMonthlyEur.toLocaleString()} per month from non-${cName} sources. Gather 3-6 months of bank statements or invoices as proof.`
+          : `Verify your nationality is eligible. Gather bank statements showing financial means even if no minimum is stated.`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Gather documents',
+        text: 'Valid passport (12+ months remaining), clean criminal record, health insurance covering the destination, proof of accommodation, proof of remote employment or contracts.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Submit application',
+        text: `Apply through the official portal or your nearest ${cName} consulate. Pay the application fee (typically €50-300).`,
+        url: visa.officialUrl,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Wait for processing',
+        text: `Processing takes around ${visa.processingDays} days. Some consulates request additional documents during this period.`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Travel and register',
+        text: `Once approved, travel to ${cName} and register locally within the first 30-90 days as instructed on your approval letter.`,
+      },
+    ],
+  };
+
   const facts = [
     { label: 'Minimum income', value: visa.minIncomeMonthlyEur ? `€${visa.minIncomeMonthlyEur.toLocaleString()} / month` : 'No threshold' },
     { label: 'Duration', value: `${visa.durationMonths} months` },
@@ -144,9 +190,23 @@ export default async function VisaDetailPage({ params }: Props) {
         );
       })()}
 
+      {/* How-to apply steps as visible content */}
+      <section className="mt-12 max-w-3xl">
+        <h2 className="text-xl font-semibold tracking-tightish">How to apply for the {visa.name}</h2>
+        <ol className="mt-4 space-y-4 list-decimal pl-6">
+          {howToLd.step.map((s) => (
+            <li key={s.position}>
+              <p className="font-semibold tracking-tightish">{s.name}</p>
+              <p className="mt-1 text-sm text-muted leading-relaxed">{s.text}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
       <PartnerStack categories={['banking', 'insurance']} heading="Set up before you apply" />
       <FaqSection faqs={visaFaqs(visa, params.lang)} />
       <JsonLd data={govPermit} />
+      <JsonLd data={howToLd} />
     </article>
   );
 }

@@ -19,6 +19,7 @@ export function Footer({ locale, dict }: Props) {
         { href: `/${locale}/cities`, label: dict.nav.cities },
         { href: `/${locale}/regions`, label: dict.nav.regions },
         { href: `/${locale}/best`, label: 'Best for…' },
+        { href: `/${locale}/themes`, label: 'By lifestyle' },
       ],
     },
     {

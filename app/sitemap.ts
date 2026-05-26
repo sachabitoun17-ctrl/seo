@@ -8,6 +8,7 @@ import { getAllComparisons } from '@/lib/data/comparisons';
 import { getAllGuides } from '@/lib/data/guides';
 import { getAllRegions } from '@/lib/data/regions';
 import { getAllCriteria } from '@/lib/data/criteria';
+import { getAllThemes } from '@/lib/data/themes';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -115,6 +116,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Glossary
     entries.push({ url: `${SITE_URL}/${lang}/glossary`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 });
+
+    // Lifestyle theme pages
+    entries.push({ url: `${SITE_URL}/${lang}/themes`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 });
+    for (const t of getAllThemes()) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/themes/${t.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      });
+    }
   }
 
   return entries;

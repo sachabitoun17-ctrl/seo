@@ -17,6 +17,7 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/visas`, label: dict.nav.visas },
     { href: `/${locale}/compare`, label: dict.nav.compare },
     { href: `/${locale}/guides`, label: dict.nav.guides },
+    { href: `/${locale}/themes`, label: 'Themes' },
     { href: `/${locale}/cost-of-living`, label: 'Cost of living' },
     { href: `/${locale}/regions`, label: dict.nav.regions },
     { href: `/${locale}/best`, label: 'Best for…' },
