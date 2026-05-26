@@ -79,7 +79,11 @@ export default async function NationalityPage({ params }: Props) {
       </section>
 
       <JobsCTA heading={`Remote job for ${name}? See sister site.`} />
-      <PartnerStack categories={['banking', 'insurance']} />
+      <PartnerStack
+        locale={params.lang}
+        categories={['banking', 'insurance', 'esim', 'ai-llm', 'earn-while-traveling']}
+        heading="Set up before you apply"
+      />
     </article>
   );
 }

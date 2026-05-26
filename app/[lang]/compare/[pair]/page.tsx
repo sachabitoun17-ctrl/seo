@@ -121,7 +121,10 @@ export default async function ComparePairPage({ params }: Props) {
       </section>
 
       <JobsCTA heading={`Remote roles in ${a.name} or ${b.name}?`} />
-      <PartnerStack />
+      <PartnerStack
+        locale={params.lang}
+        categories={['banking', 'insurance', 'esim', 'vpn', 'accommodation']}
+      />
     </article>
   );
 }

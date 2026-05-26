@@ -85,7 +85,10 @@ export default async function SeasonDetailPage({ params }: Props) {
       )}
 
       <JobsCTA />
-      <PartnerStack />
+      <PartnerStack
+        locale={params.lang}
+        categories={['travel-meta', 'accommodation', 'insurance', 'esim', 'banking']}
+      />
     </article>
   );
 }

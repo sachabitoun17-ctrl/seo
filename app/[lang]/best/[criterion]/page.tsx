@@ -68,7 +68,10 @@ export default async function BestCriterionPage({ params }: Props) {
       </section>
 
       <JobsCTA />
-      <PartnerStack />
+      <PartnerStack
+        locale={params.lang}
+        categories={['banking', 'insurance', 'esim', 'vpn', 'accommodation']}
+      />
     </article>
   );
 }

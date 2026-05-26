@@ -69,7 +69,11 @@ export default async function VisaTypePage({ params }: Props) {
       </ul>
 
       <JobsCTA heading="Have the visa, need the job?" />
-      <PartnerStack categories={['banking', 'insurance']} />
+      <PartnerStack
+        locale={params.lang}
+        categories={['banking', 'insurance', 'esim', 'ai-llm']}
+        heading="Set up before you apply"
+      />
     </article>
   );
 }

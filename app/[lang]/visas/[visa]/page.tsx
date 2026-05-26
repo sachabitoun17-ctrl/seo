@@ -209,7 +209,11 @@ export default async function VisaDetailPage({ params }: Props) {
         countrySlug={country?.slug}
         heading="Have the visa, need the job?"
       />
-      <PartnerStack categories={['banking', 'insurance']} heading="Set up before you apply" />
+      <PartnerStack
+        locale={params.lang}
+        categories={['banking', 'insurance', 'esim', 'ai-llm']}
+        heading="Set up before you apply"
+      />
       <FaqSection faqs={visaFaqs(visa, params.lang)} />
       <JsonLd data={govPermit} />
       <JsonLd data={howToLd} />

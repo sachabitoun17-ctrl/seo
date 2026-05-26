@@ -116,7 +116,11 @@ export default async function CoworkingDetailPage({ params }: Props) {
       </section>
 
       <JobsCTA cityName={name} countryName={countryName} countrySlug={country?.slug} />
-      <PartnerStack />
+      <PartnerStack
+        locale={params.lang}
+        categories={['productivity', 'ai-llm', 'voice-ai', 'esim', 'vpn']}
+        heading="Tools we use on coworking days"
+      />
     </article>
   );
 }

@@ -169,7 +169,11 @@ export default async function CityDetailPage({ params }: Props) {
       )}
 
       <JobsCTA cityName={name} countryName={country ? countryName : undefined} countrySlug={country?.slug} />
-      <PartnerStack />
+      <PartnerStack
+        locale={params.lang}
+        categories={['banking', 'insurance', 'esim', 'accommodation', 'vpn', 'travel-meta']}
+        heading={`Set up before you go to ${name}`}
+      />
       <FaqSection faqs={cityFaqs(city, name, params.lang)} />
       <JsonLd data={place} />
     </article>

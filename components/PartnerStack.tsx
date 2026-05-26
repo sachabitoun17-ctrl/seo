@@ -1,15 +1,20 @@
-import { getActivePartners, type Partner } from '@/lib/partners';
+import { getPartners, type PartnerCategory } from '@/lib/partners';
+import type { Locale } from '@/lib/i18n';
 
 type Props = {
-  categories?: Partner['category'][];
+  locale?: Locale;
+  categories?: PartnerCategory[];
   heading?: string;
+  limit?: number;
 };
 
-export function PartnerStack({ categories, heading = 'Useful for this trip' }: Props) {
-  let partners = getActivePartners();
-  if (categories?.length) {
-    partners = partners.filter((p) => categories.includes(p.category));
-  }
+export function PartnerStack({
+  locale,
+  categories,
+  heading = 'Useful for this trip',
+  limit = 6,
+}: Props) {
+  const partners = getPartners({ categories, locale, limit });
   if (partners.length === 0) return null;
 
   return (
@@ -22,10 +27,15 @@ export function PartnerStack({ categories, heading = 'Useful for this trip' }: P
               href={p.url}
               target="_blank"
               rel="sponsored noopener"
-              className="block rounded-lg border border-line px-4 py-3 hover:border-ink transition-colors"
+              className="block rounded-lg border border-line bg-paper px-4 py-3 card-hover"
             >
-              <p className="font-semibold">{p.name}</p>
-              <p className="mt-1 text-sm text-muted">{p.blurb}</p>
+              <div className="flex items-center justify-between gap-3">
+                <p className="font-semibold tracking-tightish">{p.name}</p>
+                <span className="text-[10px] uppercase tracking-widest text-muted">
+                  {p.category.replace('-', ' ')}
+                </span>
+              </div>
+              <p className="mt-1 text-sm text-muted leading-snug">{p.blurb}</p>
             </a>
           </li>
         ))}

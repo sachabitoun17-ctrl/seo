@@ -161,7 +161,20 @@ export default async function GuideDetailPage({ params }: Props) {
       )}
       {(guide.topic === 'tools' || guide.topic === 'city-guide') && <AiToolsCTA />}
 
-      <PartnerStack />
+      <PartnerStack
+        locale={params.lang}
+        categories={
+          guide.topic === 'tools'
+            ? ['productivity', 'ai-llm', 'voice-ai', 'newsletter', 'vpn', 'esim']
+            : guide.topic === 'tax' || guide.topic === 'visas'
+            ? ['banking', 'insurance', 'esim', 'ai-llm']
+            : guide.topic === 'cost'
+            ? ['banking', 'accommodation', 'mobility-credits', 'investing']
+            : guide.topic === 'infrastructure'
+            ? ['esim', 'vpn', 'productivity']
+            : ['banking', 'insurance', 'esim', 'accommodation']
+        }
+      />
       <JsonLd data={articleLd} />
       {faqLd && <JsonLd data={faqLd} />}
     </article>
