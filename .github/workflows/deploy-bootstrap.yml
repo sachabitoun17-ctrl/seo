@@ -29,10 +29,6 @@ jobs:
         run: npm ci --legacy-peer-deps
       - name: Build for Cloudflare Pages
         run: npx @cloudflare/next-on-pages@latest
-      - name: Ensure Pages project exists
-        run: |
-          npx wrangler@latest pages project list 2>/dev/null | grep -q "^slowmadly " \
-            || npx wrangler@latest pages project create slowmadly --production-branch=main
       - name: Deploy
         run: |
           npx wrangler@latest pages deploy .vercel/output/static \
