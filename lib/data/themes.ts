@@ -132,7 +132,7 @@ export const THEMES: Theme[] = [
       de: 'Beste vegane Städte für digitale Nomaden',
       pl: 'Najlepsze miasta wegańskie dla nomadów',
     },
-    description: 'Cities with a dense plant-based food scene where you never have to compromise — Asian veg traditions, EU veg revolution, LATAM hits.',
+    description: 'Cities with a dense plant-based food scene where you never have to compromise. Asian veg traditions, EU veg revolution, LATAM hits.',
     citySlugs: ['ubud', 'bali', 'berlin', 'lisbon', 'tel-aviv', 'chiang-mai', 'goa', 'taipei', 'osaka', 'london'],
   },
   {

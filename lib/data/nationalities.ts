@@ -50,7 +50,7 @@ export const NATIONALITIES: Nationality[] = [
     passportName: 'Australian passport',
     visaFreeCount: 185,
     eligibleVisaSlugs: ['portugal-d8', 'spain-digital-nomad', 'thailand-dtv', 'indonesia-b211a', 'malaysia-de-rantau', 'japan-digital-nomad', 'south-korea-workation', 'uae-dubai-remote-work', 'mexico-temporary-resident', 'colombia-digital-nomad'],
-    note: 'Australian passport is one of the strongest globally. Working Holiday agreements with 40+ countries (up to age 35) — a great alternative to DNVs for younger nomads.',
+    note: 'Australian passport is one of the strongest globally. Working Holiday agreements with 40+ countries (up to age 35), a great alternative to DNVs for younger nomads.',
   },
   {
     slug: 'indian-citizens',

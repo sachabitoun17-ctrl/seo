@@ -970,10 +970,24 @@
       "de": "Wie die 90/180-Schengen-Regel 2026 wirklich funktioniert, Rechnerbeispiele und wie DNVs längere Aufenthalte ermöglichen.",
       "pl": "Jak naprawdę działa reguła Schengen 90/180 w 2026, przykłady z kalkulatorem i jak DNV pozwalają zostać dłużej."
     },
-    "relatedCountries": ["portugal", "spain", "italy", "greece", "croatia", "germany", "france"],
+    "relatedCountries": [
+      "portugal",
+      "spain",
+      "italy",
+      "greece",
+      "croatia",
+      "germany",
+      "france"
+    ],
     "faq": [
-      { "q": "How does the Schengen 90/180 day rule work?", "a": "You can be in any Schengen country (or combination) for up to 90 days within any rolling 180-day period. The clock counts every day you've been in any Schengen country in the past 180 days." },
-      { "q": "Does the UK count for Schengen?", "a": "No, the UK is no longer in Schengen. UK time does not count toward the 90-day limit. But UK citizens are now subject to the 90/180 rule when visiting Schengen." }
+      {
+        "q": "How does the Schengen 90/180 day rule work?",
+        "a": "You can be in any Schengen country (or combination) for up to 90 days within any rolling 180-day period. The clock counts every day you've been in any Schengen country in the past 180 days."
+      },
+      {
+        "q": "Does the UK count for Schengen?",
+        "a": "No, the UK is no longer in Schengen. UK time does not count toward the 90-day limit. But UK citizens are now subject to the 90/180 rule when visiting Schengen."
+      }
     ]
   },
   {
@@ -997,10 +1011,27 @@
       "de": "Sechs erprobte 3-12-Monats-Routen: SEA-Schleife, Iberien-Winter, LATAM-Frühling, Kaukasus-Sommer, Nordafrika-Herbst, Mittelmeer-Inselhopping.",
       "pl": "Sześć przetestowanych tras 3-12 mies.: pętla SEA, Iberia zima, LATAM wiosna, Kaukaz lato, Afryka Płn. jesień, Morze Śródziemne wyspy."
     },
-    "relatedCountries": ["thailand", "vietnam", "indonesia", "portugal", "spain", "mexico", "colombia", "georgia", "morocco", "greece"],
+    "relatedCountries": [
+      "thailand",
+      "vietnam",
+      "indonesia",
+      "portugal",
+      "spain",
+      "mexico",
+      "colombia",
+      "georgia",
+      "morocco",
+      "greece"
+    ],
     "faq": [
-      { "q": "What is slow travel?", "a": "Spending 1-12 months in one location instead of 3-7 days. The intent is depth over breadth: learning the city, building habits, having a real community, working effectively." },
-      { "q": "How do I plan a slow travel year?", "a": "Pick 3-4 base cities aligned with seasons (e.g. Lisbon spring, Tbilisi summer, Chiang Mai winter), allow 1-2 weeks transition between each, and respect visa rules." }
+      {
+        "q": "What is slow travel?",
+        "a": "Spending 1-12 months in one location instead of 3-7 days. The intent is depth over breadth: learning the city, building habits, having a real community, working effectively."
+      },
+      {
+        "q": "How do I plan a slow travel year?",
+        "a": "Pick 3-4 base cities aligned with seasons (e.g. Lisbon spring, Tbilisi summer, Chiang Mai winter), allow 1-2 weeks transition between each, and respect visa rules."
+      }
     ]
   },
   {
@@ -1016,17 +1047,23 @@
       "pl": "Pasywny dochód dla nomadów cyfrowych 2026: 8 prawdziwych opcji"
     },
     "description": {
-      "en": "Dividend portfolio, REITs, course sales, SaaS, ad sites, affiliate sites, rental real estate, peer-to-peer lending — what actually works for nomads in 2026.",
-      "fr": "Portefeuille dividendes, REIT, ventes de cours, SaaS, sites pub, sites affiliés, immobilier locatif, prêts P2P — ce qui marche vraiment en 2026.",
-      "es": "Cartera de dividendos, REITs, ventas de cursos, SaaS, sitios publicitarios, sitios afiliados, alquiler inmobiliario, P2P — lo que funciona en 2026.",
-      "pt": "Carteira de dividendos, REITs, vendas de cursos, SaaS, sites pub, sites afiliados, imobiliário, P2P — o que funciona em 2026.",
-      "it": "Portafoglio dividendi, REITs, vendite di corsi, SaaS, siti pub, siti affiliati, immobiliare, P2P — cosa funziona davvero nel 2026.",
-      "de": "Dividendenportfolio, REITs, Kursverkäufe, SaaS, Werbeseiten, Affiliate-Seiten, Mietimmobilien, P2P — was 2026 wirklich funktioniert.",
-      "pl": "Portfel dywidendowy, REITs, kursy, SaaS, strony reklamowe, afiliacyjne, najem, P2P — co naprawdę działa w 2026."
+      "en": "Dividend portfolio, REITs, course sales, SaaS, ad sites, affiliate sites, rental real estate, peer-to-peer lending , what actually works for nomads in 2026.",
+      "fr": "Portefeuille dividendes, REIT, ventes de cours, SaaS, sites pub, sites affiliés, immobilier locatif, prêts P2P , ce qui marche vraiment en 2026.",
+      "es": "Cartera de dividendos, REITs, ventas de cursos, SaaS, sitios publicitarios, sitios afiliados, alquiler inmobiliario, P2P , lo que funciona en 2026.",
+      "pt": "Carteira de dividendos, REITs, vendas de cursos, SaaS, sites pub, sites afiliados, imobiliário, P2P , o que funciona em 2026.",
+      "it": "Portafoglio dividendi, REITs, vendite di corsi, SaaS, siti pub, siti affiliati, immobiliare, P2P , cosa funziona davvero nel 2026.",
+      "de": "Dividendenportfolio, REITs, Kursverkäufe, SaaS, Werbeseiten, Affiliate-Seiten, Mietimmobilien, P2P , was 2026 wirklich funktioniert.",
+      "pl": "Portfel dywidendowy, REITs, kursy, SaaS, strony reklamowe, afiliacyjne, najem, P2P , co naprawdę działa w 2026."
     },
     "faq": [
-      { "q": "How much passive income do I need to nomad full-time?", "a": "Conservative target: $2,000-3,000/month for SEA/LATAM living. Generous: $4,000-6,000/month for Europe. Add 30% margin for currency drift and unexpected costs." },
-      { "q": "Can passive income visa replace a DNV?", "a": "Yes — Portugal D7, Spain Non-Lucrative, Costa Rica Rentista and similar visas specifically target passive income. Usually €870-2,500/month is enough to qualify." }
+      {
+        "q": "How much passive income do I need to nomad full-time?",
+        "a": "Conservative target: $2,000-3,000/month for SEA/LATAM living. Generous: $4,000-6,000/month for Europe. Add 30% margin for currency drift and unexpected costs."
+      },
+      {
+        "q": "Can passive income visa replace a DNV?",
+        "a": "Yes , Portugal D7, Spain Non-Lucrative, Costa Rica Rentista and similar visas specifically target passive income. Usually €870-2,500/month is enough to qualify."
+      }
     ]
   },
   {
@@ -1051,8 +1088,14 @@
       "pl": "Reguła 4h pokrycia, asynchroniczne narzędzia, najlepsze regiony dla US Pacific/Wschód/UE/Azja, negocjowanie pracy zdalnej."
     },
     "faq": [
-      { "q": "Can I work remotely from anywhere if my team is in San Francisco?", "a": "Yes for async-friendly teams. For sync-heavy roles, stay within 8h of SF: Hawaii, Mexico (Mexico City overlaps PT 9am-5pm with 3-hr delay), Latin America. EU/Asia is feasible if you flex hours." },
-      { "q": "What is the 4-hour overlap rule?", "a": "Most remote-friendly teams require 4 hours of working-hour overlap with the core team. Plan your base accordingly. Async-only teams have no such requirement." }
+      {
+        "q": "Can I work remotely from anywhere if my team is in San Francisco?",
+        "a": "Yes for async-friendly teams. For sync-heavy roles, stay within 8h of SF: Hawaii, Mexico (Mexico City overlaps PT 9am-5pm with 3-hr delay), Latin America. EU/Asia is feasible if you flex hours."
+      },
+      {
+        "q": "What is the 4-hour overlap rule?",
+        "a": "Most remote-friendly teams require 4 hours of working-hour overlap with the core team. Plan your base accordingly. Async-only teams have no such requirement."
+      }
     ]
   },
   {
@@ -1077,8 +1120,14 @@
       "pl": "MacBook Air M3, MacBook Pro M4, Framework 13, ThinkPad X1 Carbon, Dell XPS 13 porównane: bateria, waga, naprawialność, koszt całkowity."
     },
     "faq": [
-      { "q": "What is the best laptop for a digital nomad in 2026?", "a": "MacBook Air M3 13' for 95% of nomads: 18h battery, 1.24kg, silent fan, premium build. MacBook Pro M4 14' for video editors / heavy devs. Framework 13 for the repair-anywhere crowd." },
-      { "q": "Do I need a Windows laptop in 2026?", "a": "Only if you use Windows-only software (some accounting tools, specific gaming, Visual Studio enterprise). Most software is cross-platform now." }
+      {
+        "q": "What is the best laptop for a digital nomad in 2026?",
+        "a": "MacBook Air M3 13' for 95% of nomads: 18h battery, 1.24kg, silent fan, premium build. MacBook Pro M4 14' for video editors / heavy devs. Framework 13 for the repair-anywhere crowd."
+      },
+      {
+        "q": "Do I need a Windows laptop in 2026?",
+        "a": "Only if you use Windows-only software (some accounting tools, specific gaming, Visual Studio enterprise). Most software is cross-platform now."
+      }
     ]
   },
   {
@@ -1103,7 +1152,10 @@
       "pl": "Sony WH-1000XM6, Bose QC Ultra, Apple AirPods Max porównane. Bateria, ANC, komfort na 12h, alternatywy budżetowe."
     },
     "faq": [
-      { "q": "Which noise-cancelling headphones are best in 2026?", "a": "Sony WH-1000XM6 win on ANC + battery (40h). Bose QC Ultra for the deepest noise cancellation. AirPods Max for Apple ecosystem integration." }
+      {
+        "q": "Which noise-cancelling headphones are best in 2026?",
+        "a": "Sony WH-1000XM6 win on ANC + battery (40h). Bose QC Ultra for the deepest noise cancellation. AirPods Max for Apple ecosystem integration."
+      }
     ]
   },
   {
@@ -1128,7 +1180,10 @@
       "pl": "Anytime Mailbox, Earth Class Mail, Traveling Mailbox porównane. Adres US/UK/UE dla banków, urzędów i paczek."
     },
     "faq": [
-      { "q": "Why do nomads need a mail forwarding service?", "a": "Banks, tax authorities, drivers' licenses and many services require a physical address. Mail forwarding gives you a permanent one that scans your mail to a cloud inbox." }
+      {
+        "q": "Why do nomads need a mail forwarding service?",
+        "a": "Banks, tax authorities, drivers' licenses and many services require a physical address. Mail forwarding gives you a permanent one that scans your mail to a cloud inbox."
+      }
     ]
   },
   {
@@ -1152,10 +1207,22 @@
       "de": "FEIE $126.500 in 2026, ausländische Steuergutschrift, FBAR, Formular 8938, Bundesstaaten-Steuerausstieg. Die 5 Formulare und Hilfe.",
       "pl": "FEIE 126 500 $ w 2026, kredyt podatkowy, FBAR, formularz 8938, wyjście podatkowe stanowe. 5 formularzy do wypełnienia."
     },
-    "relatedCountries": ["portugal", "uae", "panama", "costa-rica", "mexico"],
+    "relatedCountries": [
+      "portugal",
+      "uae",
+      "panama",
+      "costa-rica",
+      "mexico"
+    ],
     "faq": [
-      { "q": "Do I have to file US taxes if I live abroad full-time?", "a": "Yes. US citizens and green card holders must file every year regardless of where they live. The FEIE excludes up to $126,500/year (2026) of foreign-earned income." },
-      { "q": "What is FBAR and do I need to file it?", "a": "FBAR (FinCEN 114) reports foreign bank accounts. If your aggregate foreign account balance exceeds $10,000 at any point in the year, you must file. Penalties are severe for non-filing." }
+      {
+        "q": "Do I have to file US taxes if I live abroad full-time?",
+        "a": "Yes. US citizens and green card holders must file every year regardless of where they live. The FEIE excludes up to $126,500/year (2026) of foreign-earned income."
+      },
+      {
+        "q": "What is FBAR and do I need to file it?",
+        "a": "FBAR (FinCEN 114) reports foreign bank accounts. If your aggregate foreign account balance exceeds $10,000 at any point in the year, you must file. Penalties are severe for non-filing."
+      }
     ]
   },
   {
@@ -1180,7 +1247,10 @@
       "pl": "7 powodów odrzucenia: niewystarczający dochód, wygasły rejestr karny, słabe ubezpieczenie, sponsor, zdjęcia."
     },
     "faq": [
-      { "q": "Can I reapply if my DNV is rejected?", "a": "Usually yes, but you must address the rejection reason. Some countries (Croatia) impose a 6-month cooldown. Always read the rejection letter carefully." }
+      {
+        "q": "Can I reapply if my DNV is rejected?",
+        "a": "Usually yes, but you must address the rejection reason. Some countries (Croatia) impose a 6-month cooldown. Always read the rejection letter carefully."
+      }
     ]
   },
   {
@@ -1204,11 +1274,21 @@
       "de": "Italien-DNV Schritt für Schritt: 28.000 €/Jahr, Krankenversicherung, Konsulatsantrag, 90 Tage Bearbeitung.",
       "pl": "Włoska DNV krok po kroku: 28 000 €/rok, ubezpieczenie zdrowotne, wniosek konsularny, 90 dni procesowania."
     },
-    "relatedVisas": ["italy-digital-nomad"],
-    "relatedCountries": ["italy"],
+    "relatedVisas": [
+      "italy-digital-nomad"
+    ],
+    "relatedCountries": [
+      "italy"
+    ],
     "faq": [
-      { "q": "What is the income threshold for the Italy Digital Nomad Visa?", "a": "Around €28,000 annually (3 times Italy's minimum yearly threshold), with health insurance covering €30,000+ in medical care." },
-      { "q": "Can I bring family on the Italy DNV?", "a": "Yes. Spouse and dependent children are eligible. Each dependent requires demonstrating additional income (+30-50%)." }
+      {
+        "q": "What is the income threshold for the Italy Digital Nomad Visa?",
+        "a": "Around €28,000 annually (3 times Italy's minimum yearly threshold), with health insurance covering €30,000+ in medical care."
+      },
+      {
+        "q": "Can I bring family on the Italy DNV?",
+        "a": "Yes. Spouse and dependent children are eligible. Each dependent requires demonstrating additional income (+30-50%)."
+      }
     ]
   },
   {
@@ -1232,10 +1312,17 @@
       "de": "Griechenland-DNV mit 50% Steuerrabatt für 7 Jahre. 3.500 €/Monat erforderlich. Konsulatsantrag in 30 Tagen.",
       "pl": "Grecka DNV z 50% ulgą podatkową przez 7 lat. 3500 €/mies. wymagane. Tramite konsularne 30 dni."
     },
-    "relatedVisas": ["greece-digital-nomad"],
-    "relatedCountries": ["greece"],
+    "relatedVisas": [
+      "greece-digital-nomad"
+    ],
+    "relatedCountries": [
+      "greece"
+    ],
     "faq": [
-      { "q": "Does Greece really give a 50% tax break?", "a": "Yes. The Greek 'Mover-In' regime taxes only 50% of foreign-source income for the first 7 years of residency, for newcomers eligible under specific criteria." }
+      {
+        "q": "Does Greece really give a 50% tax break?",
+        "a": "Yes. The Greek 'Mover-In' regime taxes only 50% of foreign-source income for the first 7 years of residency, for newcomers eligible under specific criteria."
+      }
     ]
   },
   {
@@ -1259,10 +1346,17 @@
       "de": "5 Jahre Mehrfacheinreise, 180 Tage pro Aufenthalt, 500.000 ฿ oder Arbeitgeberbrief. Der Thailand DTV Prozess 2024 im Detail.",
       "pl": "5 lat wielokrotny wjazd, 180 dni na pobyt, 500 000 ฿ lub list od pracodawcy. Proces tajlandzkiej DTV 2024 w detalach."
     },
-    "relatedVisas": ["thailand-dtv"],
-    "relatedCountries": ["thailand"],
+    "relatedVisas": [
+      "thailand-dtv"
+    ],
+    "relatedCountries": [
+      "thailand"
+    ],
     "faq": [
-      { "q": "What is the bank balance requirement for Thailand DTV?", "a": "฿500,000 (approximately €13,000) maintained for 3+ months, OR a letter from an employer abroad as alternative proof." }
+      {
+        "q": "What is the bank balance requirement for Thailand DTV?",
+        "a": "฿500,000 (approximately €13,000) maintained for 3+ months, OR a letter from an employer abroad as alternative proof."
+      }
     ]
   },
   {
@@ -1286,10 +1380,17 @@
       "de": "3.500 $/Monat erforderlich, Bearbeitung in 21 Tagen, volle Aufenthaltsrechte und 0% Einkommensteuer. Online-Antrag.",
       "pl": "3500 $/mies. wymagane, 21 dni procesowania, pełne prawa rezydencji i 0% PIT. Wniosek online."
     },
-    "relatedVisas": ["uae-dubai-remote-work"],
-    "relatedCountries": ["uae"],
+    "relatedVisas": [
+      "uae-dubai-remote-work"
+    ],
+    "relatedCountries": [
+      "uae"
+    ],
     "faq": [
-      { "q": "What is the income requirement for the Dubai remote work visa?", "a": "$3,500/month minimum (≈ €2,900). Proof through 3-6 months of bank statements or employer letter." }
+      {
+        "q": "What is the income requirement for the Dubai remote work visa?",
+        "a": "$3,500/month minimum (≈ €2,900). Proof through 3-6 months of bank statements or employer letter."
+      }
     ]
   },
   {
@@ -1313,10 +1414,17 @@
       "de": "Niedrigste Schwelle der Welt: 900 €/Monat. 2 Jahre. Online-Antrag über Cancillería in 30 Tagen.",
       "pl": "Najniższy próg na świecie: 900 €/mies. 2 lata. Wniosek online przez Cancillería w 30 dni."
     },
-    "relatedVisas": ["colombia-digital-nomad"],
-    "relatedCountries": ["colombia"],
+    "relatedVisas": [
+      "colombia-digital-nomad"
+    ],
+    "relatedCountries": [
+      "colombia"
+    ],
     "faq": [
-      { "q": "Is the Colombia DNV the easiest globally?", "a": "Yes by income threshold (€900/month) and process (full online via Cancillería). 2-year initial duration with path to permanent residency." }
+      {
+        "q": "Is the Colombia DNV the easiest globally?",
+        "a": "Yes by income threshold (€900/month) and process (full online via Cancillería). 2-year initial duration with path to permanent residency."
+      }
     ]
   },
   {
@@ -1340,10 +1448,17 @@
       "de": "Antrag in jedem mexikanischen Konsulat im Ausland mit 2.900 €/Monat Nachweis. Verlängerbar bis 4 Jahre.",
       "pl": "Wniosek w dowolnym konsulacie meksykańskim poza Meksykiem z dowodem 2900 €/mies. Odnawialna do 4 lat."
     },
-    "relatedVisas": ["mexico-temporary-resident"],
-    "relatedCountries": ["mexico"],
+    "relatedVisas": [
+      "mexico-temporary-resident"
+    ],
+    "relatedCountries": [
+      "mexico"
+    ],
     "faq": [
-      { "q": "Where do I apply for the Mexico Temporary Resident Visa?", "a": "At any Mexican consulate ABROAD (not from inside Mexico). Most popular: Guatemala, Belize, or your home country consulate." }
+      {
+        "q": "Where do I apply for the Mexico Temporary Resident Visa?",
+        "a": "At any Mexican consulate ABROAD (not from inside Mexico). Most popular: Guatemala, Belize, or your home country consulate."
+      }
     ]
   },
   {
@@ -1367,10 +1482,17 @@
       "de": "100% online beantragen. 2.540 €/Monat, 12 Monate, 0% Steuer (kein Steueransässiger). Ideal für kurzen EU-Aufenthalt.",
       "pl": "Wniosek w 100% online. 2540 €/mies., 12 miesięcy, 0% podatku (nie jesteś rezydentem). Idealne dla krótkiego pobytu UE."
     },
-    "relatedVisas": ["croatia-digital-nomad"],
-    "relatedCountries": ["croatia"],
+    "relatedVisas": [
+      "croatia-digital-nomad"
+    ],
+    "relatedCountries": [
+      "croatia"
+    ],
     "faq": [
-      { "q": "Does Croatia tax DNV holders?", "a": "No. DNV holders are explicitly NOT considered tax residents and pay 0% tax on foreign income. Note: the DNV cannot be renewed; you must wait 6 months and reapply." }
+      {
+        "q": "Does Croatia tax DNV holders?",
+        "a": "No. DNV holders are explicitly NOT considered tax residents and pay 0% tax on foreign income. Note: the DNV cannot be renewed; you must wait 6 months and reapply."
+      }
     ]
   },
   {
@@ -1394,10 +1516,17 @@
       "de": "Erstes EU-Land mit DNV (2020). 4.500 €/Monat erforderlich, perfekt mit e-Residency für Firmengründung.",
       "pl": "Pierwsze państwo UE z DNV (2020). 4500 €/mies. wymagane, idealnie łączy się z e-Residency."
     },
-    "relatedVisas": ["estonia-digital-nomad"],
-    "relatedCountries": ["estonia"],
+    "relatedVisas": [
+      "estonia-digital-nomad"
+    ],
+    "relatedCountries": [
+      "estonia"
+    ],
     "faq": [
-      { "q": "Is Estonia e-Residency the same as the DNV?", "a": "No. e-Residency is a digital identity for company formation (you can run an Estonian company from anywhere). The DNV is a 12-month physical residence permit." }
+      {
+        "q": "Is Estonia e-Residency the same as the DNV?",
+        "a": "No. e-Residency is a digital identity for company formation (you can run an Estonian company from anywhere). The DNV is a 12-month physical residence permit."
+      }
     ]
   },
   {
@@ -1422,7 +1551,10 @@
       "pl": "Kwiecień na wiosnę w Europie, październik na SEA, listopad na LATAM. Miesięczny przewodnik startu w 2026."
     },
     "faq": [
-      { "q": "When is the worst month to start nomading?", "a": "August (Europe is hot + tourist-packed + EU is on holiday so admin is closed), February (LATAM low season, SEA is fine but rainier in some spots)." }
+      {
+        "q": "When is the worst month to start nomading?",
+        "a": "August (Europe is hot + tourist-packed + EU is on holiday so admin is closed), February (LATAM low season, SEA is fine but rainier in some spots)."
+      }
     ]
   },
   {
