@@ -23,6 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const cfToken =
     process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ||
     'e22d5f9e3bf74faaa2399d1a7ef53ee3';
+  const ahrefsKey =
+    process.env.NEXT_PUBLIC_AHREFS_KEY ||
+    'YowbqBmffmzExnDFmRGerw';
   return (
     <html lang="en">
       <body className="min-h-screen antialiased">
@@ -31,6 +34,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Script
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon={JSON.stringify({ token: cfToken })}
+            strategy="afterInteractive"
+          />
+        )}
+        {ahrefsKey && (
+          <Script
+            src="https://analytics.ahrefs.com/analytics.js"
+            data-key={ahrefsKey}
             strategy="afterInteractive"
           />
         )}
