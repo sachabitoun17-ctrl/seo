@@ -5,6 +5,8 @@ import { buildPageMetadata } from '@/lib/seo';
 import { getVisasByType, type Visa } from '@/lib/data/visas';
 import { VisaCard } from '@/components/VisaCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { JobsCTA } from '@/components/JobsCTA';
+import { PartnerStack } from '@/components/PartnerStack';
 
 const VALID: Visa['type'][] = ['digital-nomad', 'passive-income', 'investor', 'freelance'];
 
@@ -65,6 +67,9 @@ export default async function VisaTypePage({ params }: Props) {
           </li>
         ))}
       </ul>
+
+      <JobsCTA heading="Have the visa, need the job?" />
+      <PartnerStack categories={['banking', 'insurance']} />
     </article>
   );
 }

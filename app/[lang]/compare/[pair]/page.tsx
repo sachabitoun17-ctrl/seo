@@ -7,6 +7,7 @@ import { getCountry, getCountryName } from '@/lib/data/countries';
 import { getCity, getCityName } from '@/lib/data/cities';
 import { PartnerStack } from '@/components/PartnerStack';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -119,6 +120,7 @@ export default async function ComparePairPage({ params }: Props) {
         <p className="mt-3 leading-relaxed">{comp.verdict}</p>
       </section>
 
+      <JobsCTA heading={`Remote roles in ${a.name} or ${b.name}?`} />
       <PartnerStack />
     </article>
   );

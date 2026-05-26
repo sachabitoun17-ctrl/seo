@@ -4,19 +4,17 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-type Item = { href: string; label: string };
+type Item = { href: string; label: string; external?: boolean };
 type Props = { items: Item[] };
 
 export function MobileMenu({ items }: Props) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Close on route change
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
-  // Lock body scroll when open
   useEffect(() => {
     if (open) {
       const original = document.body.style.overflow;
@@ -57,16 +55,29 @@ export function MobileMenu({ items }: Props) {
         >
           <nav className="max-w-container mx-auto px-5 pt-6 pb-10" onClick={(e) => e.stopPropagation()}>
             <ul className="space-y-1">
-              {items.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="block py-3 text-xl font-medium tracking-tightish border-b border-line hover:text-accent transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {items.map((item) => {
+                const isExternal = item.external || /^https?:\/\//.test(item.href);
+                const className =
+                  'block py-3 text-xl font-medium tracking-tightish border-b border-line hover:text-accent transition-colors';
+                return (
+                  <li key={item.href}>
+                    {isExternal ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener"
+                        className={className}
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link href={item.href} className={className}>
+                        {item.label}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>

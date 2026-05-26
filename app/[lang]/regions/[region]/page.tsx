@@ -6,6 +6,8 @@ import { getAllRegions, getRegion, getRegionName } from '@/lib/data/regions';
 import { getCountry } from '@/lib/data/countries';
 import { CountryCard } from '@/components/CountryCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { JobsCTA } from '@/components/JobsCTA';
+import { PartnerStack } from '@/components/PartnerStack';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -61,6 +63,9 @@ export default async function RegionDetailPage({ params }: Props) {
           ))}
         </ul>
       </section>
+
+      <JobsCTA heading={`Remote roles across ${name}`} />
+      <PartnerStack />
     </article>
   );
 }

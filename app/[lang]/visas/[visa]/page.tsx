@@ -167,7 +167,7 @@ export default async function VisaDetailPage({ params }: Props) {
         <a
           href={visa.officialUrl}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           className="inline-flex items-center rounded-md bg-ink text-cream px-5 py-2.5 text-sm font-medium hover:bg-ink/90 transition-colors"
         >
           Official application portal

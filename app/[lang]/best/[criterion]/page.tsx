@@ -11,6 +11,7 @@ import {
 import { CountryCard } from '@/components/CountryCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { PartnerStack } from '@/components/PartnerStack';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -66,6 +67,7 @@ export default async function BestCriterionPage({ params }: Props) {
         </ul>
       </section>
 
+      <JobsCTA />
       <PartnerStack />
     </article>
   );
