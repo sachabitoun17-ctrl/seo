@@ -10,6 +10,7 @@ import { getAllRegions } from '@/lib/data/regions';
 import { getAllCriteria } from '@/lib/data/criteria';
 import { getAllThemes } from '@/lib/data/themes';
 import { getAllNationalities } from '@/lib/data/nationalities';
+import { getAllSeasons } from '@/lib/data/seasons';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -139,6 +140,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       });
     }
+
+    // Seasonal pages
+    entries.push({ url: `${SITE_URL}/${lang}/seasonal`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 });
+    for (const s of getAllSeasons()) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/seasonal/${s.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      });
+    }
+
+    // Search page
+    entries.push({ url: `${SITE_URL}/${lang}/search`, lastModified: now, changeFrequency: 'weekly', priority: 0.5 });
   }
 
   return entries;

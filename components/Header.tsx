@@ -18,10 +18,12 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/compare`, label: dict.nav.compare },
     { href: `/${locale}/guides`, label: dict.nav.guides },
     { href: `/${locale}/themes`, label: 'Themes' },
+    { href: `/${locale}/seasonal`, label: 'By season' },
     { href: `/${locale}/cost-of-living`, label: 'Cost of living' },
     { href: `/${locale}/regions`, label: dict.nav.regions },
     { href: `/${locale}/best`, label: 'Best for…' },
     { href: `/${locale}/glossary`, label: 'Glossary' },
+    { href: `/${locale}/search`, label: 'Search' },
     { href: `/${locale}/about`, label: dict.nav.about },
     { href: SISTER_JOBS.url, label: 'Find remote jobs ↗', external: true },
   ];

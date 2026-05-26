@@ -1,0 +1,91 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { LOCALES, type Locale } from '@/lib/i18n';
+import { buildPageMetadata } from '@/lib/seo';
+import {
+  getAllSeasons,
+  getSeason,
+  getSeasonTitle,
+  getCitiesForSeason,
+  getCountriesForSeason,
+} from '@/lib/data/seasons';
+import { CityCard } from '@/components/CityCard';
+import { CountryCard } from '@/components/CountryCard';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PartnerStack } from '@/components/PartnerStack';
+import { JobsCTA } from '@/components/JobsCTA';
+
+export const dynamicParams = false;
+export const revalidate = false;
+
+type Props = { params: { lang: Locale; season: string } };
+
+export function generateStaticParams() {
+  return LOCALES.flatMap((lang) =>
+    getAllSeasons().map((s) => ({ lang, season: s.slug })),
+  );
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const s = getSeason(params.season);
+  if (!s) return {};
+  return buildPageMetadata({
+    locale: params.lang,
+    title: getSeasonTitle(s, params.lang),
+    description: s.description,
+    pathForLocale: (l) => `/${l}/seasonal/${s.slug}`,
+  });
+}
+
+export default async function SeasonDetailPage({ params }: Props) {
+  const s = getSeason(params.season);
+  if (!s) notFound();
+  const title = getSeasonTitle(s, params.lang);
+  const cities = getCitiesForSeason(s);
+  const countries = getCountriesForSeason(s);
+
+  return (
+    <article className="py-14">
+      <Breadcrumbs items={[
+        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}/seasonal`, label: 'Seasonal' },
+        { href: `/${params.lang}/seasonal/${s.slug}`, label: title },
+      ]} />
+
+      <header className="max-w-3xl mt-4">
+        <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">{s.months.join(' · ')}</p>
+        <h1 className="mt-2 text-3xl sm:text-5xl font-semibold tracking-tightish font-display">{title}</h1>
+        <p className="mt-3 text-lg text-muted leading-relaxed">{s.description}</p>
+      </header>
+
+      {cities.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">Cities at their best</h2>
+          <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {cities.slice(0, 18).map((c) => (
+              <li key={c.slug}>
+                <CityCard city={c} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {countries.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold tracking-tightish">Countries to base in</h2>
+          <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {countries.slice(0, 18).map((c) => (
+              <li key={c.slug}>
+                <CountryCard country={c} locale={params.lang} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <JobsCTA />
+      <PartnerStack />
+    </article>
+  );
+}
