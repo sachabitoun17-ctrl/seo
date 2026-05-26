@@ -11,6 +11,7 @@ import { getAllCriteria } from '@/lib/data/criteria';
 import { getAllThemes } from '@/lib/data/themes';
 import { getAllNationalities } from '@/lib/data/nationalities';
 import { getAllSeasons } from '@/lib/data/seasons';
+import { getAllRoles } from '@/lib/data/roles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -154,6 +155,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Search page
     entries.push({ url: `${SITE_URL}/${lang}/search`, lastModified: now, changeFrequency: 'weekly', priority: 0.5 });
+
+    // Job-role pages
+    entries.push({ url: `${SITE_URL}/${lang}/for`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 });
+    for (const r of getAllRoles()) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/for/${r.slug}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      });
+    }
   }
 
   return entries;

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Dictionary, Locale } from '@/lib/i18n';
 import { Logo } from './Logo';
+import { NewsletterSignup } from './NewsletterSignup';
 import { SISTER_JOBS, SISTER_AI } from '@/lib/sister-sites';
 
 type Props = {
@@ -62,6 +63,21 @@ export function Footer({ locale, dict }: Props) {
             </ul>
           </div>
         ))}
+      </div>
+
+      <div className="border-t border-line/70 bg-cream">
+        <div className="max-w-container mx-auto px-5 sm:px-8 py-10 grid gap-8 md:grid-cols-2 md:items-center">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Newsletter</p>
+            <h3 className="mt-2 text-2xl font-semibold tracking-tightish font-display">
+              One slow-travel email a month.
+            </h3>
+            <p className="mt-2 text-sm text-muted">
+              New visa rules, trending nomad cities, the best cost-of-living updates.
+            </p>
+          </div>
+          <NewsletterSignup variant="inline" publication={process.env.NEXT_PUBLIC_BEEHIIV_PUBLICATION_ID} />
+        </div>
       </div>
 
       <div className="border-t border-line/70 bg-accent-soft/40">
