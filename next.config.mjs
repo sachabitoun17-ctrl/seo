@@ -6,11 +6,6 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['gray-matter'],
   },
-  async redirects() {
-    return [
-      { source: '/', destination: '/en', permanent: true },
-    ];
-  },
   async headers() {
     return [
       {
