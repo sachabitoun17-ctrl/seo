@@ -6,7 +6,7 @@ import { getAllThemes, getTheme, getThemeTitle, getCitiesForTheme } from '@/lib/
 import { CityCard } from '@/components/CityCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { PartnerStack } from '@/components/PartnerStack';
-import { RemoteJobsCTA } from '@/components/RemoteJobsCTA';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -60,7 +60,7 @@ export default async function ThemeDetailPage({ params }: Props) {
         </ul>
       </section>
 
-      <RemoteJobsCTA />
+      <JobsCTA />
       <PartnerStack />
     </article>
   );

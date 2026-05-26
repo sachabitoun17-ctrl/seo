@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Dictionary, Locale } from '@/lib/i18n';
 import { Logo } from './Logo';
-import { SISTER_JOBS, SISTER_AI } from '@/lib/sister-site';
+import { SISTER_JOBS, SISTER_AI } from '@/lib/sister-sites';
 
 type Props = {
   locale: Locale;
@@ -68,7 +68,7 @@ export function Footer({ locale, dict }: Props) {
         <div className="max-w-container mx-auto px-5 sm:px-8 py-7 grid gap-4 sm:grid-cols-2">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Looking for remote work?</p>
+              <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Need a remote tech job?</p>
               <p className="mt-1 text-sm font-medium tracking-tightish">{SISTER_JOBS.tagline}</p>
             </div>
             <a
@@ -82,7 +82,7 @@ export function Footer({ locale, dict }: Props) {
           </div>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:pl-4 sm:border-l sm:border-line/70">
             <div>
-              <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Need AI tools to work?</p>
+              <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Need AI tools?</p>
               <p className="mt-1 text-sm font-medium tracking-tightish">{SISTER_AI.tagline}</p>
             </div>
             <a
@@ -99,7 +99,12 @@ export function Footer({ locale, dict }: Props) {
 
       <div className="border-t border-line/70">
         <div className="max-w-container mx-auto px-5 sm:px-8 py-6 flex flex-col sm:flex-row gap-3 justify-between text-xs text-muted">
-          <p>© {year} Slowmadly. {dict.footer.rights}</p>
+          <p>
+            © {year} Slowmadly. {dict.footer.rights} Part of a small network with{' '}
+            <a href={SISTER_JOBS.url} target="_blank" rel="noopener" className="hover:text-accent transition-colors">{SISTER_JOBS.domain}</a>
+            {' '}and{' '}
+            <a href={SISTER_AI.url} target="_blank" rel="noopener" className="hover:text-accent transition-colors">{SISTER_AI.domain}</a>.
+          </p>
           <p className="max-w-md sm:text-right">{dict.footer.affiliateNotice}</p>
         </div>
       </div>

@@ -11,7 +11,7 @@ import {
 import { VisaCard } from '@/components/VisaCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { PartnerStack } from '@/components/PartnerStack';
-import { RemoteJobsCTA } from '@/components/RemoteJobsCTA';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -78,7 +78,7 @@ export default async function NationalityPage({ params }: Props) {
         </ul>
       </section>
 
-      <RemoteJobsCTA heading={`Remote job for ${name}? See sister site.`} />
+      <JobsCTA heading={`Remote job for ${name}? See sister site.`} />
       <PartnerStack categories={['banking', 'insurance']} />
     </article>
   );

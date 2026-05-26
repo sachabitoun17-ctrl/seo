@@ -1,18 +1,22 @@
-import { SISTER_AI, aiByJobRoleUrl } from '@/lib/sister-sites';
+import { SISTER_JOBS, slateremoteCountryUrl } from '@/lib/sister-sites';
 
 type Props = {
-  role?: string;
+  countrySlug?: string;
+  countryName?: string;
+  cityName?: string;
   heading?: string;
   variant?: 'card' | 'inline';
 };
 
-export function AiToolsCTA({ role, heading, variant = 'card' }: Props) {
-  const url = role ? aiByJobRoleUrl(role) : SISTER_AI.url;
+export function JobsCTA({ countrySlug, countryName, cityName, heading, variant = 'card' }: Props) {
+  const url = countrySlug ? slateremoteCountryUrl(countrySlug) : SISTER_JOBS.url;
   const computedHeading =
     heading ||
-    (role
-      ? `AI tools to make remote work as a ${role} lighter`
-      : 'AI tools to make remote work lighter');
+    (cityName
+      ? `Looking for work in ${countryName || cityName}? Browse open remote roles.`
+      : countryName
+      ? `Working remote from ${countryName}? See open positions.`
+      : 'Need a remote tech job?');
 
   if (variant === 'inline') {
     return (
@@ -24,7 +28,7 @@ export function AiToolsCTA({ role, heading, variant = 'card' }: Props) {
           rel="noopener"
           className="text-accent font-semibold hover:text-accent-deep transition-colors underline-offset-4 hover:underline"
         >
-          Browse on {SISTER_AI.domain} ↗
+          Browse on {SISTER_JOBS.domain} ↗
         </a>
       </p>
     );
@@ -35,7 +39,7 @@ export function AiToolsCTA({ role, heading, variant = 'card' }: Props) {
       <div>
         <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Sister site</p>
         <h2 className="mt-1 text-xl font-semibold tracking-tightish font-display">{computedHeading}</h2>
-        <p className="mt-2 text-sm text-muted max-w-md">{SISTER_AI.tagline}</p>
+        <p className="mt-2 text-sm text-muted max-w-md">{SISTER_JOBS.tagline}</p>
       </div>
       <a
         href={url}
@@ -43,7 +47,7 @@ export function AiToolsCTA({ role, heading, variant = 'card' }: Props) {
         rel="noopener"
         className="inline-flex items-center gap-2 rounded-md bg-ink text-cream px-5 py-2.5 text-sm font-medium hover:bg-accent-deep transition-colors whitespace-nowrap"
       >
-        Browse on {SISTER_AI.domain} <span aria-hidden>↗</span>
+        Browse on {SISTER_JOBS.domain} <span aria-hidden>↗</span>
       </a>
     </section>
   );

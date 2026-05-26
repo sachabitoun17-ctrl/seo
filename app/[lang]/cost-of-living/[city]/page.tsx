@@ -8,7 +8,7 @@ import { getCountry, getCountryName } from '@/lib/data/countries';
 import { estimateForCity } from '@/lib/data/cost';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { PartnerStack } from '@/components/PartnerStack';
-import { RemoteJobsCTA } from '@/components/RemoteJobsCTA';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -140,7 +140,7 @@ export default async function CostOfLivingDetailPage({ params }: Props) {
         </p>
       </section>
 
-      <RemoteJobsCTA cityName={name} heading={`Need a remote job to fund ${name}?`} />
+      <JobsCTA cityName={name} heading={`Need a remote job to fund ${name}?`} />
       <PartnerStack />
     </article>
   );

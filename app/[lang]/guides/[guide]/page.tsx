@@ -19,6 +19,7 @@ import { CountryCard } from '@/components/CountryCard';
 import { CityCard } from '@/components/CityCard';
 import { VisaCard } from '@/components/VisaCard';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -155,7 +156,10 @@ export default async function GuideDetailPage({ params }: Props) {
         </section>
       )}
 
-      {guide.topic === 'tools' && <AiToolsCTA />}
+      {(guide.topic === 'visas' || guide.topic === 'tax') && (
+        <JobsCTA heading="Have the visa, need the job?" />
+      )}
+      {(guide.topic === 'tools' || guide.topic === 'city-guide') && <AiToolsCTA />}
 
       <PartnerStack />
       <JsonLd data={articleLd} />

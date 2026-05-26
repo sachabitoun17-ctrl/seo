@@ -12,6 +12,7 @@ import { FaqSection } from '@/components/FaqSection';
 import { visaFaqs } from '@/lib/faq-templates';
 import { GuideCard } from '@/components/GuideCard';
 import { getGuidesForVisa } from '@/lib/data/guides';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -203,6 +204,11 @@ export default async function VisaDetailPage({ params }: Props) {
         </ol>
       </section>
 
+      <JobsCTA
+        countryName={cName}
+        countrySlug={country?.slug}
+        heading="Have the visa, need the job?"
+      />
       <PartnerStack categories={['banking', 'insurance']} heading="Set up before you apply" />
       <FaqSection faqs={visaFaqs(visa, params.lang)} />
       <JsonLd data={govPermit} />

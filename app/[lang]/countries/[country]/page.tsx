@@ -14,7 +14,7 @@ import { GuideCard } from '@/components/GuideCard';
 import { FaqSection } from '@/components/FaqSection';
 import { countryFaqs } from '@/lib/faq-templates';
 import { getGuidesForCountry } from '@/lib/data/guides';
-import { RemoteJobsCTA } from '@/components/RemoteJobsCTA';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -152,7 +152,7 @@ export default async function CountryDetailPage({ params }: Props) {
         </section>
       )}
 
-      <RemoteJobsCTA countryName={name} />
+      <JobsCTA countryName={name} countrySlug={country.slug} />
       <PartnerStack />
       <FaqSection faqs={countryFaqs(country, name, params.lang)} />
       <JsonLd data={placeLd} />

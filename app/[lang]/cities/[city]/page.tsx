@@ -20,7 +20,7 @@ import { GuideCard } from '@/components/GuideCard';
 import { FaqSection } from '@/components/FaqSection';
 import { cityFaqs } from '@/lib/faq-templates';
 import { getGuidesForCity } from '@/lib/data/guides';
-import { RemoteJobsCTA } from '@/components/RemoteJobsCTA';
+import { JobsCTA } from '@/components/JobsCTA';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -168,7 +168,7 @@ export default async function CityDetailPage({ params }: Props) {
         </section>
       )}
 
-      <RemoteJobsCTA cityName={name} />
+      <JobsCTA cityName={name} countryName={country ? countryName : undefined} countrySlug={country?.slug} />
       <PartnerStack />
       <FaqSection faqs={cityFaqs(city, name, params.lang)} />
       <JsonLd data={place} />
