@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import type { Dictionary, Locale } from '@/lib/i18n';
 import { Logo } from './Logo';
-import { NewsletterSignup } from './NewsletterSignup';
 import { SISTER_JOBS, SISTER_AI } from '@/lib/sister-sites';
 
 type Props = {
@@ -21,13 +20,17 @@ export function Footer({ locale, dict }: Props) {
         { href: `/${locale}/regions`, label: dict.nav.regions },
         { href: `/${locale}/best`, label: 'Best for…' },
         { href: `/${locale}/themes`, label: 'By lifestyle' },
+        { href: `/${locale}/seasonal`, label: 'By season' },
+        { href: `/${locale}/for`, label: 'By job role' },
       ],
     },
     {
       title: 'Practical',
       links: [
         { href: `/${locale}/visas`, label: dict.nav.visas },
+        { href: `/${locale}/visas/for`, label: 'Visas by nationality' },
         { href: `/${locale}/cost-of-living`, label: 'Cost of living' },
+        { href: `/${locale}/coworking`, label: 'Coworking by city' },
         { href: `/${locale}/glossary`, label: 'Glossary' },
         { href: `/${locale}/guides`, label: dict.nav.guides },
       ],
@@ -38,6 +41,7 @@ export function Footer({ locale, dict }: Props) {
         { href: `/${locale}/about`, label: dict.nav.about },
         { href: `/${locale}/contact`, label: dict.footer.contact },
         { href: `/${locale}/legal`, label: dict.footer.legal },
+        { href: `/${locale}/search`, label: 'Search' },
       ],
     },
   ];
@@ -63,21 +67,6 @@ export function Footer({ locale, dict }: Props) {
             </ul>
           </div>
         ))}
-      </div>
-
-      <div className="border-t border-line/70 bg-cream">
-        <div className="max-w-container mx-auto px-5 sm:px-8 py-10 grid gap-8 md:grid-cols-2 md:items-center">
-          <div>
-            <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Newsletter</p>
-            <h3 className="mt-2 text-2xl font-semibold tracking-tightish font-display">
-              One slow-travel email a month.
-            </h3>
-            <p className="mt-2 text-sm text-muted">
-              New visa rules, trending nomad cities, the best cost-of-living updates.
-            </p>
-          </div>
-          <NewsletterSignup variant="inline" publication={process.env.NEXT_PUBLIC_BEEHIIV_PUBLICATION_ID} />
-        </div>
       </div>
 
       <div className="border-t border-line/70 bg-accent-soft/40">

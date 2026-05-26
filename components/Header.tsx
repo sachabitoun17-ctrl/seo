@@ -21,6 +21,7 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/for`, label: 'By job role' },
     { href: `/${locale}/seasonal`, label: 'By season' },
     { href: `/${locale}/cost-of-living`, label: 'Cost of living' },
+    { href: `/${locale}/coworking`, label: 'Coworking' },
     { href: `/${locale}/regions`, label: dict.nav.regions },
     { href: `/${locale}/best`, label: 'Best for…' },
     { href: `/${locale}/glossary`, label: 'Glossary' },

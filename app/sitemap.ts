@@ -12,6 +12,7 @@ import { getAllThemes } from '@/lib/data/themes';
 import { getAllNationalities } from '@/lib/data/nationalities';
 import { getAllSeasons } from '@/lib/data/seasons';
 import { getAllRoles } from '@/lib/data/roles';
+import { getAllCoworking } from '@/lib/data/coworking';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -164,6 +165,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: 'monthly',
         priority: 0.8,
+      });
+    }
+
+    // Coworking by city
+    entries.push({ url: `${SITE_URL}/${lang}/coworking`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 });
+    for (const c of getAllCoworking()) {
+      entries.push({
+        url: `${SITE_URL}/${lang}/coworking/${c.citySlug}`,
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: 0.7,
       });
     }
   }
