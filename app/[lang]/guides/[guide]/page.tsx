@@ -20,6 +20,8 @@ import { CityCard } from '@/components/CityCard';
 import { VisaCard } from '@/components/VisaCard';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
 import { JobsCTA } from '@/components/JobsCTA';
+import { TopicCallouts } from '@/components/TopicCallouts';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -103,6 +105,8 @@ export default async function GuideDetailPage({ params }: Props) {
         <p className="mt-4 text-lg text-muted leading-relaxed">{description}</p>
       </header>
 
+      <TopicCallouts guide={guide} locale={params.lang} />
+
       {guide.faq.length > 0 && (
         <section className="mt-12 max-w-3xl">
           <h2 className="text-xl font-semibold tracking-tightish">Frequently asked</h2>
@@ -160,6 +164,8 @@ export default async function GuideDetailPage({ params }: Props) {
         <JobsCTA locale={params.lang} heading="Have the visa, need the job?" />
       )}
       {(guide.topic === 'tools' || guide.topic === 'city-guide') && <AiToolsCTA locale={params.lang} />}
+
+      <SlateRemoteBanner locale={params.lang} className="mt-12" size="compact" />
 
       <PartnerStack
         locale={params.lang}
