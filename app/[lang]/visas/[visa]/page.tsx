@@ -36,9 +36,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : 'no income minimum';
   return buildPageMetadata({
     locale: params.lang,
-    title: `${visa.name}: requirements, cost, how to apply (2026)`,
-    description: `${cName} ${visa.type.replace('-', ' ')} visa, ${incomeStr}, ${visa.durationMonths} months. Tax, family, processing time.`,
+    title: `${visa.name} (2026): how to apply`,
+    description: `Apply for the ${visa.name} in ${cName}. ${incomeStr}, ${visa.durationMonths} months duration, ${visa.processingDays}-day processing. Tax and family rules covered.`,
     pathForLocale: (l) => `/${l}/visas/${visa.slug}`,
+    ogType: 'article',
   });
 }
 

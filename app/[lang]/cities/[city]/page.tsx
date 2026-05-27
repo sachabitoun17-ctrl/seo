@@ -40,9 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = getCityName(city, params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: `${name} for digital nomads 2026: cost, wifi, visa`,
-    description: `${name}: rent, internet speed, safety, weather and visa guide. Nomad score ${city.nomadScore}/10.`,
+    title: `${name} digital nomad guide 2026`,
+    description: `${name} for nomads (score ${city.nomadScore}/10): rent, ${city.internetMbps} Mbps internet, safety, weather, top neighborhoods, coworking, monthly budget and visa pathways.`,
     pathForLocale: (l) => `/${l}/cities/${city.slug}`,
+    ogType: 'article',
   });
 }
 

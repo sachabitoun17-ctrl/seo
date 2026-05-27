@@ -34,9 +34,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = getCountryName(country, params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: `${name} for digital nomads 2026: visa, cost, internet`,
-    description: `Living in ${name} as a nomad: visa options, cost of living, internet speed, safety, weather, top cities.`,
+    title: `${name} digital nomad guide 2026`,
+    description: `${name} for nomads: digital nomad visa, cost of living index ${country.costIndex}/100, ${country.internetMbps} Mbps avg internet, safety, weather, top cities and what it actually costs to live there.`,
     pathForLocale: (l) => `/${l}/countries/${country.slug}`,
+    ogType: 'article',
   });
 }
 

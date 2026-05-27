@@ -156,6 +156,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Search page
     entries.push({ url: `${SITE_URL}/${lang}/search`, lastModified: now, changeFrequency: 'weekly', priority: 0.5 });
+    // Tools (affiliate directory) — high commercial intent
+    entries.push({ url: `${SITE_URL}/${lang}/tools`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 });
 
     // Job-role pages
     entries.push({ url: `${SITE_URL}/${lang}/for`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 });

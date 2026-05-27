@@ -147,7 +147,7 @@ export const THEMES: Theme[] = [
       pl: 'Najlepsze miasta nadmorskie dla nomadów',
     },
     description: 'Sand under your feet 5 days a week. Cities where the beach is a 15-minute walk from your laptop.',
-    citySlugs: ['lisbon', 'madeira', 'malaga', 'phuket', 'koh-phangan', 'bali', 'da-nang', 'cape-town', 'cartagena', 'playa-del-carmen', 'tulum', 'florianopolis', 'antalya', 'barbados'],
+    citySlugs: ['lisbon', 'madeira', 'malaga', 'phuket', 'koh-phangan', 'bali', 'da-nang', 'cape-town', 'cartagena', 'playa-del-carmen', 'tulum', 'florianopolis', 'antalya'],
   },
   {
     slug: 'mountain-cities',

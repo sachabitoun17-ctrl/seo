@@ -31,6 +31,7 @@ export function Footer({ locale, dict }: Props) {
         { href: `/${locale}/visas/for`, label: 'Visas by nationality' },
         { href: `/${locale}/cost-of-living`, label: 'Cost of living' },
         { href: `/${locale}/coworking`, label: 'Coworking by city' },
+        { href: `/${locale}/tools`, label: 'Tools we use' },
         { href: `/${locale}/glossary`, label: 'Glossary' },
         { href: `/${locale}/guides`, label: dict.nav.guides },
       ],

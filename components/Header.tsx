@@ -24,6 +24,7 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/coworking`, label: 'Coworking' },
     { href: `/${locale}/regions`, label: dict.nav.regions },
     { href: `/${locale}/best`, label: 'Best for…' },
+    { href: `/${locale}/tools`, label: 'Tools' },
     { href: `/${locale}/glossary`, label: 'Glossary' },
     { href: `/${locale}/search`, label: 'Search' },
     { href: `/${locale}/about`, label: dict.nav.about },

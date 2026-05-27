@@ -57,7 +57,7 @@ export const NATIONALITIES: Nationality[] = [
     name: { en: 'Indian citizens', fr: 'Citoyens indiens', es: 'Ciudadanos indios', pt: 'Cidadãos indianos', it: 'Cittadini indiani', de: 'Indische Bürger', pl: 'Obywatele Indii' },
     passportName: 'Indian passport',
     visaFreeCount: 60,
-    eligibleVisaSlugs: ['thailand-dtv', 'uae-dubai-remote-work', 'malaysia-de-rantau', 'indonesia-b211a', 'sri-lanka-nomad', 'mauritius-premium', 'georgia-visa-free'],
+    eligibleVisaSlugs: ['thailand-dtv', 'uae-dubai-remote-work', 'malaysia-de-rantau', 'indonesia-b211a', 'sri-lanka-nomad', 'mauritius-premium'],
     note: 'Indian passport requires advance visas for most destinations. DNVs are the cleanest path. Strong eligibility for tax-friendly Gulf countries and SEA neighbours.',
   },
   {
