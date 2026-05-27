@@ -13,6 +13,8 @@ import { visaFaqs } from '@/lib/faq-templates';
 import { GuideCard } from '@/components/GuideCard';
 import { getGuidesForVisa } from '@/lib/data/guides';
 import { JobsCTA } from '@/components/JobsCTA';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -204,6 +206,18 @@ export default async function VisaDetailPage({ params }: Props) {
           ))}
         </ol>
       </section>
+
+      <div className="mt-10 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="insurance" />
+      </div>
+
+      <SlateRemoteBanner
+        locale={params.lang}
+        countrySlug={country?.slug}
+        countryName={cName}
+        className="mt-8"
+      />
 
       <JobsCTA
         locale={params.lang}

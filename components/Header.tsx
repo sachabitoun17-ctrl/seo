@@ -13,6 +13,7 @@ type Props = {
 export function Header({ locale, dict }: Props) {
   const jobsUrl = slateremoteHomeUrl(locale);
   const nav = [
+    { href: `/${locale}/finder`, label: 'Find my city' },
     { href: `/${locale}/countries`, label: dict.nav.countries },
     { href: `/${locale}/cities`, label: dict.nav.cities },
     { href: `/${locale}/visas`, label: dict.nav.visas },

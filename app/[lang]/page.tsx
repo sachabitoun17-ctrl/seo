@@ -16,6 +16,8 @@ import { LogoMark } from '@/components/Logo';
 import { flagEmoji } from '@/lib/flag';
 import { cityPhoto, countryPhoto, flagSvg } from '@/lib/images';
 import { getCity, getCityName } from '@/lib/data/cities';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const runtime = 'edge';
 
@@ -85,6 +87,13 @@ export default async function HomePage({ params }: Props) {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
+                  href={`/${params.lang}/finder`}
+                  className="inline-flex items-center gap-2 rounded-md bg-accent text-cream px-6 py-3 text-sm font-semibold hover:bg-accent-deep transition-colors shadow-lg"
+                >
+                  Find my best city (60s quiz)
+                  <span aria-hidden>→</span>
+                </Link>
+                <Link
                   href={`/${params.lang}/cities`}
                   className="inline-flex items-center gap-2 rounded-md bg-cream text-ink px-6 py-3 text-sm font-semibold hover:bg-accent hover:text-cream transition-colors"
                 >
@@ -120,6 +129,55 @@ export default async function HomePage({ params }: Props) {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* The pitch — three things this site does */}
+      <section className="mt-16 grid gap-4 lg:grid-cols-3">
+        <Link
+          href={`/${params.lang}/finder`}
+          className="group block rounded-2xl border border-line bg-paper p-6 card-hover"
+        >
+          <div className="text-2xl">🎯</div>
+          <h3 className="mt-3 text-lg font-semibold tracking-tightish">Find your basecamp</h3>
+          <p className="mt-2 text-sm text-muted leading-relaxed">
+            6-question quiz across {cities.length}+ cities. Budget, internet, climate, visa — get
+            your top 9 matches in 60 seconds.
+          </p>
+          <span className="mt-3 inline-block text-sm font-semibold text-accent">Take the quiz →</span>
+        </Link>
+        <Link
+          href={`/${params.lang}/cities`}
+          className="group block rounded-2xl border border-line bg-paper p-6 card-hover"
+        >
+          <div className="text-2xl">🔍</div>
+          <h3 className="mt-3 text-lg font-semibold tracking-tightish">Filter every city</h3>
+          <p className="mt-2 text-sm text-muted leading-relaxed">
+            Cost index, Mbps, safety, region, nomad score. Sliders + chips. Sort by what
+            actually matters for your trip.
+          </p>
+          <span className="mt-3 inline-block text-sm font-semibold text-accent">Open the filter →</span>
+        </Link>
+        <a
+          href={`https://slateremote.com/${params.lang}`}
+          target="_blank"
+          rel="noopener"
+          className="group block rounded-2xl border border-ink bg-ink text-cream p-6 card-hover"
+        >
+          <div className="text-2xl">💼</div>
+          <h3 className="mt-3 text-lg font-semibold tracking-tightish">Find the remote job</h3>
+          <p className="mt-2 text-sm text-cream/80 leading-relaxed">
+            Slate Remote — our sister site — aggregates every remote role from every major
+            board. One search, all sources, refreshed daily.
+          </p>
+          <span className="mt-3 inline-block text-sm font-semibold text-accent">Browse jobs ↗</span>
+        </a>
+      </section>
+
+      {/* High-revenue affiliate banners */}
+      <section className="mt-12 grid gap-4 lg:grid-cols-3">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="insurance" />
+        <PromoBanner locale={params.lang} variant="esim" />
       </section>
 
       {/* Trending */}
@@ -250,6 +308,8 @@ export default async function HomePage({ params }: Props) {
           ))}
         </ul>
       </section>
+
+      <SlateRemoteBanner locale={params.lang} className="mt-20" />
 
       {/* CTA strip */}
       <section className="mt-24 rounded-3xl bg-paper-gradient border border-line p-10 sm:p-14 text-center">

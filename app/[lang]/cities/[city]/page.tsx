@@ -22,6 +22,8 @@ import { cityFaqs } from '@/lib/faq-templates';
 import { getGuidesForCity } from '@/lib/data/guides';
 import { JobsCTA } from '@/components/JobsCTA';
 import { HeroImage } from '@/components/HeroImage';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 import { cityPhoto, flagSvg } from '@/lib/images';
 
 export const dynamicParams = false;
@@ -106,6 +108,18 @@ export default async function CityDetailPage({ params }: Props) {
           </div>
         ))}
       </section>
+
+      <div className="mt-8 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="esim" />
+        <PromoBanner locale={params.lang} variant="insurance" />
+      </div>
+
+      <SlateRemoteBanner
+        locale={params.lang}
+        countrySlug={country?.slug}
+        countryName={country ? countryName : undefined}
+        className="mt-8"
+      />
 
       {city.neighborhoods.length > 0 && (
         <section className="mt-12 max-w-3xl">

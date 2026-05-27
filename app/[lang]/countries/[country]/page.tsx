@@ -16,6 +16,8 @@ import { countryFaqs } from '@/lib/faq-templates';
 import { getGuidesForCountry } from '@/lib/data/guides';
 import { JobsCTA } from '@/components/JobsCTA';
 import { HeroImage } from '@/components/HeroImage';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 import { countryPhoto, flagSvg } from '@/lib/images';
 
 export const dynamicParams = false;
@@ -95,6 +97,18 @@ export default async function CountryDetailPage({ params }: Props) {
           </div>
         ))}
       </section>
+
+      <div className="mt-8 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="insurance" />
+      </div>
+
+      <SlateRemoteBanner
+        locale={params.lang}
+        countrySlug={country.slug}
+        countryName={name}
+        className="mt-8"
+      />
 
       <section className="mt-12 max-w-3xl">
         <h2 className="text-xl font-semibold tracking-tightish">{dict.country.visa}</h2>

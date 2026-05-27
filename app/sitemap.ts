@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Index pages
     entries.push({ url: `${SITE_URL}/${lang}/countries`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 });
     entries.push({ url: `${SITE_URL}/${lang}/cities`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 });
+    entries.push({ url: `${SITE_URL}/${lang}/finder`, lastModified: now, changeFrequency: 'monthly', priority: 0.95 });
     entries.push({ url: `${SITE_URL}/${lang}/visas`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 });
     entries.push({ url: `${SITE_URL}/${lang}/compare`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 });
     entries.push({ url: `${SITE_URL}/${lang}/guides`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 });
