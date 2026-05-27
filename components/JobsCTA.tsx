@@ -1,6 +1,8 @@
-import { SISTER_JOBS, slateremoteCountryUrl } from '@/lib/sister-sites';
+import type { Locale } from '@/lib/i18n';
+import { SISTER_JOBS, slateremoteCountryUrl, slateremoteHomeUrl } from '@/lib/sister-sites';
 
 type Props = {
+  locale?: Locale;
   countrySlug?: string;
   countryName?: string;
   cityName?: string;
@@ -8,8 +10,8 @@ type Props = {
   variant?: 'card' | 'inline';
 };
 
-export function JobsCTA({ countrySlug, countryName, cityName, heading, variant = 'card' }: Props) {
-  const url = countrySlug ? slateremoteCountryUrl(countrySlug) : SISTER_JOBS.url;
+export function JobsCTA({ locale, countrySlug, countryName, cityName, heading, variant = 'card' }: Props) {
+  const url = countrySlug ? slateremoteCountryUrl(countrySlug, locale) : slateremoteHomeUrl(locale);
   const computedHeading =
     heading ||
     (cityName

@@ -60,7 +60,7 @@ export default async function ThemeDetailPage({ params }: Props) {
         </ul>
       </section>
 
-      <JobsCTA />
+      <JobsCTA locale={params.lang} />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'accommodation', 'fitness-credits']}

@@ -1,13 +1,15 @@
-import { SISTER_AI, aiByJobRoleUrl } from '@/lib/sister-sites';
+import type { Locale } from '@/lib/i18n';
+import { SISTER_AI, aiByJobRoleUrl, aiByJobHomeUrl } from '@/lib/sister-sites';
 
 type Props = {
+  locale?: Locale;
   role?: string;
   heading?: string;
   variant?: 'card' | 'inline';
 };
 
-export function AiToolsCTA({ role, heading, variant = 'card' }: Props) {
-  const url = role ? aiByJobRoleUrl(role) : SISTER_AI.url;
+export function AiToolsCTA({ locale, role, heading, variant = 'card' }: Props) {
+  const url = role ? aiByJobRoleUrl(role, locale) : aiByJobHomeUrl(locale);
   const computedHeading =
     heading ||
     (role

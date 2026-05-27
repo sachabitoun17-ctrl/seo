@@ -120,7 +120,7 @@ export default async function ComparePairPage({ params }: Props) {
         <p className="mt-3 leading-relaxed">{comp.verdict}</p>
       </section>
 
-      <JobsCTA heading={`Remote roles in ${a.name} or ${b.name}?`} />
+      <JobsCTA locale={params.lang} heading={`Remote roles in ${a.name} or ${b.name}?`} />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'vpn', 'accommodation']}

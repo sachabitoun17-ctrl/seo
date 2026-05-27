@@ -78,7 +78,7 @@ export default async function NationalityPage({ params }: Props) {
         </ul>
       </section>
 
-      <JobsCTA heading={`Remote job for ${name}? See sister site.`} />
+      <JobsCTA locale={params.lang} heading={`Remote job for ${name}? See sister site.`} />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'ai-llm', 'earn-while-traveling']}

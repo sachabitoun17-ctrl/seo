@@ -159,7 +159,7 @@ export default async function CountryDetailPage({ params }: Props) {
         </section>
       )}
 
-      <JobsCTA countryName={name} countrySlug={country.slug} />
+      <JobsCTA locale={params.lang} countryName={name} countrySlug={country.slug} />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'vpn', 'accommodation', 'travel-meta']}

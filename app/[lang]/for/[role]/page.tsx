@@ -65,8 +65,8 @@ export default async function RoleDetailPage({ params }: Props) {
         </ul>
       </section>
 
-      <JobsCTA heading={`Remote ${r.slug.replace(/s$/, '')} jobs from across the web`} />
-      <AiToolsCTA role={r.slug.replace(/s$/, '')} />
+      <JobsCTA locale={params.lang} heading={`Remote ${r.slug.replace(/s$/, '')} jobs from across the web`} />
+      <AiToolsCTA locale={params.lang} role={r.slug.replace(/s$/, '')} />
       <PartnerStack
         locale={params.lang}
         categories={['productivity', 'ai-llm', 'voice-ai', 'earn-while-traveling', 'newsletter', 'banking']}

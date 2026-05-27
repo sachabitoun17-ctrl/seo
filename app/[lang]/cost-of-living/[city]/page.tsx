@@ -140,7 +140,7 @@ export default async function CostOfLivingDetailPage({ params }: Props) {
         </p>
       </section>
 
-      <JobsCTA cityName={name} heading={`Need a remote job to fund ${name}?`} />
+      <JobsCTA locale={params.lang} cityName={name} heading={`Need a remote job to fund ${name}?`} />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'accommodation', 'mobility-credits', 'esim', 'insurance']}

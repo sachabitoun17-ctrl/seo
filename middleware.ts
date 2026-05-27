@@ -6,15 +6,6 @@ export const config = {
   matcher: ['/((?!_next|api|sitemap.xml|robots.txt|icon.svg|llms.txt|opengraph-image|.*\\.[a-z0-9]+$).*)'],
 };
 
-function pickLocale(req: NextRequest): string {
-  const header = req.headers.get('accept-language') || '';
-  for (const part of header.split(',')) {
-    const tag = part.trim().split(';')[0].toLowerCase().slice(0, 2);
-    if ((LOCALES as readonly string[]).includes(tag)) return tag;
-  }
-  return DEFAULT_LOCALE;
-}
-
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
   // If path is already prefixed by a locale, do nothing
@@ -22,8 +13,9 @@ export function middleware(req: NextRequest) {
   if ((LOCALES as readonly string[]).includes(first)) {
     return NextResponse.next();
   }
-  // Otherwise redirect (root or any unprefixed path) to /<locale> + remainder
-  const locale = pickLocale(req);
-  const target = new URL(`/${locale}${pathname === '/' ? '' : pathname}`, req.url);
+  // Otherwise redirect (root or any unprefixed path) to the default locale (English).
+  // We deliberately do NOT auto-detect from Accept-Language: English is the canonical
+  // entry point. Users can switch via the LangSwitcher.
+  const target = new URL(`/${DEFAULT_LOCALE}${pathname === '/' ? '' : pathname}`, req.url);
   return NextResponse.redirect(target, 307);
 }

@@ -3,7 +3,7 @@ import { LangSwitcher } from './LangSwitcher';
 import { Logo } from './Logo';
 import { MobileMenu } from './MobileMenu';
 import type { Dictionary, Locale } from '@/lib/i18n';
-import { SISTER_JOBS } from '@/lib/sister-sites';
+import { SISTER_JOBS, slateremoteHomeUrl } from '@/lib/sister-sites';
 
 type Props = {
   locale: Locale;
@@ -11,6 +11,7 @@ type Props = {
 };
 
 export function Header({ locale, dict }: Props) {
+  const jobsUrl = slateremoteHomeUrl(locale);
   const nav = [
     { href: `/${locale}/countries`, label: dict.nav.countries },
     { href: `/${locale}/cities`, label: dict.nav.cities },
@@ -28,7 +29,7 @@ export function Header({ locale, dict }: Props) {
     { href: `/${locale}/glossary`, label: 'Glossary' },
     { href: `/${locale}/search`, label: 'Search' },
     { href: `/${locale}/about`, label: dict.nav.about },
-    { href: SISTER_JOBS.url, label: 'Find remote jobs ↗', external: true },
+    { href: jobsUrl, label: 'Find remote jobs ↗', external: true },
   ];
   const desktop = nav.slice(0, 5);
   return (
@@ -44,7 +45,7 @@ export function Header({ locale, dict }: Props) {
             </Link>
           ))}
           <a
-            href={SISTER_JOBS.url}
+            href={jobsUrl}
             target="_blank"
             rel="noopener"
             className="text-accent hover:text-accent-deep transition-colors font-medium"

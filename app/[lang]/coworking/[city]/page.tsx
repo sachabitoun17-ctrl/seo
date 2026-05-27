@@ -115,7 +115,7 @@ export default async function CoworkingDetailPage({ params }: Props) {
         </p>
       </section>
 
-      <JobsCTA cityName={name} countryName={countryName} countrySlug={country?.slug} />
+      <JobsCTA locale={params.lang} cityName={name} countryName={countryName} countrySlug={country?.slug} />
       <PartnerStack
         locale={params.lang}
         categories={['productivity', 'ai-llm', 'voice-ai', 'esim', 'vpn']}

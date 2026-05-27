@@ -165,7 +165,7 @@ export default async function CityDetailPage({ params }: Props) {
         </section>
       )}
 
-      <JobsCTA cityName={name} countryName={country ? countryName : undefined} countrySlug={country?.slug} />
+      <JobsCTA locale={params.lang} cityName={name} countryName={country ? countryName : undefined} countrySlug={country?.slug} />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'accommodation', 'vpn', 'travel-meta']}

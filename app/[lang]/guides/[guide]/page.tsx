@@ -157,9 +157,9 @@ export default async function GuideDetailPage({ params }: Props) {
       )}
 
       {(guide.topic === 'visas' || guide.topic === 'tax') && (
-        <JobsCTA heading="Have the visa, need the job?" />
+        <JobsCTA locale={params.lang} heading="Have the visa, need the job?" />
       )}
-      {(guide.topic === 'tools' || guide.topic === 'city-guide') && <AiToolsCTA />}
+      {(guide.topic === 'tools' || guide.topic === 'city-guide') && <AiToolsCTA locale={params.lang} />}
 
       <PartnerStack
         locale={params.lang}

@@ -1,3 +1,6 @@
+import type { Locale } from '@/lib/i18n';
+import { LOCALES } from '@/lib/i18n';
+
 export const SISTER_JOBS = {
   name: 'Slate Remote',
   domain: 'slateremote.com',
@@ -21,17 +24,34 @@ function slug(s: string): string {
     .replace(/(^-|-$)/g, '');
 }
 
-export function slateremoteCountryUrl(country?: string): string {
-  if (!country) return SISTER_JOBS.url;
-  return `${SISTER_JOBS.url}/en/locations/${slug(country)}`;
+/** Pick a locale supported by the sister sites (same 7 locales today). Falls back to 'en'. */
+function pickSisterLocale(locale?: Locale | string): Locale {
+  if (locale && (LOCALES as readonly string[]).includes(locale)) return locale as Locale;
+  return 'en';
 }
 
-export function slateremoteRoleUrl(role?: string): string {
-  if (!role) return SISTER_JOBS.url;
-  return `${SISTER_JOBS.url}/en/jobs/${slug(role)}`;
+export function slateremoteHomeUrl(locale?: Locale | string): string {
+  return `${SISTER_JOBS.url}/${pickSisterLocale(locale)}`;
 }
 
-export function aiByJobRoleUrl(role?: string): string {
-  if (!role) return SISTER_AI.url;
-  return `${SISTER_AI.url}/en/jobs/${slug(role)}`;
+export function aiByJobHomeUrl(locale?: Locale | string): string {
+  return `${SISTER_AI.url}/${pickSisterLocale(locale)}`;
+}
+
+export function slateremoteCountryUrl(country?: string, locale?: Locale | string): string {
+  const l = pickSisterLocale(locale);
+  if (!country) return `${SISTER_JOBS.url}/${l}`;
+  return `${SISTER_JOBS.url}/${l}/locations/${slug(country)}`;
+}
+
+export function slateremoteRoleUrl(role?: string, locale?: Locale | string): string {
+  const l = pickSisterLocale(locale);
+  if (!role) return `${SISTER_JOBS.url}/${l}`;
+  return `${SISTER_JOBS.url}/${l}/jobs/${slug(role)}`;
+}
+
+export function aiByJobRoleUrl(role?: string, locale?: Locale | string): string {
+  const l = pickSisterLocale(locale);
+  if (!role) return `${SISTER_AI.url}/${l}`;
+  return `${SISTER_AI.url}/${l}/jobs/${slug(role)}`;
 }

@@ -206,6 +206,7 @@ export default async function VisaDetailPage({ params }: Props) {
       </section>
 
       <JobsCTA
+        locale={params.lang}
         countryName={cName}
         countrySlug={country?.slug}
         heading="Have the visa, need the job?"

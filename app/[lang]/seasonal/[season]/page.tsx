@@ -84,7 +84,7 @@ export default async function SeasonDetailPage({ params }: Props) {
         </section>
       )}
 
-      <JobsCTA />
+      <JobsCTA locale={params.lang} />
       <PartnerStack
         locale={params.lang}
         categories={['travel-meta', 'accommodation', 'insurance', 'esim', 'banking']}

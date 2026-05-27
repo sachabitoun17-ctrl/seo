@@ -64,7 +64,7 @@ export default async function RegionDetailPage({ params }: Props) {
         </ul>
       </section>
 
-      <JobsCTA heading={`Remote roles across ${name}`} />
+      <JobsCTA locale={params.lang} heading={`Remote roles across ${name}`} />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'travel-meta', 'accommodation']}
