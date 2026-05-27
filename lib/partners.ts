@@ -43,12 +43,39 @@ const SAFETYWING =
 const TRAVELPAYOUTS = process.env.NEXT_PUBLIC_AFF_TRAVELPAYOUTS || 'TOKEN_TRAVELPAYOUTS';
 const VIATOR = process.env.NEXT_PUBLIC_AFF_VIATOR || 'TOKEN_VIATOR';
 
+// Wise has per-currency affiliate links. We route by locale to the
+// most likely target currency for the audience. JPY/AUD/GBP aren't
+// tied to any of our 7 locales today but the helper is ready for
+// future additions (e.g. en-AU, en-GB, ja).
+const WISE_LINKS = {
+  EUR: 'https://wise.prf.hn/click/camref:1100l5KwDi',
+  USD: 'https://wise.prf.hn/click/camref:1100l5KwDm',
+  JPY: 'https://wise.prf.hn/click/camref:1100l5KwDk',
+  AUD: 'https://wise.prf.hn/click/camref:1100l5KwDh',
+  GBP: 'https://wise.prf.hn/click/camref:1100l5KwDj',
+} as const;
+
+const WISE_BY_LOCALE: Partial<Record<Locale, keyof typeof WISE_LINKS>> = {
+  fr: 'EUR',
+  es: 'EUR',
+  pt: 'EUR',
+  it: 'EUR',
+  de: 'EUR',
+  pl: 'EUR',
+  en: 'USD',
+};
+
+export function wiseUrl(locale?: Locale | string): string {
+  const currency = locale && WISE_BY_LOCALE[locale as Locale];
+  return WISE_LINKS[currency || 'USD'];
+}
+
 export const PARTNERS: Partner[] = [
   // Banking
   {
     id: 'wise',
     name: 'Wise',
-    url: 'https://wise.prf.hn/click/camref:1100l5KwDi',
+    url: WISE_LINKS.USD,
     blurb: 'Multi-currency account with real exchange rates. Receive in 40+ currencies.',
     category: 'banking',
     tier: 'primary',
@@ -326,6 +353,16 @@ export const PARTNERS: Partner[] = [
 
 export function getPartner(id: string): Partner | undefined {
   return PARTNERS.find((p) => p.id === id);
+}
+
+/**
+ * Some partners (Wise) have per-currency affiliate links that we route by
+ * locale. Use this at render time so each page links to the variant most
+ * relevant to the visitor.
+ */
+export function resolvePartnerUrl(p: Partner, locale?: Locale | string): string {
+  if (p.id === 'wise') return wiseUrl(locale);
+  return p.url;
 }
 
 export function getPartnersByCategory(category: PartnerCategory): Partner[] {

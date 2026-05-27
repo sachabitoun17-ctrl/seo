@@ -1,4 +1,4 @@
-import { getPartners, type Partner, type PartnerCategory } from '@/lib/partners';
+import { getPartners, resolvePartnerUrl, type Partner, type PartnerCategory } from '@/lib/partners';
 import { partnerLogo } from '@/lib/images';
 import type { Locale } from '@/lib/i18n';
 
@@ -21,17 +21,19 @@ export function FeaturedPartners({ locale, categories, heading = 'Set up in 2 mi
     <section className="mt-6 rounded-2xl border border-accent-soft bg-accent-soft/30 px-5 py-5 sm:px-6 sm:py-6">
       <p className="text-[10px] uppercase tracking-widest text-accent-deep font-semibold">{heading}</p>
       <ul className="mt-3 grid gap-2 sm:grid-cols-3">
-        {partners.map((p: Partner) => (
+        {partners.map((p: Partner) => {
+          const url = resolvePartnerUrl(p, locale);
+          return (
           <li key={p.id}>
             <a
-              href={p.url}
+              href={url}
               target="_blank"
               rel="sponsored noopener"
               className="flex items-start gap-2 rounded-lg bg-paper border border-line px-4 py-3 hover:border-ink card-hover h-full"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={partnerLogo(p.url)}
+                src={partnerLogo(url)}
                 alt=""
                 width={28}
                 height={28}
@@ -47,7 +49,8 @@ export function FeaturedPartners({ locale, categories, heading = 'Set up in 2 mi
               </div>
             </a>
           </li>
-        ))}
+          );
+        })}
       </ul>
     </section>
   );

@@ -1,4 +1,4 @@
-import { getPartners, type PartnerCategory } from '@/lib/partners';
+import { getPartners, resolvePartnerUrl, type PartnerCategory } from '@/lib/partners';
 import { partnerLogo } from '@/lib/images';
 import type { Locale } from '@/lib/i18n';
 
@@ -22,17 +22,19 @@ export function PartnerStack({
     <section className="mt-12 border-t border-line pt-8">
       <h2 className="text-sm uppercase tracking-widest text-muted">{heading}</h2>
       <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-        {partners.map((p) => (
+        {partners.map((p) => {
+          const url = resolvePartnerUrl(p, locale);
+          return (
           <li key={p.id}>
             <a
-              href={p.url}
+              href={url}
               target="_blank"
               rel="sponsored noopener"
               className="flex items-start gap-3 rounded-lg border border-line bg-paper px-4 py-3 card-hover"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={partnerLogo(p.url)}
+                src={partnerLogo(url)}
                 alt=""
                 width={32}
                 height={32}
@@ -50,7 +52,8 @@ export function PartnerStack({
               </div>
             </a>
           </li>
-        ))}
+          );
+        })}
       </ul>
     </section>
   );
