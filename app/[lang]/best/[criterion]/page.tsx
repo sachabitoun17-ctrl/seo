@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import {
   getAllCriteria,
@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BestCriterionPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const criterion = getCriterion(params.criterion);
   if (!criterion) notFound();
   const title = getCriterionTitle(criterion, params.lang);
@@ -48,8 +49,8 @@ export default async function BestCriterionPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/best`, label: 'Best' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/best`, label: dict.nav.bestFor },
         { href: `/${params.lang}/best/${criterion.slug}`, label: title },
       ]} />
 

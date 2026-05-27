@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllRoles, getRole, getRoleName, getCitiesForRole } from '@/lib/data/roles';
 import { CityCard } from '@/components/CityCard';
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function RoleDetailPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const r = getRole(params.role);
   if (!r) notFound();
   const name = getRoleName(r, params.lang);
@@ -43,8 +44,8 @@ export default async function RoleDetailPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/for`, label: 'By job role' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/for`, label: dict.nav.byJobRole },
         { href: `/${params.lang}/for/${r.slug}`, label: name },
       ]} />
 

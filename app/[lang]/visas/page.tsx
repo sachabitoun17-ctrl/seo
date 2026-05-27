@@ -4,6 +4,8 @@ import { buildPageMetadata } from '@/lib/seo';
 import { getAllVisas } from '@/lib/data/visas';
 import { VisaCard } from '@/components/VisaCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const runtime = 'edge';
 
@@ -56,6 +58,12 @@ export default async function VisasIndexPage({ params }: Props) {
           </li>
         ))}
       </ul>
+
+      <div className="mt-14 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="insurance" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} className="mt-10" />
     </div>
   );
 }

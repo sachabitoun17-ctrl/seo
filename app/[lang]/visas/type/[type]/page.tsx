@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getVisasByType, type Visa } from '@/lib/data/visas';
 import { VisaCard } from '@/components/VisaCard';
@@ -44,13 +44,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function VisaTypePage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   if (!VALID.includes(params.type)) notFound();
   const visas = getVisasByType(params.type);
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/visas`, label: 'Visas' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/visas`, label: dict.nav.visas },
         { href: `/${params.lang}/visas/type/${params.type}`, label: TITLES[params.type] },
       ]} />
       <header className="max-w-3xl mt-4">

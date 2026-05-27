@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { type Locale } from '@/lib/i18n';
+import { getDictionary, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllCoworking, getCoworkingCities } from '@/lib/data/coworking';
 import { getCityName } from '@/lib/data/cities';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { flagEmoji } from '@/lib/flag';
 import { getCountry } from '@/lib/data/countries';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const runtime = 'edge';
 
@@ -22,13 +24,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function CoworkingIndexPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const entries = getAllCoworking();
   const cities = getCoworkingCities();
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/coworking`, label: 'Coworking' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/coworking`, label: dict.nav.coworking },
       ]} />
       <header className="max-w-3xl mt-4">
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tightish font-display">Coworking by city</h1>
@@ -59,6 +62,12 @@ export default async function CoworkingIndexPage({ params }: Props) {
           );
         })}
       </ul>
+
+      <div className="mt-14 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="esim" />
+        <PromoBanner locale={params.lang} variant="vpn" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} className="mt-10" />
     </div>
   );
 }

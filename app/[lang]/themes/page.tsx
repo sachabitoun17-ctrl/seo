@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { type Locale } from '@/lib/i18n';
+import { getDictionary, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllThemes, getThemeTitle } from '@/lib/data/themes';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const runtime = 'edge';
 
@@ -19,12 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ThemesIndexPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const themes = getAllThemes();
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/themes`, label: 'Themes' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/themes`, label: dict.nav.themes },
       ]} />
       <header className="max-w-3xl mt-4">
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tightish font-display">
@@ -48,6 +51,12 @@ export default async function ThemesIndexPage({ params }: Props) {
           </li>
         ))}
       </ul>
+
+      <div className="mt-14 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="esim" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} className="mt-10" />
     </div>
   );
 }

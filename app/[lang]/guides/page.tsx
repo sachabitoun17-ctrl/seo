@@ -4,6 +4,8 @@ import { buildPageMetadata } from '@/lib/seo';
 import { getAllGuides } from '@/lib/data/guides';
 import { GuideCard } from '@/components/GuideCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const runtime = 'edge';
 
@@ -44,6 +46,12 @@ export default async function GuidesIndexPage({ params }: Props) {
           </li>
         ))}
       </ul>
+
+      <div className="mt-14 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="ai" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} className="mt-10" />
     </div>
   );
 }

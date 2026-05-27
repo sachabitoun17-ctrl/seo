@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { type Locale } from '@/lib/i18n';
+import { getDictionary, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
@@ -46,12 +46,13 @@ const TERMS: Term[] = [
 ];
 
 export default async function GlossaryPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const terms = [...TERMS].sort((a, b) => a.term.localeCompare(b.term));
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/glossary`, label: 'Glossary' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/glossary`, label: dict.nav.glossary },
       ]} />
       <header className="max-w-3xl mt-4">
         <h1 className="text-3xl sm:text-4xl font-semibold tracking-tightish">

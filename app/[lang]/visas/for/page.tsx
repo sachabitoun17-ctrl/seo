@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { type Locale } from '@/lib/i18n';
+import { getDictionary, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllNationalities, getNationalityName } from '@/lib/data/nationalities';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const runtime = 'edge';
 
@@ -19,11 +21,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function NationalitiesIndexPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const nationalities = getAllNationalities();
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/visas`, label: 'Visas' },
         { href: `/${params.lang}/visas/for`, label: 'By nationality' },
       ]} />
@@ -49,6 +52,12 @@ export default async function NationalitiesIndexPage({ params }: Props) {
           </li>
         ))}
       </ul>
+
+      <div className="mt-14 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="insurance" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} className="mt-10" />
     </div>
   );
 }

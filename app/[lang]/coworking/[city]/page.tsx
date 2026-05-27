@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllCoworking, getCoworking } from '@/lib/data/coworking';
 import { getCity, getCityName } from '@/lib/data/cities';
@@ -37,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function CoworkingDetailPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const co = getCoworking(params.city);
   const city = getCity(params.city);
   if (!co || !city) notFound();
@@ -47,8 +48,8 @@ export default async function CoworkingDetailPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/coworking`, label: 'Coworking' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/coworking`, label: dict.nav.coworking },
         { href: `/${params.lang}/coworking/${co.citySlug}`, label: name },
       ]} />
 

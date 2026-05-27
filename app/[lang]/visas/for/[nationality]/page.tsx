@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import {
   getAllNationalities,
@@ -37,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function NationalityPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const n = getNationality(params.nationality);
   if (!n) notFound();
   const name = getNationalityName(n, params.lang);
@@ -45,8 +46,8 @@ export default async function NationalityPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/visas`, label: 'Visas' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/visas`, label: dict.nav.visas },
         { href: `/${params.lang}/visas/for/${n.slug}`, label: `For ${name}` },
       ]} />
 

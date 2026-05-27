@@ -62,7 +62,7 @@ export default async function CostOfLivingDetailPage({ params }: Props) {
     <article className="py-14">
       <Breadcrumbs items={[
         { href: `/${params.lang}`, label: dict.common.home },
-        { href: `/${params.lang}/cost-of-living`, label: 'Cost of living' },
+        { href: `/${params.lang}/cost-of-living`, label: dict.nav.costOfLiving },
         { href: `/${params.lang}/cost-of-living/${city.slug}`, label: name },
       ]} />
 

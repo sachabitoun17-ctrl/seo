@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllRegions, getRegion, getRegionName } from '@/lib/data/regions';
 import { getCountry } from '@/lib/data/countries';
@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function RegionDetailPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const region = getRegion(params.region);
   if (!region) notFound();
   const name = getRegionName(region, params.lang);
@@ -46,8 +47,8 @@ export default async function RegionDetailPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/regions`, label: 'Regions' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/regions`, label: dict.nav.regions },
         { href: `/${params.lang}/regions/${region.slug}`, label: name },
       ]} />
 

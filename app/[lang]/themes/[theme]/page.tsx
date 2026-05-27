@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllThemes, getTheme, getThemeTitle, getCitiesForTheme } from '@/lib/data/themes';
 import { CityCard } from '@/components/CityCard';
@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ThemeDetailPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const theme = getTheme(params.theme);
   if (!theme) notFound();
   const title = getThemeTitle(theme, params.lang);
@@ -41,8 +42,8 @@ export default async function ThemeDetailPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/themes`, label: 'Themes' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/themes`, label: dict.nav.themes },
         { href: `/${params.lang}/themes/${theme.slug}`, label: title },
       ]} />
 

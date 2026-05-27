@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { LOCALES, type Locale } from '@/lib/i18n';
+import { getDictionary, LOCALES, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { getAllComparisons, getComparison } from '@/lib/data/comparisons';
 import { getCountry, getCountryName } from '@/lib/data/countries';
@@ -72,6 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ComparePairPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const comp = getComparison(params.pair);
   if (!comp) notFound();
   const a = resolveSide(comp.a, comp.type, params.lang);
@@ -83,8 +84,8 @@ export default async function ComparePairPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/compare`, label: 'Compare' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/compare`, label: dict.nav.compare },
         { href: `/${params.lang}/compare/${comp.slug}`, label: `${a.name} vs ${b.name}` },
       ]} />
 

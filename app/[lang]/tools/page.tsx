@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
-import { type Locale } from '@/lib/i18n';
+import { getDictionary, type Locale } from '@/lib/i18n';
 import { buildPageMetadata } from '@/lib/seo';
 import { PARTNERS, getPartners, type PartnerCategory } from '@/lib/partners';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const runtime = 'edge';
 
@@ -66,12 +68,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ToolsPage({ params }: Props) {
+  const dict = await getDictionary(params.lang);
   const total = getPartners({ locale: params.lang }).length;
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/tools`, label: 'Tools' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/tools`, label: dict.nav.tools },
       ]} />
       <header className="max-w-3xl mt-4">
         <p className="text-xs uppercase tracking-widest text-accent-deep font-semibold">Curated for 2026</p>
@@ -129,6 +132,12 @@ export default async function ToolsPage({ params }: Props) {
           actively use. No paid placements, no &quot;sponsored&quot; reviews of mediocre products.
         </p>
       </section>
+
+      <div className="mt-14 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="ai" />
+        <PromoBanner locale={params.lang} variant="setup" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} className="mt-10" />
     </div>
   );
 }
