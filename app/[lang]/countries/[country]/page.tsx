@@ -15,6 +15,8 @@ import { FaqSection } from '@/components/FaqSection';
 import { countryFaqs } from '@/lib/faq-templates';
 import { getGuidesForCountry } from '@/lib/data/guides';
 import { JobsCTA } from '@/components/JobsCTA';
+import { HeroImage } from '@/components/HeroImage';
+import { countryPhoto, flagSvg } from '@/lib/images';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -66,20 +68,24 @@ export default async function CountryDetailPage({ params }: Props) {
   ];
 
   return (
-    <article className="py-14">
-      <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/countries`, label: dict.nav.countries },
-        { href: `/${params.lang}/countries/${country.slug}`, label: name },
-      ]} />
+    <article className="pb-14">
+      <div className="pt-6">
+        <Breadcrumbs items={[
+          { href: `/${params.lang}`, label: 'Home' },
+          { href: `/${params.lang}/countries`, label: dict.nav.countries },
+          { href: `/${params.lang}/countries/${country.slug}`, label: name },
+        ]} />
+      </div>
 
-      <header className="max-w-3xl mt-4">
-        <p className="text-sm uppercase tracking-widest text-muted">{country.region}</p>
-        <h1 className="mt-3 text-4xl sm:text-5xl font-semibold tracking-tightish">{name}</h1>
-        <p className="mt-3 text-muted">
-          {country.capital} · {country.currency} · {country.languages.join(', ')}
-        </p>
-      </header>
+      <HeroImage
+        slug={country.slug}
+        src={countryPhoto(country.slug)}
+        alt={`${name} digital nomad guide`}
+        kicker={country.region}
+        title={name}
+        subtitle={`${country.capital} · ${country.currency} · ${country.languages.join(', ')}`}
+        flagSrc={flagSvg(country.code, 160)}
+      />
 
       <section className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((s) => (

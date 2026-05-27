@@ -21,6 +21,8 @@ import { FaqSection } from '@/components/FaqSection';
 import { cityFaqs } from '@/lib/faq-templates';
 import { getGuidesForCity } from '@/lib/data/guides';
 import { JobsCTA } from '@/components/JobsCTA';
+import { HeroImage } from '@/components/HeroImage';
+import { cityPhoto, flagSvg } from '@/lib/images';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -77,30 +79,24 @@ export default async function CityDetailPage({ params }: Props) {
   ];
 
   return (
-    <article className="py-14">
-      <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/cities`, label: dict.nav.cities },
-        { href: `/${params.lang}/cities/${city.slug}`, label: name },
-      ]} />
+    <article className="pb-14">
+      <div className="pt-6">
+        <Breadcrumbs items={[
+          { href: `/${params.lang}`, label: 'Home' },
+          { href: `/${params.lang}/cities`, label: dict.nav.cities },
+          { href: `/${params.lang}/cities/${city.slug}`, label: name },
+        ]} />
+      </div>
 
-      <header className="max-w-3xl mt-4">
-        {country && (
-          <Link
-            href={`/${params.lang}/countries/${country.slug}`}
-            className="text-sm uppercase tracking-widest text-muted hover:text-ink"
-          >
-            {countryName}
-          </Link>
-        )}
-        <h1 className="mt-2 text-4xl sm:text-5xl font-semibold tracking-tightish">{name}</h1>
-        <p className="mt-3 text-lg text-muted">{city.highlight}</p>
-        <p className="mt-2 text-sm text-muted">
-          Nomad score <span className="text-ink font-semibold">{city.nomadScore}/10</span>
-          {' · '}
-          {city.coworkingCount}+ coworking spaces
-        </p>
-      </header>
+      <HeroImage
+        slug={city.slug}
+        src={cityPhoto(city.slug)}
+        alt={`${name} digital nomad guide`}
+        kicker={country ? countryName : undefined}
+        title={name}
+        subtitle={`${city.highlight} · Nomad score ${city.nomadScore}/10 · ${city.coworkingCount}+ coworking spaces`}
+        flagSrc={country ? flagSvg(country.code, 160) : undefined}
+      />
 
       <section className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((s) => (

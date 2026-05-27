@@ -1,4 +1,5 @@
 import { getPartners, type PartnerCategory } from '@/lib/partners';
+import { partnerLogo } from '@/lib/images';
 import type { Locale } from '@/lib/i18n';
 
 type Props = {
@@ -27,15 +28,26 @@ export function PartnerStack({
               href={p.url}
               target="_blank"
               rel="sponsored noopener"
-              className="block rounded-lg border border-line bg-paper px-4 py-3 card-hover"
+              className="flex items-start gap-3 rounded-lg border border-line bg-paper px-4 py-3 card-hover"
             >
-              <div className="flex items-center justify-between gap-3">
-                <p className="font-semibold tracking-tightish">{p.name}</p>
-                <span className="text-[10px] uppercase tracking-widest text-muted">
-                  {p.category.replace('-', ' ')}
-                </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={partnerLogo(p.url)}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                className="w-8 h-8 rounded-md object-contain flex-shrink-0 bg-cream border border-line/60"
+              />
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between gap-3">
+                  <p className="font-semibold tracking-tightish">{p.name}</p>
+                  <span className="text-[10px] uppercase tracking-widest text-muted">
+                    {p.category.replace('-', ' ')}
+                  </span>
+                </div>
+                <p className="mt-1 text-sm text-muted leading-snug">{p.blurb}</p>
               </div>
-              <p className="mt-1 text-sm text-muted leading-snug">{p.blurb}</p>
             </a>
           </li>
         ))}

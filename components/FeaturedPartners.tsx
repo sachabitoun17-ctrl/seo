@@ -1,11 +1,11 @@
 import { getPartners, type Partner, type PartnerCategory } from '@/lib/partners';
+import { partnerLogo } from '@/lib/images';
 import type { Locale } from '@/lib/i18n';
 
 type Props = {
   locale: Locale;
   categories: PartnerCategory[];
   heading?: string;
-  /** show only the 1-2 most relevant partners as primary CTA buttons */
   limit?: number;
 };
 
@@ -27,13 +27,24 @@ export function FeaturedPartners({ locale, categories, heading = 'Set up in 2 mi
               href={p.url}
               target="_blank"
               rel="sponsored noopener"
-              className="block rounded-lg bg-paper border border-line px-4 py-3 hover:border-ink card-hover h-full"
+              className="flex items-start gap-2 rounded-lg bg-paper border border-line px-4 py-3 hover:border-ink card-hover h-full"
             >
-              <div className="flex items-center justify-between gap-2">
-                <span className="font-semibold text-sm tracking-tightish">{p.name}</span>
-                <span aria-hidden className="text-accent text-sm">↗</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={partnerLogo(p.url)}
+                alt=""
+                width={28}
+                height={28}
+                loading="lazy"
+                className="w-7 h-7 rounded-md object-contain flex-shrink-0 bg-cream border border-line/60"
+              />
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-semibold text-sm tracking-tightish">{p.name}</span>
+                  <span aria-hidden className="text-accent text-sm">↗</span>
+                </div>
+                <p className="mt-1 text-xs text-muted line-clamp-2">{p.blurb}</p>
               </div>
-              <p className="mt-1 text-xs text-muted line-clamp-2">{p.blurb}</p>
             </a>
           </li>
         ))}

@@ -14,6 +14,8 @@ import { GuideCard } from '@/components/GuideCard';
 import { JsonLd } from '@/components/JsonLd';
 import { LogoMark } from '@/components/Logo';
 import { flagEmoji } from '@/lib/flag';
+import { cityPhoto, countryPhoto, flagSvg } from '@/lib/images';
+import { getCity, getCityName } from '@/lib/data/cities';
 
 export const runtime = 'edge';
 
@@ -47,34 +49,51 @@ export default async function HomePage({ params }: Props) {
     description: dict.home.heroSubtitle,
   };
 
+  // Pick a featured city for the hero background (top nomad score with a real photo)
+  const featuredCity = cities.find((c) => cityPhoto(c.slug)) || cities[0];
+  const featuredPhoto = featuredCity ? cityPhoto(featuredCity.slug) : undefined;
+
   return (
     <>
-      {/* Hero */}
-      <section className="relative bg-noise pt-16 pb-20 sm:pt-24 sm:pb-28 -mx-5 sm:-mx-8 px-5 sm:px-8">
-        <div className="max-w-container mx-auto">
-          <div className="grid lg:grid-cols-12 gap-10 items-end">
+      {/* Hero — full bleed photo background */}
+      <section className="relative -mx-5 sm:-mx-8 overflow-hidden">
+        <div className="relative min-h-[560px] sm:min-h-[640px] lg:min-h-[720px] flex items-center">
+          {featuredPhoto && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={featuredPhoto}
+              alt=""
+              loading="eager"
+              fetchPriority="high"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-br from-ink/85 via-ink/60 to-ink/40" />
+          <div className="absolute inset-0 bg-noise opacity-30" />
+
+          <div className="relative max-w-container w-full mx-auto px-5 sm:px-8 py-20 sm:py-24 grid lg:grid-cols-12 gap-10 items-center text-cream">
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-soft text-accent-deep text-xs font-semibold uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream/15 backdrop-blur-sm text-cream text-xs font-semibold uppercase tracking-widest border border-cream/20">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />
                 Curated for slow nomads · 2026
               </div>
               <h1 className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tightest leading-[1.02] font-display">
                 {dict.home.heroTitle}
               </h1>
-              <p className="mt-6 text-lg sm:text-xl text-charcoal leading-relaxed max-w-2xl">
+              <p className="mt-6 text-lg sm:text-xl text-cream/85 leading-relaxed max-w-2xl">
                 {dict.home.heroSubtitle}
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href={`/${params.lang}/cities`}
-                  className="inline-flex items-center gap-2 rounded-md bg-ink text-cream px-6 py-3 text-sm font-medium hover:bg-accent-deep transition-colors"
+                  className="inline-flex items-center gap-2 rounded-md bg-cream text-ink px-6 py-3 text-sm font-semibold hover:bg-accent hover:text-cream transition-colors"
                 >
                   {dict.home.exploreCities}
                   <span aria-hidden>→</span>
                 </Link>
                 <Link
                   href={`/${params.lang}/visas`}
-                  className="inline-flex items-center rounded-md border border-ink/20 px-6 py-3 text-sm font-medium hover:bg-paper hover:border-ink transition-colors"
+                  className="inline-flex items-center rounded-md border border-cream/30 text-cream px-6 py-3 text-sm font-semibold hover:bg-cream/10 transition-colors"
                 >
                   {dict.nav.visas}
                 </Link>
@@ -82,21 +101,21 @@ export default async function HomePage({ params }: Props) {
             </div>
 
             <div className="lg:col-span-5 grid grid-cols-2 gap-3">
-              <div className="rounded-2xl bg-paper border border-line p-5">
-                <p className="text-3xl font-semibold tracking-tightest">{countries.length}</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-muted">Countries</p>
+              <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
+                <p className="text-3xl font-semibold tracking-tightest text-cream">{countries.length}</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Countries</p>
               </div>
-              <div className="rounded-2xl bg-sage-soft/40 border border-sage/20 p-5">
-                <p className="text-3xl font-semibold tracking-tightest">{cities.length}+</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-muted">Nomad cities</p>
+              <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
+                <p className="text-3xl font-semibold tracking-tightest text-cream">{cities.length}+</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Nomad cities</p>
               </div>
-              <div className="rounded-2xl bg-sand-soft/40 border border-sand/20 p-5">
-                <p className="text-3xl font-semibold tracking-tightest">{visas.length}+</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-muted">Nomad visas</p>
+              <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
+                <p className="text-3xl font-semibold tracking-tightest text-cream">{visas.length}+</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Nomad visas</p>
               </div>
-              <div className="rounded-2xl bg-sky-soft/40 border border-sky/20 p-5">
-                <p className="text-3xl font-semibold tracking-tightest">{guides.length}+</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-muted">Long guides</p>
+              <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
+                <p className="text-3xl font-semibold tracking-tightest text-cream">{guides.length}+</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Long guides</p>
               </div>
             </div>
           </div>
@@ -121,18 +140,39 @@ export default async function HomePage({ params }: Props) {
             </Link>
           </div>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-            {trendingCountries.map((c) => (
-              <li key={c.slug}>
-                <Link
-                  href={`/${params.lang}/countries/${c.slug}`}
-                  className="block rounded-xl border border-line bg-paper p-4 card-hover text-center"
-                >
-                  <div className="text-4xl mb-2">{flagEmoji(c.code)}</div>
-                  <div className="font-semibold tracking-tightish">{getCountryName(c, params.lang)}</div>
-                  <div className="mt-1 text-xs text-muted">{c.region}</div>
-                </Link>
-              </li>
-            ))}
+            {trendingCountries.map((c) => {
+              const photo = countryPhoto(c.slug);
+              const flag = flagSvg(c.code, 80);
+              return (
+                <li key={c.slug}>
+                  <Link
+                    href={`/${params.lang}/countries/${c.slug}`}
+                    className="group relative block rounded-xl overflow-hidden border border-line h-44 card-hover"
+                  >
+                    {photo && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={photo}
+                        alt=""
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" />
+                    <div className="absolute inset-0 p-4 flex flex-col justify-between text-cream">
+                      {flag && (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={flag} alt="" width={32} height={24} className="rounded shadow-md self-start border border-cream/20" />
+                      )}
+                      <div>
+                        <div className="font-semibold tracking-tightish">{getCountryName(c, params.lang)}</div>
+                        <div className="mt-0.5 text-xs text-cream/70">{c.region}</div>
+                      </div>
+                    </div>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}
