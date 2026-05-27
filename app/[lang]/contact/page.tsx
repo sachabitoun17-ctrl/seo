@@ -22,7 +22,7 @@ export default async function ContactPage({ params }: Props) {
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/contact`, label: dict.footer.contact },
       ]} />
       <article className="max-w-prose mt-6 prose-content">

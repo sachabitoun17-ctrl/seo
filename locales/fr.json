@@ -6,23 +6,59 @@
     "guides": "Guides",
     "compare": "Comparer",
     "regions": "Régions",
-    "about": "À propos"
+    "about": "À propos",
+    "findMyCity": "Trouve ma ville",
+    "themes": "Styles de vie",
+    "byJobRole": "Par métier",
+    "bySeason": "Par saison",
+    "costOfLiving": "Coût de la vie",
+    "coworking": "Coworking",
+    "bestFor": "Le meilleur pour…",
+    "tools": "Outils",
+    "glossary": "Glossaire",
+    "search": "Rechercher"
   },
   "footer": {
-    "tagline": "Guides pays pour nomades qui prennent leur temps.",
+    "tagline": "Guides pays pour les nomades qui restent un moment.",
     "legal": "Mentions légales",
     "contact": "Contact",
     "rights": "Tous droits réservés.",
-    "affiliateNotice": "Certains liens sur ce site sont affiliés. Nous touchons une petite commission sans coût supplémentaire pour vous."
+    "affiliateNotice": "Certains liens sont affiliés. Nous touchons une petite commission sans surcoût pour vous."
   },
   "home": {
-    "heroTitle": "Guides pays pour nomades qui restent un moment.",
-    "heroSubtitle": "Visa, coût de la vie, internet, météo et fiscalité de base pour les destinations qui accueillent les longs séjours.",
+    "heroTitle": "Guides pays pour les nomades qui prennent leur temps.",
+    "heroSubtitle": "Visa, coût de la vie, internet, météo et bases fiscales pour les destinations qui accueillent les longs séjours.",
     "exploreCountries": "Explorer les pays",
-    "exploreCities": "Explorer les villes"
+    "exploreCities": "Explorer les villes",
+    "findMyBestCity": "Trouve ma ville idéale (quiz 60s)",
+    "trendingKicker": "Google Trends 2026",
+    "trendingTitle": "En tendance",
+    "topCities": "Top villes nomades",
+    "seeAll": "Tout voir",
+    "browseByCriterion": "Parcourir par critère",
+    "allFilters": "Tous les filtres",
+    "digitalNomadVisas": "Visas nomades numériques",
+    "longStayGuides": "Guides longs séjours",
+    "pitchFinderTitle": "Trouve ton point de chute",
+    "pitchFinderText": "Quiz 5 questions sur 100+ villes. Budget, travail, climat, visa — tes 9 meilleurs matchs en 60 secondes.",
+    "pitchFinderCta": "Faire le quiz",
+    "pitchFilterTitle": "Filtre chaque ville",
+    "pitchFilterText": "Coût, Mbps, sécurité, région, score nomade. Sliders et chips. Trie par ce qui compte vraiment.",
+    "pitchFilterCta": "Ouvrir les filtres",
+    "pitchJobsTitle": "Trouve le job remote",
+    "pitchJobsText": "Slate Remote — notre site frère — agrège chaque offre remote des grandes plateformes. Une recherche, toutes les sources, mise à jour quotidienne.",
+    "pitchJobsCta": "Voir les jobs",
+    "countriesLabel": "Pays",
+    "nomadCitiesLabel": "Villes nomades",
+    "nomadVisasLabel": "Visas nomades",
+    "longGuidesLabel": "Guides long format",
+    "ctaTitle": "Reste plus longtemps. Vis plus profond.",
+    "ctaSubtitle": "Chaque page de Slowmadly est pensée pour les nomades qui choisissent un lieu et s'y posent un mois, une saison ou un an.",
+    "ctaButton": "Trouve ton prochain point de chute",
+    "curatedBadge": "Sélection slow nomades · 2026"
   },
   "country": {
-    "overview": "Vue d’ensemble",
+    "overview": "Aperçu",
     "visa": "Visa et résidence",
     "costOfLiving": "Coût de la vie",
     "internet": "Internet et coworking",
@@ -30,9 +66,30 @@
     "weather": "Météo",
     "keyFacts": "Chiffres clés"
   },
+  "detail": {
+    "setupBefore": "À régler avant de partir",
+    "setupBeforeApply": "À régler avant de candidater",
+    "whereNomadsStay": "Où les nomades s'installent",
+    "otherCitiesIn": "Autres villes",
+    "citiesIn": "Villes",
+    "visasFor": "Visas pour",
+    "guidesFor": "Guides pour",
+    "relatedCountries": "Pays liés",
+    "relatedCities": "Villes liées",
+    "relatedVisas": "Visas liés",
+    "haveVisaNeedJob": "Le visa OK, reste à trouver le job ?",
+    "takeQuiz": "Faire le quiz 60s",
+    "sponsored": "Sponsorisé",
+    "shortStay": "Court séjour",
+    "digitalNomadVisa": "Visa nomade",
+    "passiveIncomeVisa": "Revenus passifs",
+    "matchYourFilters": "correspondent à tes filtres",
+    "noMatch": "Aucun résultat. Élargis un des critères."
+  },
   "common": {
     "updated": "Mis à jour",
     "loading": "Chargement…",
-    "notFound": "Introuvable"
+    "notFound": "Introuvable",
+    "home": "Accueil"
   }
 }

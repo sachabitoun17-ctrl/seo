@@ -22,7 +22,7 @@ export default async function LegalPage({ params }: Props) {
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/legal`, label: dict.footer.legal },
       ]} />
       <article className="max-w-prose mt-6 prose-content">

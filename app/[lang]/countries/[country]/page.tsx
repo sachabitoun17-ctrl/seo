@@ -73,7 +73,7 @@ export default async function CountryDetailPage({ params }: Props) {
     <article className="pb-14">
       <div className="pt-6">
         <Breadcrumbs items={[
-          { href: `/${params.lang}`, label: 'Home' },
+          { href: `/${params.lang}`, label: dict.common.home },
           { href: `/${params.lang}/countries`, label: dict.nav.countries },
           { href: `/${params.lang}/countries/${country.slug}`, label: name },
         ]} />
@@ -114,15 +114,15 @@ export default async function CountryDetailPage({ params }: Props) {
         <h2 className="text-xl font-semibold tracking-tightish">{dict.country.visa}</h2>
         <dl className="mt-4 grid gap-3 sm:grid-cols-3 text-sm">
           <div className="rounded-lg border border-line px-4 py-3">
-            <dt className="text-xs uppercase tracking-widest text-muted">Short stay</dt>
+            <dt className="text-xs uppercase tracking-widest text-muted">{dict.detail.shortStay}</dt>
             <dd className="mt-1 font-medium">{country.visa.shortStay}</dd>
           </div>
           <div className="rounded-lg border border-line px-4 py-3">
-            <dt className="text-xs uppercase tracking-widest text-muted">Digital nomad</dt>
+            <dt className="text-xs uppercase tracking-widest text-muted">{dict.detail.digitalNomadVisa}</dt>
             <dd className="mt-1 font-medium">{country.visa.digitalNomad}</dd>
           </div>
           <div className="rounded-lg border border-line px-4 py-3">
-            <dt className="text-xs uppercase tracking-widest text-muted">Passive income</dt>
+            <dt className="text-xs uppercase tracking-widest text-muted">{dict.detail.passiveIncomeVisa}</dt>
             <dd className="mt-1 font-medium">{country.visa.passiveIncome}</dd>
           </div>
         </dl>
@@ -131,7 +131,7 @@ export default async function CountryDetailPage({ params }: Props) {
       {cities.length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-semibold tracking-tightish">
-            {dict.nav.cities} in {name}
+            {dict.detail.citiesIn} {name}
           </h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {cities.map((c) => (
@@ -146,7 +146,7 @@ export default async function CountryDetailPage({ params }: Props) {
       {visas.length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-semibold tracking-tightish">
-            {dict.nav.visas} for {name}
+            {dict.detail.visasFor} {name}
           </h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {visas.map((v) => (
@@ -161,7 +161,7 @@ export default async function CountryDetailPage({ params }: Props) {
       {guides.length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-semibold tracking-tightish">
-            {dict.nav.guides} for {name}
+            {dict.detail.guidesFor} {name}
           </h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {guides.map((g) => (
@@ -177,7 +177,7 @@ export default async function CountryDetailPage({ params }: Props) {
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'vpn', 'accommodation', 'travel-meta']}
-        heading={`Set up before you go to ${name}`}
+        heading={`${dict.detail.setupBefore} — ${name}`}
       />
       <FaqSection faqs={countryFaqs(country, name, params.lang)} />
       <JsonLd data={placeLd} />

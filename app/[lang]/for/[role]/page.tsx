@@ -6,6 +6,8 @@ import { getAllRoles, getRole, getRoleName, getCitiesForRole } from '@/lib/data/
 import { CityCard } from '@/components/CityCard';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JobsCTA } from '@/components/JobsCTA';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 import { AiToolsCTA } from '@/components/AiToolsCTA';
 import { PartnerStack } from '@/components/PartnerStack';
 
@@ -65,6 +67,11 @@ export default async function RoleDetailPage({ params }: Props) {
         </ul>
       </section>
 
+      <div className="mt-12 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="ai" />
+        <PromoBanner locale={params.lang} variant="setup" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} role={r.slug.replace(/s$/, '')} className="mt-8" />
       <JobsCTA locale={params.lang} heading={`Remote ${r.slug.replace(/s$/, '')} jobs from across the web`} />
       <AiToolsCTA locale={params.lang} role={r.slug.replace(/s$/, '')} />
       <PartnerStack

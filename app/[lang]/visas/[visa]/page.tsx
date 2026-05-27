@@ -123,7 +123,7 @@ export default async function VisaDetailPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/visas`, label: dict.nav.visas },
         { href: `/${params.lang}/visas/${visa.slug}`, label: visa.name },
       ]} />
@@ -223,12 +223,12 @@ export default async function VisaDetailPage({ params }: Props) {
         locale={params.lang}
         countryName={cName}
         countrySlug={country?.slug}
-        heading="Have the visa, need the job?"
+        heading={dict.detail.haveVisaNeedJob}
       />
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'ai-llm']}
-        heading="Set up before you apply"
+        heading={dict.detail.setupBeforeApply}
       />
       <FaqSection faqs={visaFaqs(visa, params.lang)} />
       <JsonLd data={govPermit} />

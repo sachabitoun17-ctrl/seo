@@ -22,7 +22,7 @@ export default async function AboutPage({ params }: Props) {
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/about`, label: dict.nav.about },
       ]} />
       <article className="max-w-prose mt-6 prose-content">

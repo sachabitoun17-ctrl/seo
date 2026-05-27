@@ -9,6 +9,8 @@ import { estimateForCity } from '@/lib/data/cost';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { PartnerStack } from '@/components/PartnerStack';
 import { JobsCTA } from '@/components/JobsCTA';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -59,7 +61,7 @@ export default async function CostOfLivingDetailPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/cost-of-living`, label: 'Cost of living' },
         { href: `/${params.lang}/cost-of-living/${city.slug}`, label: name },
       ]} />
@@ -140,6 +142,11 @@ export default async function CostOfLivingDetailPage({ params }: Props) {
         </p>
       </section>
 
+      <div className="mt-12 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="banking" />
+        <PromoBanner locale={params.lang} variant="esim" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} countrySlug={country?.slug} countryName={countryName} className="mt-8" />
       <JobsCTA locale={params.lang} cityName={name} heading={`Need a remote job to fund ${name}?`} />
       <PartnerStack
         locale={params.lang}

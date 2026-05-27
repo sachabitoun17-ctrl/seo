@@ -6,7 +6,17 @@
     "guides": "Guides",
     "compare": "Compare",
     "regions": "Regions",
-    "about": "About"
+    "about": "About",
+    "findMyCity": "Find my city",
+    "themes": "Themes",
+    "byJobRole": "By job role",
+    "bySeason": "By season",
+    "costOfLiving": "Cost of living",
+    "coworking": "Coworking",
+    "bestFor": "Best for…",
+    "tools": "Tools",
+    "glossary": "Glossary",
+    "search": "Search"
   },
   "footer": {
     "tagline": "Long-stay country guides for slow nomads.",
@@ -19,7 +29,33 @@
     "heroTitle": "Country guides for nomads who stay a while.",
     "heroSubtitle": "Visa, cost of living, internet, weather and tax basics for the places that welcome long-stay travelers.",
     "exploreCountries": "Explore countries",
-    "exploreCities": "Explore cities"
+    "exploreCities": "Explore cities",
+    "findMyBestCity": "Find my best city (60s quiz)",
+    "trendingKicker": "Google Trends 2026",
+    "trendingTitle": "Trending right now",
+    "topCities": "Top nomad cities",
+    "seeAll": "See all",
+    "browseByCriterion": "Browse by criterion",
+    "allFilters": "All filters",
+    "digitalNomadVisas": "Digital nomad visas",
+    "longStayGuides": "Long-stay guides",
+    "pitchFinderTitle": "Find your basecamp",
+    "pitchFinderText": "5-question quiz across 100+ cities. Budget, work, climate, visa — get your top 9 matches in 60 seconds.",
+    "pitchFinderCta": "Take the quiz",
+    "pitchFilterTitle": "Filter every city",
+    "pitchFilterText": "Cost index, Mbps, safety, region, nomad score. Sliders and chips. Sort by what actually matters for your trip.",
+    "pitchFilterCta": "Open the filter",
+    "pitchJobsTitle": "Find the remote job",
+    "pitchJobsText": "Slate Remote — our sister site — aggregates every remote role from every major board. One search, all sources, refreshed daily.",
+    "pitchJobsCta": "Browse jobs",
+    "countriesLabel": "Countries",
+    "nomadCitiesLabel": "Nomad cities",
+    "nomadVisasLabel": "Nomad visas",
+    "longGuidesLabel": "Long guides",
+    "ctaTitle": "Stay longer. Live deeper.",
+    "ctaSubtitle": "Every page on Slowmadly is researched for nomads who pick a place and settle in for a month, a season, or a year.",
+    "ctaButton": "Find your next basecamp",
+    "curatedBadge": "Curated for slow nomads · 2026"
   },
   "country": {
     "overview": "Overview",
@@ -30,9 +66,30 @@
     "weather": "Weather",
     "keyFacts": "Key facts"
   },
+  "detail": {
+    "setupBefore": "Set up before you go",
+    "setupBeforeApply": "Set up before you apply",
+    "whereNomadsStay": "Where nomads stay",
+    "otherCitiesIn": "Other cities in",
+    "citiesIn": "Cities in",
+    "visasFor": "Visas for",
+    "guidesFor": "Guides for",
+    "relatedCountries": "Related countries",
+    "relatedCities": "Related cities",
+    "relatedVisas": "Related visas",
+    "haveVisaNeedJob": "Have the visa, need the job?",
+    "takeQuiz": "Take the 60-second quiz",
+    "sponsored": "Sponsored",
+    "shortStay": "Short stay",
+    "digitalNomadVisa": "Digital nomad",
+    "passiveIncomeVisa": "Passive income",
+    "matchYourFilters": "match your filters",
+    "noMatch": "No match. Try loosening one of the constraints."
+  },
   "common": {
     "updated": "Updated",
     "loading": "Loading…",
-    "notFound": "Not found"
+    "notFound": "Not found",
+    "home": "Home"
   }
 }

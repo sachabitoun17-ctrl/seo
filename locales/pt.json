@@ -6,20 +6,56 @@
     "guides": "Guias",
     "compare": "Comparar",
     "regions": "Regiões",
-    "about": "Sobre"
+    "about": "Sobre",
+    "findMyCity": "Encontra a minha cidade",
+    "themes": "Estilos de vida",
+    "byJobRole": "Por profissão",
+    "bySeason": "Por estação",
+    "costOfLiving": "Custo de vida",
+    "coworking": "Coworking",
+    "bestFor": "O melhor para…",
+    "tools": "Ferramentas",
+    "glossary": "Glossário",
+    "search": "Procurar"
   },
   "footer": {
-    "tagline": "Guias de países para nómadas que ficam mais tempo.",
-    "legal": "Aviso legal",
+    "tagline": "Guias de país para nómadas que ficam algum tempo.",
+    "legal": "Legal",
     "contact": "Contacto",
     "rights": "Todos os direitos reservados.",
-    "affiliateNotice": "Alguns links são de afiliação. Recebemos uma pequena comissão sem custo adicional para ti."
+    "affiliateNotice": "Alguns links são afiliados. Recebemos uma pequena comissão sem custo extra para ti."
   },
   "home": {
-    "heroTitle": "Guias de países para nómadas que ficam.",
-    "heroSubtitle": "Visto, custo de vida, internet, clima e fiscalidade básica para destinos que acolhem estadias longas.",
+    "heroTitle": "Guias de país para nómadas que viajam devagar.",
+    "heroSubtitle": "Vistos, custo de vida, internet, clima e fiscalidade para os destinos que recebem estadias longas.",
     "exploreCountries": "Explorar países",
-    "exploreCities": "Explorar cidades"
+    "exploreCities": "Explorar cidades",
+    "findMyBestCity": "Encontra a minha cidade ideal (quiz 60s)",
+    "trendingKicker": "Google Trends 2026",
+    "trendingTitle": "Em tendência agora",
+    "topCities": "Top cidades nómadas",
+    "seeAll": "Ver tudo",
+    "browseByCriterion": "Explorar por critério",
+    "allFilters": "Todos os filtros",
+    "digitalNomadVisas": "Vistos de nómada digital",
+    "longStayGuides": "Guias de estadia longa",
+    "pitchFinderTitle": "Encontra a tua base",
+    "pitchFinderText": "Quiz de 5 perguntas em 100+ cidades. Orçamento, trabalho, clima, visto — os teus 9 melhores matches em 60 segundos.",
+    "pitchFinderCta": "Fazer o quiz",
+    "pitchFilterTitle": "Filtra cada cidade",
+    "pitchFilterText": "Custo, Mbps, segurança, região, score nómada. Sliders e chips. Ordena pelo que realmente importa.",
+    "pitchFilterCta": "Abrir filtros",
+    "pitchJobsTitle": "Encontra o trabalho remoto",
+    "pitchJobsText": "Slate Remote — o nosso site irmão — agrega cada vaga remota das principais plataformas. Uma pesquisa, todas as fontes, atualizada diariamente.",
+    "pitchJobsCta": "Ver vagas",
+    "countriesLabel": "Países",
+    "nomadCitiesLabel": "Cidades nómadas",
+    "nomadVisasLabel": "Vistos nómadas",
+    "longGuidesLabel": "Guias longos",
+    "ctaTitle": "Fica mais tempo. Vive mais fundo.",
+    "ctaSubtitle": "Cada página da Slowmadly é pesquisada para nómadas que escolhem um lugar e ficam um mês, uma estação ou um ano.",
+    "ctaButton": "Encontra a tua próxima base",
+    "curatedBadge": "Seleção slow nómadas · 2026"
   },
   "country": {
     "overview": "Visão geral",
@@ -30,9 +66,30 @@
     "weather": "Clima",
     "keyFacts": "Dados-chave"
   },
+  "detail": {
+    "setupBefore": "Trata antes de viajar",
+    "setupBeforeApply": "Trata antes de candidatar",
+    "whereNomadsStay": "Onde os nómadas ficam",
+    "otherCitiesIn": "Outras cidades em",
+    "citiesIn": "Cidades em",
+    "visasFor": "Vistos para",
+    "guidesFor": "Guias para",
+    "relatedCountries": "Países relacionados",
+    "relatedCities": "Cidades relacionadas",
+    "relatedVisas": "Vistos relacionados",
+    "haveVisaNeedJob": "Tens o visto, falta o trabalho?",
+    "takeQuiz": "Fazer o quiz 60s",
+    "sponsored": "Patrocinado",
+    "shortStay": "Estadia curta",
+    "digitalNomadVisa": "Nómada digital",
+    "passiveIncomeVisa": "Rendimentos passivos",
+    "matchYourFilters": "correspondem aos teus filtros",
+    "noMatch": "Sem resultados. Aumenta um dos critérios."
+  },
   "common": {
     "updated": "Atualizado",
     "loading": "A carregar…",
-    "notFound": "Não encontrado"
+    "notFound": "Não encontrado",
+    "home": "Início"
   }
 }

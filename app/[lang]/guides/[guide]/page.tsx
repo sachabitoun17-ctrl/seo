@@ -92,7 +92,7 @@ export default async function GuideDetailPage({ params }: Props) {
   return (
     <article className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/guides`, label: dict.nav.guides },
         { href: `/${params.lang}/guides/${guide.slug}`, label: title },
       ]} />
@@ -161,7 +161,7 @@ export default async function GuideDetailPage({ params }: Props) {
       )}
 
       {(guide.topic === 'visas' || guide.topic === 'tax') && (
-        <JobsCTA locale={params.lang} heading="Have the visa, need the job?" />
+        <JobsCTA locale={params.lang} heading={dict.detail.haveVisaNeedJob} />
       )}
       {(guide.topic === 'tools' || guide.topic === 'city-guide') && <AiToolsCTA locale={params.lang} />}
 

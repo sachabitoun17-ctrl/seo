@@ -29,6 +29,8 @@ export function HeroImage({ src, alt, slug, kicker, title, subtitle, flagSrc }: 
             alt={alt}
             loading="eager"
             fetchPriority="high"
+            width={1600}
+            height={420}
             className="absolute inset-0 w-full h-full object-cover"
           />
         )}

@@ -6,20 +6,56 @@
     "guides": "Guías",
     "compare": "Comparar",
     "regions": "Regiones",
-    "about": "Sobre"
+    "about": "Acerca de",
+    "findMyCity": "Encuentra mi ciudad",
+    "themes": "Estilos de vida",
+    "byJobRole": "Por profesión",
+    "bySeason": "Por temporada",
+    "costOfLiving": "Coste de vida",
+    "coworking": "Coworking",
+    "bestFor": "Lo mejor para…",
+    "tools": "Herramientas",
+    "glossary": "Glosario",
+    "search": "Buscar"
   },
   "footer": {
-    "tagline": "Guías de países para nómadas que se quedan un tiempo.",
-    "legal": "Aviso legal",
+    "tagline": "Guías de país para nómadas que se quedan un tiempo.",
+    "legal": "Legal",
     "contact": "Contacto",
     "rights": "Todos los derechos reservados.",
-    "affiliateNotice": "Algunos enlaces son de afiliados. Recibimos una pequeña comisión sin coste adicional para ti."
+    "affiliateNotice": "Algunos enlaces son afiliados. Recibimos una pequeña comisión sin coste extra para ti."
   },
   "home": {
-    "heroTitle": "Guías de países para nómadas que se quedan.",
-    "heroSubtitle": "Visado, coste de vida, internet, clima y fiscalidad básica de los destinos que acogen estancias largas.",
+    "heroTitle": "Guías de país para nómadas que se toman su tiempo.",
+    "heroSubtitle": "Visado, coste de vida, internet, clima y fiscalidad para los destinos que acogen estancias largas.",
     "exploreCountries": "Explorar países",
-    "exploreCities": "Explorar ciudades"
+    "exploreCities": "Explorar ciudades",
+    "findMyBestCity": "Encuentra mi ciudad ideal (quiz 60s)",
+    "trendingKicker": "Google Trends 2026",
+    "trendingTitle": "En tendencia ahora",
+    "topCities": "Top ciudades nómadas",
+    "seeAll": "Ver todo",
+    "browseByCriterion": "Explorar por criterio",
+    "allFilters": "Todos los filtros",
+    "digitalNomadVisas": "Visados nómada digital",
+    "longStayGuides": "Guías de estancia larga",
+    "pitchFinderTitle": "Encuentra tu base",
+    "pitchFinderText": "Quiz de 5 preguntas sobre 100+ ciudades. Presupuesto, trabajo, clima, visado — tus 9 mejores matches en 60 segundos.",
+    "pitchFinderCta": "Hacer el quiz",
+    "pitchFilterTitle": "Filtra cada ciudad",
+    "pitchFilterText": "Coste, Mbps, seguridad, región, score nómada. Sliders y chips. Ordena por lo que importa de verdad.",
+    "pitchFilterCta": "Abrir filtros",
+    "pitchJobsTitle": "Encuentra el trabajo remoto",
+    "pitchJobsText": "Slate Remote — nuestra web hermana — agrega cada empleo remoto de las grandes plataformas. Una búsqueda, todas las fuentes, actualizada a diario.",
+    "pitchJobsCta": "Ver empleos",
+    "countriesLabel": "Países",
+    "nomadCitiesLabel": "Ciudades nómadas",
+    "nomadVisasLabel": "Visados nómadas",
+    "longGuidesLabel": "Guías largas",
+    "ctaTitle": "Quédate más. Vive más profundo.",
+    "ctaSubtitle": "Cada página de Slowmadly está investigada para nómadas que eligen un lugar y se quedan un mes, una temporada o un año.",
+    "ctaButton": "Encuentra tu próxima base",
+    "curatedBadge": "Selección slow nómadas · 2026"
   },
   "country": {
     "overview": "Resumen",
@@ -30,9 +66,30 @@
     "weather": "Clima",
     "keyFacts": "Datos clave"
   },
+  "detail": {
+    "setupBefore": "Prepárate antes de viajar",
+    "setupBeforeApply": "Prepárate antes de solicitar",
+    "whereNomadsStay": "Dónde se alojan los nómadas",
+    "otherCitiesIn": "Otras ciudades en",
+    "citiesIn": "Ciudades en",
+    "visasFor": "Visados para",
+    "guidesFor": "Guías para",
+    "relatedCountries": "Países relacionados",
+    "relatedCities": "Ciudades relacionadas",
+    "relatedVisas": "Visados relacionados",
+    "haveVisaNeedJob": "¿Tienes el visado y te falta el trabajo?",
+    "takeQuiz": "Hacer el quiz 60s",
+    "sponsored": "Patrocinado",
+    "shortStay": "Estancia corta",
+    "digitalNomadVisa": "Nómada digital",
+    "passiveIncomeVisa": "Ingresos pasivos",
+    "matchYourFilters": "coinciden con tus filtros",
+    "noMatch": "Sin resultados. Amplía uno de los criterios."
+  },
   "common": {
     "updated": "Actualizado",
     "loading": "Cargando…",
-    "notFound": "No encontrado"
+    "notFound": "No encontrado",
+    "home": "Inicio"
   }
 }

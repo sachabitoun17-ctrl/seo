@@ -84,7 +84,7 @@ export default async function CityDetailPage({ params }: Props) {
     <article className="pb-14">
       <div className="pt-6">
         <Breadcrumbs items={[
-          { href: `/${params.lang}`, label: 'Home' },
+          { href: `/${params.lang}`, label: dict.common.home },
           { href: `/${params.lang}/cities`, label: dict.nav.cities },
           { href: `/${params.lang}/cities/${city.slug}`, label: name },
         ]} />
@@ -123,7 +123,7 @@ export default async function CityDetailPage({ params }: Props) {
 
       {city.neighborhoods.length > 0 && (
         <section className="mt-12 max-w-3xl">
-          <h2 className="text-xl font-semibold tracking-tightish">Where nomads stay</h2>
+          <h2 className="text-xl font-semibold tracking-tightish">{dict.detail.whereNomadsStay}</h2>
           <ul className="mt-3 flex flex-wrap gap-2 text-sm">
             {city.neighborhoods.map((n) => (
               <li key={n} className="px-3 py-1 rounded-full border border-line">
@@ -137,7 +137,7 @@ export default async function CityDetailPage({ params }: Props) {
       {visas.length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-semibold tracking-tightish">
-            Visas for {countryName}
+            {dict.detail.visasFor} {countryName}
           </h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {visas.map((v) => (
@@ -152,7 +152,7 @@ export default async function CityDetailPage({ params }: Props) {
       {siblingCities.length > 0 && (
         <section className="mt-12">
           <h2 className="text-xl font-semibold tracking-tightish">
-            Other cities in {countryName}
+            {dict.detail.otherCitiesIn} {countryName}
           </h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {siblingCities.slice(0, 6).map((c) => (
@@ -183,7 +183,7 @@ export default async function CityDetailPage({ params }: Props) {
       <PartnerStack
         locale={params.lang}
         categories={['banking', 'insurance', 'esim', 'accommodation', 'vpn', 'travel-meta']}
-        heading={`Set up before you go to ${name}`}
+        heading={`${dict.detail.setupBefore} — ${name}`}
       />
       <FaqSection faqs={cityFaqs(city, name, params.lang)} />
       <JsonLd data={place} />

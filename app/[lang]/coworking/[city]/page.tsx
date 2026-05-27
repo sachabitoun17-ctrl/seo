@@ -8,6 +8,8 @@ import { getCity, getCityName } from '@/lib/data/cities';
 import { getCountry, getCountryName } from '@/lib/data/countries';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JobsCTA } from '@/components/JobsCTA';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 import { PartnerStack } from '@/components/PartnerStack';
 
 export const dynamicParams = false;
@@ -115,6 +117,11 @@ export default async function CoworkingDetailPage({ params }: Props) {
         </p>
       </section>
 
+      <div className="mt-12 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="esim" />
+        <PromoBanner locale={params.lang} variant="vpn" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} countrySlug={country?.slug} countryName={countryName} className="mt-8" />
       <JobsCTA locale={params.lang} cityName={name} countryName={countryName} countrySlug={country?.slug} />
       <PartnerStack
         locale={params.lang}

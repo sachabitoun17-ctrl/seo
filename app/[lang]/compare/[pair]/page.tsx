@@ -8,6 +8,8 @@ import { getCity, getCityName } from '@/lib/data/cities';
 import { PartnerStack } from '@/components/PartnerStack';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { JobsCTA } from '@/components/JobsCTA';
+import { PromoBanner } from '@/components/PromoBanner';
+import { SlateRemoteBanner } from '@/components/SlateRemoteBanner';
 
 export const dynamicParams = false;
 export const revalidate = false;
@@ -120,6 +122,11 @@ export default async function ComparePairPage({ params }: Props) {
         <p className="mt-3 leading-relaxed">{comp.verdict}</p>
       </section>
 
+      <div className="mt-12 grid gap-4 lg:grid-cols-2">
+        <PromoBanner locale={params.lang} variant="setup" />
+        <PromoBanner locale={params.lang} variant="insurance" />
+      </div>
+      <SlateRemoteBanner locale={params.lang} className="mt-8" />
       <JobsCTA locale={params.lang} heading={`Remote roles in ${a.name} or ${b.name}?`} />
       <PartnerStack
         locale={params.lang}

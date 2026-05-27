@@ -31,7 +31,7 @@ export default async function CitiesIndexPage({ params }: Props) {
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/cities`, label: dict.nav.cities },
       ]} />
       <header className="max-w-3xl mt-4 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
@@ -47,7 +47,7 @@ export default async function CitiesIndexPage({ params }: Props) {
           href={`/${params.lang}/finder`}
           className="inline-flex items-center gap-2 rounded-md bg-accent text-cream px-5 py-2.5 text-sm font-semibold hover:bg-accent-deep transition-colors whitespace-nowrap"
         >
-          Take the 60-second quiz →
+          {dict.detail.takeQuiz} →
         </Link>
       </header>
 

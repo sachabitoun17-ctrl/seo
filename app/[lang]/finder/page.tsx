@@ -29,18 +29,15 @@ export default async function FinderPage({ params }: Props) {
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
-        { href: `/${params.lang}/finder`, label: 'Find your basecamp' },
+        { href: `/${params.lang}`, label: dict.common.home },
+        { href: `/${params.lang}/finder`, label: dict.nav.findMyCity },
       ]} />
       <header className="max-w-2xl mt-4">
-        <p className="text-xs uppercase tracking-widest text-accent font-semibold">Interactive · 60 seconds</p>
+        <p className="text-xs uppercase tracking-widest text-accent font-semibold">{dict.home.curatedBadge}</p>
         <h1 className="mt-2 text-4xl sm:text-5xl font-semibold tracking-tightest font-display">
-          Find your best place to work remotely
+          {dict.home.findMyBestCity}
         </h1>
-        <p className="mt-4 text-muted text-lg leading-relaxed">
-          Six questions. {cities.length} cities scored on your priorities — budget,
-          internet, climate, visa, lifestyle. No signup.
-        </p>
+        <p className="mt-4 text-muted text-lg leading-relaxed">{dict.home.pitchFinderText}</p>
       </header>
 
       <div className="mt-10">

@@ -26,7 +26,7 @@ export default async function VisasIndexPage({ params }: Props) {
   return (
     <div className="py-14">
       <Breadcrumbs items={[
-        { href: `/${params.lang}`, label: 'Home' },
+        { href: `/${params.lang}`, label: dict.common.home },
         { href: `/${params.lang}/visas`, label: dict.nav.visas },
       ]} />
       <header className="max-w-3xl mt-4">

@@ -77,7 +77,7 @@ export default async function HomePage({ params }: Props) {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream/15 backdrop-blur-sm text-cream text-xs font-semibold uppercase tracking-widest border border-cream/20">
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                Curated for slow nomads · 2026
+                {dict.home.curatedBadge}
               </div>
               <h1 className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tightest leading-[1.02] font-display">
                 {dict.home.heroTitle}
@@ -90,7 +90,7 @@ export default async function HomePage({ params }: Props) {
                   href={`/${params.lang}/finder`}
                   className="inline-flex items-center gap-2 rounded-md bg-accent text-cream px-6 py-3 text-sm font-semibold hover:bg-accent-deep transition-colors shadow-lg"
                 >
-                  Find my best city (60s quiz)
+                  {dict.home.findMyBestCity}
                   <span aria-hidden>→</span>
                 </Link>
                 <Link
@@ -112,19 +112,19 @@ export default async function HomePage({ params }: Props) {
             <div className="lg:col-span-5 grid grid-cols-2 gap-3">
               <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
                 <p className="text-3xl font-semibold tracking-tightest text-cream">{countries.length}</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Countries</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">{dict.home.countriesLabel}</p>
               </div>
               <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
                 <p className="text-3xl font-semibold tracking-tightest text-cream">{cities.length}+</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Nomad cities</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">{dict.home.nomadCitiesLabel}</p>
               </div>
               <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
                 <p className="text-3xl font-semibold tracking-tightest text-cream">{visas.length}+</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Nomad visas</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">{dict.home.nomadVisasLabel}</p>
               </div>
               <div className="rounded-2xl bg-cream/10 backdrop-blur-sm border border-cream/15 p-5">
                 <p className="text-3xl font-semibold tracking-tightest text-cream">{guides.length}+</p>
-                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">Long guides</p>
+                <p className="mt-1 text-xs uppercase tracking-widest text-cream/70">{dict.home.longGuidesLabel}</p>
               </div>
             </div>
           </div>
@@ -138,24 +138,18 @@ export default async function HomePage({ params }: Props) {
           className="group block rounded-2xl border border-line bg-paper p-6 card-hover"
         >
           <div className="text-2xl">🎯</div>
-          <h3 className="mt-3 text-lg font-semibold tracking-tightish">Find your basecamp</h3>
-          <p className="mt-2 text-sm text-muted leading-relaxed">
-            6-question quiz across {cities.length}+ cities. Budget, internet, climate, visa — get
-            your top 9 matches in 60 seconds.
-          </p>
-          <span className="mt-3 inline-block text-sm font-semibold text-accent">Take the quiz →</span>
+          <h3 className="mt-3 text-lg font-semibold tracking-tightish">{dict.home.pitchFinderTitle}</h3>
+          <p className="mt-2 text-sm text-muted leading-relaxed">{dict.home.pitchFinderText}</p>
+          <span className="mt-3 inline-block text-sm font-semibold text-accent">{dict.home.pitchFinderCta} →</span>
         </Link>
         <Link
           href={`/${params.lang}/cities`}
           className="group block rounded-2xl border border-line bg-paper p-6 card-hover"
         >
           <div className="text-2xl">🔍</div>
-          <h3 className="mt-3 text-lg font-semibold tracking-tightish">Filter every city</h3>
-          <p className="mt-2 text-sm text-muted leading-relaxed">
-            Cost index, Mbps, safety, region, nomad score. Sliders + chips. Sort by what
-            actually matters for your trip.
-          </p>
-          <span className="mt-3 inline-block text-sm font-semibold text-accent">Open the filter →</span>
+          <h3 className="mt-3 text-lg font-semibold tracking-tightish">{dict.home.pitchFilterTitle}</h3>
+          <p className="mt-2 text-sm text-muted leading-relaxed">{dict.home.pitchFilterText}</p>
+          <span className="mt-3 inline-block text-sm font-semibold text-accent">{dict.home.pitchFilterCta} →</span>
         </Link>
         <a
           href={`https://slateremote.com/${params.lang}`}
@@ -164,12 +158,9 @@ export default async function HomePage({ params }: Props) {
           className="group block rounded-2xl border border-ink bg-ink text-cream p-6 card-hover"
         >
           <div className="text-2xl">💼</div>
-          <h3 className="mt-3 text-lg font-semibold tracking-tightish">Find the remote job</h3>
-          <p className="mt-2 text-sm text-cream/80 leading-relaxed">
-            Slate Remote — our sister site — aggregates every remote role from every major
-            board. One search, all sources, refreshed daily.
-          </p>
-          <span className="mt-3 inline-block text-sm font-semibold text-accent">Browse jobs ↗</span>
+          <h3 className="mt-3 text-lg font-semibold tracking-tightish">{dict.home.pitchJobsTitle}</h3>
+          <p className="mt-2 text-sm text-cream/80 leading-relaxed">{dict.home.pitchJobsText}</p>
+          <span className="mt-3 inline-block text-sm font-semibold text-accent">{dict.home.pitchJobsCta} ↗</span>
         </a>
       </section>
 
@@ -185,16 +176,16 @@ export default async function HomePage({ params }: Props) {
         <section className="mt-20">
           <div className="flex items-baseline justify-between">
             <div>
-              <p className="text-xs uppercase tracking-widest text-accent font-semibold">Google Trends 2026</p>
+              <p className="text-xs uppercase tracking-widest text-accent font-semibold">{dict.home.trendingKicker}</p>
               <h2 className="mt-1 text-2xl sm:text-3xl font-semibold tracking-tightish font-display">
-                Trending right now
+                {dict.home.trendingTitle}
               </h2>
             </div>
             <Link
               href={`/${params.lang}/best/trending-countries`}
               className="text-sm text-accent hover:underline underline-offset-4"
             >
-              See all →
+              {dict.home.seeAll} →
             </Link>
           </div>
           <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
@@ -238,9 +229,9 @@ export default async function HomePage({ params }: Props) {
       {/* Top cities */}
       <section className="mt-20">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">Top nomad cities</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">{dict.home.topCities}</h2>
           <Link href={`/${params.lang}/cities`} className="text-sm text-accent hover:underline underline-offset-4">
-            See all {dict.nav.cities.toLowerCase()} →
+            {dict.home.seeAll} →
           </Link>
         </div>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -255,9 +246,9 @@ export default async function HomePage({ params }: Props) {
       {/* Browse by criterion */}
       <section className="mt-20">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">Browse by criterion</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">{dict.home.browseByCriterion}</h2>
           <Link href={`/${params.lang}/best`} className="text-sm text-accent hover:underline underline-offset-4">
-            All filters →
+            {dict.home.allFilters} →
           </Link>
         </div>
         <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -278,9 +269,9 @@ export default async function HomePage({ params }: Props) {
       {/* Visas */}
       <section className="mt-20">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">Digital nomad visas</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">{dict.home.digitalNomadVisas}</h2>
           <Link href={`/${params.lang}/visas`} className="text-sm text-accent hover:underline underline-offset-4">
-            See all visas →
+            {dict.home.seeAll} →
           </Link>
         </div>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -295,9 +286,9 @@ export default async function HomePage({ params }: Props) {
       {/* Guides */}
       <section className="mt-20">
         <div className="flex items-baseline justify-between">
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">Long-stay guides</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tightish font-display">{dict.home.longStayGuides}</h2>
           <Link href={`/${params.lang}/guides`} className="text-sm text-accent hover:underline underline-offset-4">
-            See all guides →
+            {dict.home.seeAll} →
           </Link>
         </div>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -315,18 +306,17 @@ export default async function HomePage({ params }: Props) {
       <section className="mt-24 rounded-3xl bg-paper-gradient border border-line p-10 sm:p-14 text-center">
         <LogoMark size={48} className="text-accent mx-auto" />
         <h2 className="mt-5 text-3xl sm:text-4xl font-semibold tracking-tightest font-display">
-          Stay longer. Live deeper.
+          {dict.home.ctaTitle}
         </h2>
         <p className="mt-3 text-muted max-w-xl mx-auto">
-          Every page on Slowmadly is researched for nomads who pick a place and settle in
-          for a month, a season, or a year.
+          {dict.home.ctaSubtitle}
         </p>
         <div className="mt-7">
           <Link
             href={`/${params.lang}/best`}
             className="inline-flex items-center gap-2 rounded-md bg-ink text-cream px-6 py-3 text-sm font-medium hover:bg-accent-deep transition-colors"
           >
-            Find your next basecamp <span aria-hidden>→</span>
+            {dict.home.ctaButton} <span aria-hidden>→</span>
           </Link>
         </div>
       </section>

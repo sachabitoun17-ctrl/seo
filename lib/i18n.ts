@@ -33,6 +33,16 @@ export type Dictionary = {
     compare: string;
     regions: string;
     about: string;
+    findMyCity: string;
+    themes: string;
+    byJobRole: string;
+    bySeason: string;
+    costOfLiving: string;
+    coworking: string;
+    bestFor: string;
+    tools: string;
+    glossary: string;
+    search: string;
   };
   footer: {
     tagline: string;
@@ -46,6 +56,32 @@ export type Dictionary = {
     heroSubtitle: string;
     exploreCountries: string;
     exploreCities: string;
+    findMyBestCity: string;
+    trendingKicker: string;
+    trendingTitle: string;
+    topCities: string;
+    seeAll: string;
+    browseByCriterion: string;
+    allFilters: string;
+    digitalNomadVisas: string;
+    longStayGuides: string;
+    pitchFinderTitle: string;
+    pitchFinderText: string;
+    pitchFinderCta: string;
+    pitchFilterTitle: string;
+    pitchFilterText: string;
+    pitchFilterCta: string;
+    pitchJobsTitle: string;
+    pitchJobsText: string;
+    pitchJobsCta: string;
+    countriesLabel: string;
+    nomadCitiesLabel: string;
+    nomadVisasLabel: string;
+    longGuidesLabel: string;
+    ctaTitle: string;
+    ctaSubtitle: string;
+    ctaButton: string;
+    curatedBadge: string;
   };
   country: {
     overview: string;
@@ -56,10 +92,31 @@ export type Dictionary = {
     weather: string;
     keyFacts: string;
   };
+  detail: {
+    setupBefore: string;
+    setupBeforeApply: string;
+    whereNomadsStay: string;
+    otherCitiesIn: string;
+    citiesIn: string;
+    visasFor: string;
+    guidesFor: string;
+    relatedCountries: string;
+    relatedCities: string;
+    relatedVisas: string;
+    haveVisaNeedJob: string;
+    takeQuiz: string;
+    sponsored: string;
+    shortStay: string;
+    digitalNomadVisa: string;
+    passiveIncomeVisa: string;
+    matchYourFilters: string;
+    noMatch: string;
+  };
   common: {
     updated: string;
     loading: string;
     notFound: string;
+    home: string;
   };
 };
 
