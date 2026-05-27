@@ -1,30 +1,28 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import Link from 'next/link';
 import type { City } from '@/lib/data/cities';
 import type { Country } from '@/lib/data/countries';
 import type { Locale } from '@/lib/i18n';
 import { CityCard } from '@/components/CityCard';
 
-type Budget = 'tight' | 'medium' | 'comfortable' | 'unlimited';
-type Speed = 'any' | 'standard' | 'fast' | 'ultra';
-type Climate = 'warm' | 'mild' | 'cold-ok' | 'any';
-type Region = 'any' | 'Europe' | 'Asia' | 'Americas' | 'Africa' | 'Oceania';
-type Lifestyle = 'beach' | 'city' | 'mountain' | 'budget' | 'any';
-type Visa = 'none' | 'digital-nomad' | 'passive-income' | 'any';
+type Budget = 'tight' | 'medium' | 'comfortable' | 'open';
+type Workday = 'solo' | 'mixed' | 'calls' | 'heavy';
+type Morning = 'beach' | 'urban' | 'nature' | 'quiet';
+type Stay = 'weeks' | 'month-two' | 'basecamp' | 'home';
+type Priority = 'budget' | 'community' | 'outdoors' | 'warmth';
 
 const BUDGET_CAP: Record<Budget, number> = {
   tight: 50,
   medium: 65,
   comfortable: 80,
-  unlimited: 200,
+  open: 200,
 };
-const SPEED_MIN: Record<Speed, number> = {
-  any: 0,
-  standard: 50,
-  fast: 100,
-  ultra: 200,
+const SPEED_MIN: Record<Workday, number> = {
+  solo: 25,
+  mixed: 50,
+  calls: 100,
+  heavy: 200,
 };
 
 type Props = {
@@ -35,11 +33,10 @@ type Props = {
 
 export function Finder({ locale, cities, countries }: Props) {
   const [budget, setBudget] = useState<Budget>('medium');
-  const [speed, setSpeed] = useState<Speed>('fast');
-  const [climate, setClimate] = useState<Climate>('warm');
-  const [region, setRegion] = useState<Region>('any');
-  const [lifestyle, setLifestyle] = useState<Lifestyle>('any');
-  const [visa, setVisa] = useState<Visa>('any');
+  const [workday, setWorkday] = useState<Workday>('mixed');
+  const [morning, setMorning] = useState<Morning>('urban');
+  const [stay, setStay] = useState<Stay>('basecamp');
+  const [priority, setPriority] = useState<Priority>('community');
   const [submitted, setSubmitted] = useState(false);
 
   const countryBySlug = useMemo(
@@ -49,99 +46,117 @@ export function Finder({ locale, cities, countries }: Props) {
 
   const ranked = useMemo(() => {
     if (!submitted) return [];
+    const budgetCap = BUDGET_CAP[budget];
+    const speedMin = SPEED_MIN[workday];
+
     return cities
       .map((c) => {
         const country = countryBySlug.get(c.country);
+        const tags = country?.tags || [];
         let score = 0;
         const reasons: string[] = [];
 
-        // Budget — hard cap softly
-        const budgetCap = BUDGET_CAP[budget];
+        // Budget — soft cap
         if (c.costIndex <= budgetCap) {
           score += 25;
-          reasons.push(`Fits ${budget} budget (${c.costIndex}/100)`);
+          if (budget !== 'open') reasons.push(`Fits ${c.costIndex}/100 cost index`);
         } else {
-          score -= (c.costIndex - budgetCap) * 0.4;
+          score -= (c.costIndex - budgetCap) * 0.5;
         }
 
         // Internet
-        const speedMin = SPEED_MIN[speed];
         if (c.internetMbps >= speedMin) {
-          score += 20;
-          if (speed !== 'any') reasons.push(`${c.internetMbps} Mbps internet`);
+          score += 18;
+          if (workday !== 'solo') reasons.push(`${c.internetMbps} Mbps internet`);
         } else {
-          score -= (speedMin - c.internetMbps) * 0.2;
+          score -= (speedMin - c.internetMbps) * 0.25;
         }
 
-        // Climate — based on temp range
-        if (climate === 'warm' && c.tempMinC >= 15) {
-          score += 15;
-          reasons.push(`Warm year-round (${c.tempMinC}-${c.tempMaxC}°C)`);
-        } else if (climate === 'mild' && c.tempMaxC <= 28 && c.tempMinC >= 5) {
-          score += 15;
-          reasons.push(`Mild climate (${c.tempMinC}-${c.tempMaxC}°C)`);
-        } else if (climate === 'cold-ok') {
-          score += 5;
-        } else if (climate === 'any') {
-          score += 5;
-        }
-
-        // Region
-        if (region !== 'any' && country) {
-          if (country.region === region) {
-            score += 15;
-          } else {
-            score -= 30;
-          }
-        }
-
-        // Lifestyle (tag-based)
-        if (lifestyle !== 'any' && country) {
-          const tags = country.tags || [];
-          if (lifestyle === 'beach' && (tags.includes('beach') || tags.includes('coastal') || tags.includes('island'))) {
-            score += 10;
-            reasons.push('Beach lifestyle');
-          }
-          if (lifestyle === 'city' && (tags.includes('urban') || tags.includes('capital'))) {
-            score += 10;
-            reasons.push('Urban energy');
-          }
-          if (lifestyle === 'mountain' && (tags.includes('mountain') || tags.includes('nature'))) {
-            score += 10;
-            reasons.push('Mountains & nature');
-          }
-          if (lifestyle === 'budget' && c.costIndex <= 55) {
-            score += 10;
-            reasons.push('Budget-friendly');
-          }
-        }
-
-        // Visa
-        if (visa !== 'any' && country) {
-          if (visa === 'none' && country.visa.shortStay.toLowerCase().includes('visa-free')) {
-            score += 10;
-            reasons.push('Visa-free access');
-          }
-          if (visa === 'digital-nomad' && !country.visa.digitalNomad.toLowerCase().includes('none')) {
+        // Morning → climate + lifestyle inferred together
+        if (morning === 'beach') {
+          if (c.tempMinC >= 15) score += 12;
+          else score -= 5;
+          if (tags.includes('beach') || tags.includes('coastal') || tags.includes('island')) {
             score += 12;
-            reasons.push('Digital nomad visa available');
+            reasons.push('Coastal, warm year-round');
+          } else if (c.tempMinC >= 18) {
+            score += 4;
           }
-          if (visa === 'passive-income' && !country.visa.passiveIncome.toLowerCase().includes('none')) {
+        } else if (morning === 'urban') {
+          if (c.tempMaxC <= 30 && c.tempMinC >= 0) score += 8;
+          if (tags.includes('urban') || tags.includes('capital')) {
             score += 12;
-            reasons.push('Passive income visa');
+            reasons.push('Big-city energy');
+          }
+          // Coworking density is a great urban proxy
+          if (c.coworkingCount >= 10) score += 6;
+        } else if (morning === 'nature') {
+          if (tags.includes('mountain') || tags.includes('nature') || tags.includes('outdoors')) {
+            score += 14;
+            reasons.push('Mountains & nature nearby');
+          }
+          // Cooler places skew nature
+          if (c.tempMaxC <= 26) score += 4;
+        } else if (morning === 'quiet') {
+          // Smaller cities — proxy via coworking count being moderate (not zero, not 50+)
+          if (c.coworkingCount > 0 && c.coworkingCount <= 15) score += 6;
+          if (c.tempMaxC <= 28 && c.tempMinC >= 5) score += 6;
+          // Penalise capitals
+          if (tags.includes('capital')) score -= 4;
+        }
+
+        // Stay duration → visa pathway
+        if (country) {
+          const sShort = country.visa.shortStay.toLowerCase();
+          const sDnv = country.visa.digitalNomad.toLowerCase();
+          const sPi = country.visa.passiveIncome.toLowerCase();
+          if (stay === 'weeks') {
+            if (sShort.includes('visa-free')) {
+              score += 8;
+              reasons.push('Visa-free for short stays');
+            }
+          } else if (stay === 'month-two') {
+            if (sShort.includes('visa-free')) score += 10;
+          } else if (stay === 'basecamp') {
+            if (!sDnv.includes('none')) {
+              score += 14;
+              reasons.push('Digital nomad visa available');
+            } else if (sShort.includes('90')) {
+              score += 4;
+            }
+          } else if (stay === 'home') {
+            if (!sPi.includes('none')) {
+              score += 14;
+              reasons.push('Long-term residency pathway');
+            } else if (!sDnv.includes('none')) {
+              score += 8;
+            }
           }
         }
 
-        // Nomad score baseline
-        score += c.nomadScore * 2;
-        score += (100 - c.costIndex) * 0.15;
-        score += c.safetyIndex * 0.1;
+        // Priority — reweight the tiebreaker
+        if (priority === 'budget') {
+          score += (100 - c.costIndex) * 0.35;
+        } else if (priority === 'community') {
+          score += c.coworkingCount * 0.4;
+          score += c.nomadScore * 1.5;
+        } else if (priority === 'outdoors') {
+          if (tags.includes('mountain') || tags.includes('nature') || tags.includes('island') || tags.includes('coastal')) {
+            score += 8;
+          }
+        } else if (priority === 'warmth') {
+          score += Math.max(0, (c.tempMinC - 5)) * 0.8;
+        }
+
+        // Baseline nomad score + safety
+        score += c.nomadScore * 1.8;
+        score += c.safetyIndex * 0.08;
 
         return { city: c, country, score: Math.round(score), reasons: reasons.slice(0, 3) };
       })
       .sort((a, b) => b.score - a.score)
       .slice(0, 9);
-  }, [budget, speed, climate, region, lifestyle, visa, submitted, cities, countryBySlug]);
+  }, [budget, workday, morning, stay, priority, submitted, cities, countryBySlug]);
 
   return (
     <div>
@@ -154,76 +169,62 @@ export function Finder({ locale, cities, countries }: Props) {
           className="rounded-2xl border border-line bg-paper p-6 sm:p-8 space-y-7"
         >
           <Q
-            label="Monthly budget"
-            help="All-in: rent, food, transport, coworking. Western cities are 'comfortable'+."
+            label="A fair monthly budget for everything"
+            help="Rent, food, transport, a coworking pass — all in."
             value={budget}
             onChange={setBudget}
             options={[
-              { v: 'tight', label: '< €1 000', sub: 'SE Asia, LATAM' },
-              { v: 'medium', label: '€1 000–1 800', sub: 'East Europe, Mexico' },
-              { v: 'comfortable', label: '€1 800–3 000', sub: 'Lisbon, Madrid, BCN' },
-              { v: 'unlimited', label: '€3 000+', sub: 'No constraint' },
+              { v: 'tight', label: 'Under €1 000', sub: 'I stretch every euro' },
+              { v: 'medium', label: '€1 000–1 800', sub: 'Comfortable, not flashy' },
+              { v: 'comfortable', label: '€1 800–3 000', sub: 'Like home, abroad' },
+              { v: 'open', label: 'No real ceiling', sub: 'Pick the right place' },
             ]}
           />
           <Q
-            label="Internet you need"
-            help="200+ Mbps is overkill for most. 50 is fine unless you stream/code in calls 8h/day."
-            value={speed}
-            onChange={setSpeed}
+            label="What does your work actually look like?"
+            help="Hint at what your bandwidth needs to handle."
+            value={workday}
+            onChange={setWorkday}
             options={[
-              { v: 'any', label: 'Any', sub: 'Email + light meetings' },
-              { v: 'standard', label: '50+ Mbps', sub: 'Daily Zoom calls' },
-              { v: 'fast', label: '100+ Mbps', sub: 'Video editing, devs' },
-              { v: 'ultra', label: '200+ Mbps', sub: 'Streaming + uploads' },
+              { v: 'solo', label: 'Mostly solo work', sub: 'Writing, docs, the odd call' },
+              { v: 'mixed', label: 'A few meetings a day', sub: 'Standard remote rhythm' },
+              { v: 'calls', label: 'Back-to-back calls', sub: 'Screen sharing all day' },
+              { v: 'heavy', label: 'Heavy upload work', sub: 'Video, dev pushes, streaming' },
             ]}
           />
           <Q
-            label="Climate"
-            help="Based on annual temperature range from city data."
-            value={climate}
-            onChange={setClimate}
+            label="The morning that makes you happy"
+            help="Tells us about climate and the kind of place you want around you."
+            value={morning}
+            onChange={setMorning}
             options={[
-              { v: 'warm', label: 'Warm year-round', sub: 'Never below 15°C' },
-              { v: 'mild', label: 'Mild seasons', sub: '5–28°C' },
-              { v: 'cold-ok', label: 'Cold is fine', sub: 'I like winter' },
-              { v: 'any', label: 'No preference', sub: '' },
+              { v: 'beach', label: 'Coffee with a sea breeze', sub: 'Sun, slow, salt in the air' },
+              { v: 'urban', label: 'A walk through a buzzing city', sub: 'Cafés, talent, things to do' },
+              { v: 'nature', label: 'A trail before the laptop', sub: 'Mountains, forest, cool air' },
+              { v: 'quiet', label: 'A quiet café, no rush', sub: 'Small streets, low key' },
             ]}
           />
           <Q
-            label="Region"
-            value={region}
-            onChange={setRegion}
+            label="How long are you really planning to stay?"
+            help="Drives the visa pathway and what to optimise for."
+            value={stay}
+            onChange={setStay}
             options={[
-              { v: 'any', label: 'Anywhere', sub: '' },
-              { v: 'Europe', label: 'Europe', sub: 'PT, ES, IT, EE…' },
-              { v: 'Asia', label: 'Asia', sub: 'TH, ID, VN, JP…' },
-              { v: 'Americas', label: 'Americas', sub: 'MX, CO, AR, BR…' },
-              { v: 'Africa', label: 'Africa', sub: 'MA, ZA, CV…' },
-              { v: 'Oceania', label: 'Oceania', sub: 'NZ' },
+              { v: 'weeks', label: 'A few weeks then move', sub: 'Trying it on' },
+              { v: 'month-two', label: 'A month or two', sub: 'Slow travel pace' },
+              { v: 'basecamp', label: '3 to 12 months', sub: 'A real basecamp' },
+              { v: 'home', label: 'A year or more', sub: 'Building a home base' },
             ]}
           />
           <Q
-            label="Lifestyle"
-            value={lifestyle}
-            onChange={setLifestyle}
+            label="When it comes down to two places, what tips the scale?"
+            value={priority}
+            onChange={setPriority}
             options={[
-              { v: 'any', label: 'No preference', sub: '' },
-              { v: 'beach', label: 'Beach & coastal', sub: 'Island vibes' },
-              { v: 'city', label: 'Big city', sub: 'Cafés, events, talent' },
-              { v: 'mountain', label: 'Nature / mountains', sub: 'Slow pace' },
-              { v: 'budget', label: 'Cheapest possible', sub: 'Stretch the runway' },
-            ]}
-          />
-          <Q
-            label="Visa pathway"
-            help="If you'll stay longer than 90 days, you usually need a visa."
-            value={visa}
-            onChange={setVisa}
-            options={[
-              { v: 'any', label: 'Not sure', sub: '' },
-              { v: 'none', label: 'Visa-free for me', sub: 'Short stays only' },
-              { v: 'digital-nomad', label: 'Digital nomad visa', sub: 'Work-from-anywhere visa' },
-              { v: 'passive-income', label: 'Passive income visa', sub: 'D7, NLV, etc.' },
+              { v: 'budget', label: 'Stretches my runway', sub: 'Cheap wins' },
+              { v: 'community', label: 'A real nomad scene', sub: 'Coworking, events, people' },
+              { v: 'outdoors', label: 'Wild outdoors nearby', sub: 'Hikes, beaches, escapes' },
+              { v: 'warmth', label: 'Just keep it warm', sub: 'I cannot do grey winters' },
             ]}
           />
 
@@ -231,7 +232,7 @@ export function Finder({ locale, cities, countries }: Props) {
             type="submit"
             className="w-full inline-flex items-center justify-center gap-2 rounded-md bg-ink text-cream px-6 py-3.5 text-sm font-semibold hover:bg-accent-deep transition-colors"
           >
-            Find my best places to work →
+            Show me my matches →
           </button>
         </form>
       ) : (
@@ -253,7 +254,7 @@ export function Finder({ locale, cities, countries }: Props) {
           </div>
 
           <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {ranked.map(({ city, score, reasons }, i) => (
+            {ranked.map(({ city, reasons }, i) => (
               <li key={city.slug} className="relative">
                 <div className="absolute -top-2 -left-2 z-10 inline-flex items-center justify-center w-9 h-9 rounded-full bg-accent text-cream text-sm font-bold shadow-md">
                   #{i + 1}

@@ -133,13 +133,13 @@ export const PARTNERS: Partner[] = [
     active: true,
   },
 
-  // Accommodation
+  // Host on Airbnb — referral for property owners who want to list their place
   {
-    id: 'airbnb',
-    name: 'Airbnb',
+    id: 'airbnb-host',
+    name: 'Host on Airbnb',
     url: 'https://airbnb.fr/rp/sbitoun2?p=stay',
-    blurb: 'Monthly rentals in every nomad city. Use the monthly filter for 30-50% off long stays.',
-    category: 'accommodation',
+    blurb: 'Empty apartment while you travel? List it on Airbnb and cover your trip. Onboarding bonus for new hosts.',
+    category: 'earn-while-traveling',
     tier: 'secondary',
     active: true,
   },
