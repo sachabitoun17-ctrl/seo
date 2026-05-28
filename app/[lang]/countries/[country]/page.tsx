@@ -35,11 +35,16 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const country = getCountry(params.country);
   if (!country) return {};
+  const dict = await getDictionary(params.lang);
   const name = getCountryName(country, params.lang);
+  const description = dict.meta.countryDescTpl
+    .replace('{name}', name)
+    .replace('{costIndex}', String(country.costIndex))
+    .replace('{internetMbps}', String(country.internetMbps));
   return buildPageMetadata({
     locale: params.lang,
-    title: `${name} digital nomad guide 2026`,
-    description: `${name} for nomads: digital nomad visa, cost of living index ${country.costIndex}/100, ${country.internetMbps} Mbps avg internet, safety, weather, top cities and what it actually costs to live there.`,
+    title: `${name} ${dict.meta.countryTitleSuffix}`,
+    description,
     pathForLocale: (l) => `/${l}/countries/${country.slug}`,
     ogType: 'article',
   });

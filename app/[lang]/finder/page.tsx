@@ -13,10 +13,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Find your best place to work remotely — quiz',
-    description: 'Tell us your budget, internet needs and climate preference. We rank 100+ nomad cities and match you with the best basecamp.',
+    title: dict.meta.finderTitle,
+    description: dict.meta.finderDesc,
     pathForLocale: (l) => `/${l}/finder`,
   });
 }

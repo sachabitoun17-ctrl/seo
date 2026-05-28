@@ -31,15 +31,22 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const visa = getVisa(params.visa);
   if (!visa) return {};
+  const dict = await getDictionary(params.lang);
   const country = getCountry(visa.country);
   const cName = country ? getCountryName(country, params.lang) : visa.country;
-  const incomeStr = visa.minIncomeMonthlyEur
-    ? `from €${visa.minIncomeMonthlyEur.toLocaleString()}/mo`
-    : 'no income minimum';
+  const income = visa.minIncomeMonthlyEur
+    ? dict.meta.visaIncomeFrom.replace('{amount}', visa.minIncomeMonthlyEur.toLocaleString())
+    : dict.meta.visaIncomeNone;
+  const description = dict.meta.visaDescTpl
+    .replace('{name}', visa.name)
+    .replace('{country}', cName)
+    .replace('{income}', income)
+    .replace('{months}', String(visa.durationMonths))
+    .replace('{days}', String(visa.processingDays));
   return buildPageMetadata({
     locale: params.lang,
-    title: `${visa.name} (2026): how to apply`,
-    description: `Apply for the ${visa.name} in ${cName}. ${incomeStr}, ${visa.durationMonths} months duration, ${visa.processingDays}-day processing. Tax and family rules covered.`,
+    title: `${visa.name} (2026): ${dict.meta.visaTitleSuffix}`,
+    description,
     pathForLocale: (l) => `/${l}/visas/${visa.slug}`,
     ogType: 'article',
   });

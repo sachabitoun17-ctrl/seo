@@ -12,10 +12,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Best nomad destinations by criterion (2026)',
-    description: 'Browse the 50+ digital nomad countries by what matters to you: warm, affordable, fast WiFi, Schengen, English-speaking, tax-friendly.',
+    title: dict.meta.bestTitle,
+    description: dict.meta.bestDesc,
     pathForLocale: (l) => `/${l}/best`,
   });
 }

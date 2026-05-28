@@ -15,10 +15,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Best coworking spaces by city for digital nomads (2026)',
-    description: 'Top coworking spaces in 20+ nomad cities (Lisbon, Bali, Bangkok, Berlin, Mexico City…) with hot-desk monthly rates and community notes.',
+    title: dict.meta.coworkingTitle,
+    description: dict.meta.coworkingDesc,
     pathForLocale: (l) => `/${l}/coworking`,
   });
 }

@@ -12,10 +12,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Cost of living for digital nomads (2026)',
-    description: 'Detailed monthly cost breakdowns for 75+ digital nomad cities in 2026: rent, food, coworking, transport.',
+    title: dict.meta.costOfLivingTitle,
+    description: dict.meta.costOfLivingDesc,
     pathForLocale: (l) => `/${l}/cost-of-living`,
   });
 }

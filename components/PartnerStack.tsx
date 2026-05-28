@@ -35,7 +35,7 @@ export function PartnerStack({
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={partnerLogo(url)}
-                alt=""
+                alt={`${p.name} logo`}
                 width={32}
                 height={32}
                 loading="lazy"

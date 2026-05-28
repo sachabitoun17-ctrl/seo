@@ -10,10 +10,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Search countries, cities, visas, guides (2026)',
-    description: 'Search 3700+ pages on Slowmadly: countries, nomad cities, digital nomad visas, comparisons, lifestyle themes and long-form guides.',
+    title: dict.meta.searchTitle,
+    description: dict.meta.searchDesc,
     pathForLocale: (l) => `/${l}/search`,
   });
 }

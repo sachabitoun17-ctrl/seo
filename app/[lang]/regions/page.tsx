@@ -12,10 +12,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Digital nomad destinations by region (2026)',
-    description: 'Browse 50+ digital nomad countries across Europe, SEA, Latin America, East Asia, Caucasus, Africa & the Caribbean.',
+    title: dict.meta.regionsTitle,
+    description: dict.meta.regionsDesc,
     pathForLocale: (l) => `/${l}/regions`,
   });
 }

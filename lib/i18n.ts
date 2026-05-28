@@ -118,6 +118,43 @@ export type Dictionary = {
     notFound: string;
     home: string;
   };
+  meta: {
+    forNomads2026: string;
+    finderTitle: string;
+    finderDesc: string;
+    countriesDesc: string;
+    citiesDesc: string;
+    visasDesc: string;
+    guidesDesc: string;
+    bestTitle: string;
+    bestDesc: string;
+    compareTitle: string;
+    compareDesc: string;
+    regionsTitle: string;
+    regionsDesc: string;
+    glossaryTitle: string;
+    glossaryDesc: string;
+    themesTitle: string;
+    themesDesc: string;
+    coworkingTitle: string;
+    coworkingDesc: string;
+    costOfLivingTitle: string;
+    costOfLivingDesc: string;
+    forTitle: string;
+    forDesc: string;
+    seasonalTitle: string;
+    seasonalDesc: string;
+    searchTitle: string;
+    searchDesc: string;
+    countryTitleSuffix: string;
+    countryDescTpl: string;
+    cityTitleSuffix: string;
+    cityDescTpl: string;
+    visaTitleSuffix: string;
+    visaDescTpl: string;
+    visaIncomeFrom: string;
+    visaIncomeNone: string;
+  };
 };
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {

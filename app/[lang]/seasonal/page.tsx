@@ -12,10 +12,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Best digital nomad destinations by season (2026)',
-    description: 'Where to nomad in winter, spring, summer or autumn 2026. Cities and countries optimised for each season.',
+    title: dict.meta.seasonalTitle,
+    description: dict.meta.seasonalDesc,
     pathForLocale: (l) => `/${l}/seasonal`,
   });
 }

@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: `${dict.nav.countries} for digital nomads in 2026`,
-    description: 'Filter every digital-nomad-friendly country by cost, internet, safety, region and visa pathway. Find your next basecamp in 30 seconds.',
+    title: `${dict.nav.countries} ${dict.meta.forNomads2026}`,
+    description: dict.meta.countriesDesc,
     pathForLocale: (l) => `/${l}/countries`,
   });
 }

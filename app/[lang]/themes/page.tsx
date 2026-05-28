@@ -12,10 +12,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Nomad cities by lifestyle (2026)',
-    description: 'Find cities by lifestyle theme: surf, food, coworking, yoga, family, nightlife, nature, vegan, LGBTQ+ friendly, beach, mountain.',
+    title: dict.meta.themesTitle,
+    description: dict.meta.themesDesc,
     pathForLocale: (l) => `/${l}/themes`,
   });
 }

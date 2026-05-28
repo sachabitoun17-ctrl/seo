@@ -8,10 +8,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Digital nomad glossary 2026: visa, tax and remote work terms',
-    description: 'All the visa, tax residency, remote work and immigration terms a digital nomad needs to understand in 2026.',
+    title: dict.meta.glossaryTitle,
+    description: dict.meta.glossaryDesc,
     pathForLocale: (l) => `/${l}/glossary`,
   });
 }

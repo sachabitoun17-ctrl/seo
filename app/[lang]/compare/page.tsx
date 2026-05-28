@@ -12,10 +12,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Compare digital nomad destinations side by side',
-    description: '25+ head-to-head comparisons of digital nomad countries and cities: cost, visa, vibe, internet.',
+    title: dict.meta.compareTitle,
+    description: dict.meta.compareDesc,
     pathForLocale: (l) => `/${l}/compare`,
   });
 }
