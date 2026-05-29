@@ -40,6 +40,11 @@ const BY_TOPIC: Record<Guide['topic'], Callout[]> = {
     { partnerId: 'fireflies', text: 'When you stack 4-5 client calls in a day, Fireflies transcribes and summarises so your evenings stop being "writing notes about the day".' },
     { partnerId: 'beehiiv', text: 'If your client base ever asks "how do I keep up with what you are doing", Beehiiv is the fastest way to spin up a newsletter that monetises later.' },
   ],
+  freelancing: [
+    { partnerId: 'fiverr', text: 'The fastest way to test a gig idea is to publish it where buyers already search. Fiverr puts your offer in front of millions of clients on day one — no audience, no cold outreach needed.' },
+    { partnerId: 'wise', text: 'Fiverr pays out in USD. Withdraw to a Wise account and you keep the real exchange rate instead of losing 3-4% to your home bank every time you cash out.' },
+    { partnerId: 'claude', text: 'Use Claude to draft gig descriptions, FAQ answers and client briefs in minutes — then spend your time on the actual delivery that earns the 5-star review.' },
+  ],
 };
 
 type Props = {
@@ -79,7 +84,7 @@ export function TopicCallouts({ guide, locale }: Props) {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={partnerLogo(url)}
-                  alt=""
+                  alt={`${p.name} logo`}
                   width={28}
                   height={28}
                   loading="lazy"

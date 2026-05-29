@@ -163,7 +163,7 @@ export default async function GuideDetailPage({ params }: Props) {
       {(guide.topic === 'visas' || guide.topic === 'tax') && (
         <JobsCTA locale={params.lang} heading={dict.detail.haveVisaNeedJob} />
       )}
-      {(guide.topic === 'tools' || guide.topic === 'city-guide') && <AiToolsCTA locale={params.lang} />}
+      {(guide.topic === 'tools' || guide.topic === 'city-guide' || guide.topic === 'freelancing') && <AiToolsCTA locale={params.lang} />}
 
       <SlateRemoteBanner locale={params.lang} className="mt-12" size="compact" />
 
@@ -172,6 +172,8 @@ export default async function GuideDetailPage({ params }: Props) {
         categories={
           guide.topic === 'tools'
             ? ['productivity', 'ai-llm', 'voice-ai', 'newsletter', 'vpn', 'esim']
+            : guide.topic === 'freelancing'
+            ? ['earn-while-traveling', 'banking', 'ai-llm', 'newsletter']
             : guide.topic === 'tax' || guide.topic === 'visas'
             ? ['banking', 'insurance', 'esim', 'ai-llm']
             : guide.topic === 'cost'

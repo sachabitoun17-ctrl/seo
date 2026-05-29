@@ -197,10 +197,25 @@ export function flagSvg(code: string | undefined, width = 80): string | undefine
   return `https://flagcdn.com/w${width}/${code.toLowerCase()}.png`;
 }
 
+// Affiliate links often use a tracking host that has no favicon. Map those
+// back to the brand domain so the logo proxy resolves a real icon.
+const BRAND_HOST: Record<string, string> = {
+  'ablink.affiliates.fiverr.com': 'fiverr.com',
+  'wise.prf.hn': 'wise.com',
+  'refer-nordvpn.com': 'nordvpn.com',
+  'try.elevenlabs.io': 'elevenlabs.io',
+  'share.speechify.com': 'speechify.com',
+  'get.murf.ai': 'murf.ai',
+  't.mercor.com': 'mercor.com',
+  'amzn.to': 'amazon.com',
+  'referrals.uber.com': 'uber.com',
+};
+
 /** Brand favicon for a partner via DuckDuckGo icon proxy (free, no auth) */
 export function partnerLogo(url: string): string {
   try {
-    const host = new URL(url).hostname.replace(/^www\./, '');
+    const raw = new URL(url).hostname.replace(/^www\./, '');
+    const host = BRAND_HOST[raw] || raw;
     return `https://icons.duckduckgo.com/ip3/${host}.ico`;
   } catch {
     return '';

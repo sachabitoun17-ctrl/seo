@@ -5,7 +5,7 @@ export type GuideFaq = { q: string; a: string };
 
 export type Guide = {
   slug: string;
-  topic: 'visas' | 'cost' | 'infrastructure' | 'tax' | 'city-guide' | 'tools';
+  topic: 'visas' | 'cost' | 'infrastructure' | 'tax' | 'city-guide' | 'tools' | 'freelancing';
   title: Record<Locale, string>;
   description: Record<Locale, string>;
   relatedCountries?: string[];

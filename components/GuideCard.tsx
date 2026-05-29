@@ -13,6 +13,7 @@ const TOPIC_COLORS: Record<Guide['topic'], string> = {
   infrastructure: 'bg-sky-soft text-sky',
   'city-guide': 'bg-accent-soft text-accent-deep',
   tools: 'bg-cream border border-line text-charcoal',
+  freelancing: 'bg-sage-soft text-sage',
 };
 
 type Props = { guide: Guide; locale: Locale };
