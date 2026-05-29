@@ -26,10 +26,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const region = getRegion(params.region);
   if (!region) return {};
+  const dict = await getDictionary(params.lang);
   const name = getRegionName(region, params.lang);
+  const title = dict.meta.regionTitleTpl
+    .replace('{name}', name)
+    .replace('{count}', String(region.countries.length));
   return buildPageMetadata({
     locale: params.lang,
-    title: `${name} for digital nomads: ${region.countries.length} countries (2026)`,
+    title,
     description: region.description,
     pathForLocale: (l) => `/${l}/regions/${region.slug}`,
   });

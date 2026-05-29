@@ -127,6 +127,42 @@
     "visaTitleSuffix": "how to apply",
     "visaDescTpl": "Apply for the {name} in {country}. {income}, {months} months duration, {days}-day processing. Tax and family rules covered.",
     "visaIncomeFrom": "from €{amount}/mo",
-    "visaIncomeNone": "no income minimum"
+    "visaIncomeNone": "no income minimum",
+    "legalDesc": "Legal notice, terms of use, privacy and cookie policy.",
+    "aboutDesc": "About {site}: long-stay country and city guides for digital nomads who travel slowly.",
+    "contactDesc": "Contact {site}: corrections, partnerships, custom research.",
+    "toolsTitle": "Best tools for digital nomads (2026): banking, insurance, eSIM, AI",
+    "toolsDesc": "27 hand-picked tools we actually use as nomads: Wise, Revolut, SafetyWing, Airalo, NordVPN, Claude, Fireflies, Beehiiv and more. Save money + work better.",
+    "visasForTitle": "Digital nomad visas by nationality (2026)",
+    "visasForDesc": "Best digital nomad visas for US, EU, UK, Canadian, Australian, Indian, South African and Brazilian passports.",
+    "coworkingCityTitleTpl": "Best coworking spaces in {name} (2026): {count} picks",
+    "coworkingCityDescTpl": "Curated list of the best coworking spaces in {name}: hot-desk rates from ${min} to ${max}/month, what each space is best for.",
+    "costCityTitleTpl": "Cost of living in {name} 2026: ${total}/month",
+    "costCityDescTpl": "Real monthly cost breakdown for {name} as a digital nomad in 2026: rent, food, coworking, internet, transport. Solo nomad budget around ${total}.",
+    "compareTitleTpl": "{a} vs {b} for digital nomads (2026)",
+    "compareDescTpl": "{a} vs {b}: cost, internet, safety, weather, visa. {verdict}…",
+    "regionTitleTpl": "{name} for digital nomads: {count} countries (2026)",
+    "roleTitleTpl": "Best digital nomad cities for {role} (2026)",
+    "nationalityTitleTpl": "Best digital nomad visas for {name} (2026)",
+    "nationalityDescTpl": "{count} digital nomad visa programs ranked for {nameLower}: income, duration, tax, ease of application.",
+    "visaTypeTitleSuffix": "in 2026"
+  },
+  "visaType": {
+    "digital-nomad": {
+      "label": "Digital nomad visas",
+      "desc": "Visas designed for remote workers earning foreign income. 30+ countries now offer them in 2026."
+    },
+    "passive-income": {
+      "label": "Passive income visas",
+      "desc": "Visas for retirees, rentiers and passive income earners. No remote work or local employment required."
+    },
+    "investor": {
+      "label": "Investor and golden visas",
+      "desc": "Long-term residency in exchange for investment or bank deposit. Path to citizenship in some."
+    },
+    "freelance": {
+      "label": "Freelance and self-employment visas",
+      "desc": "Visas for liberal professions and self-employed workers. Local clients usually allowed."
+    }
   }
 }

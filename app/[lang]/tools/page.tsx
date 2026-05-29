@@ -59,10 +59,11 @@ const SECTIONS: { title: string; categories: PartnerCategory[]; intro: string }[
 ];
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Best tools for digital nomads (2026): banking, insurance, eSIM, AI',
-    description: '27 hand-picked tools we actually use as nomads: Wise, Revolut, SafetyWing, Airalo, NordVPN, Claude, Fireflies, Beehiiv and more. Save money + work better.',
+    title: dict.meta.toolsTitle,
+    description: dict.meta.toolsDesc,
     pathForLocale: (l) => `/${l}/tools`,
   });
 }

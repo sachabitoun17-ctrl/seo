@@ -127,6 +127,42 @@
     "visaTitleSuffix": "cómo solicitar",
     "visaDescTpl": "Solicita el {name} en {country}. {income}, duración {months} meses, tramitación en {days} días. Impuestos y normas familiares incluidos.",
     "visaIncomeFrom": "desde €{amount}/mes",
-    "visaIncomeNone": "sin ingresos mínimos"
+    "visaIncomeNone": "sin ingresos mínimos",
+    "legalDesc": "Aviso legal, términos de uso, privacidad y política de cookies.",
+    "aboutDesc": "Sobre {site}: guías de país y ciudad para estancias largas, para nómadas digitales que viajan despacio.",
+    "contactDesc": "Contacta con {site}: correcciones, colaboraciones, investigación a medida.",
+    "toolsTitle": "Mejores herramientas para nómadas digitales (2026): banca, seguros, eSIM, IA",
+    "toolsDesc": "27 herramientas seleccionadas que de verdad usamos como nómadas: Wise, Revolut, SafetyWing, Airalo, NordVPN, Claude, Fireflies, Beehiiv y más. Ahorra y trabaja mejor.",
+    "visasForTitle": "Visas para nómadas digitales por nacionalidad (2026)",
+    "visasForDesc": "Mejores visas para nómadas digitales para pasaportes de EE. UU., UE, Reino Unido, canadiense, australiano, indio, sudafricano y brasileño.",
+    "coworkingCityTitleTpl": "Mejores espacios de coworking en {name} (2026): {count} seleccionados",
+    "coworkingCityDescTpl": "Lista seleccionada de los mejores espacios de coworking en {name}: tarifas de hot-desk desde {min} $ hasta {max} $/mes, y para qué destaca cada espacio.",
+    "costCityTitleTpl": "Coste de vida en {name} 2026: {total} $/mes",
+    "costCityDescTpl": "Desglose mensual real de costes en {name} como nómada digital en 2026: alquiler, comida, coworking, internet, transporte. Presupuesto solo en torno a {total} $.",
+    "compareTitleTpl": "{a} vs {b} para nómadas digitales (2026)",
+    "compareDescTpl": "{a} vs {b}: coste, internet, seguridad, clima, visa. {verdict}…",
+    "regionTitleTpl": "{name} para nómadas digitales: {count} países (2026)",
+    "roleTitleTpl": "Mejores ciudades para nómadas para {role} (2026)",
+    "nationalityTitleTpl": "Mejores visas para nómadas digitales para {name} (2026)",
+    "nationalityDescTpl": "{count} programas de visa para nómadas digitales clasificados para {nameLower}: ingresos, duración, impuestos, facilidad de solicitud.",
+    "visaTypeTitleSuffix": "en 2026"
+  },
+  "visaType": {
+    "digital-nomad": {
+      "label": "Visas de nómada digital",
+      "desc": "Visas diseñadas para trabajadores remotos con ingresos extranjeros. Más de 30 países las ofrecen en 2026."
+    },
+    "passive-income": {
+      "label": "Visas de ingresos pasivos",
+      "desc": "Visas para jubilados, rentistas y perceptores de ingresos pasivos. Sin trabajo remoto ni empleo local requerido."
+    },
+    "investor": {
+      "label": "Visas de inversor y golden visas",
+      "desc": "Residencia de larga duración a cambio de inversión o depósito bancario. Vía a la ciudadanía en algunos casos."
+    },
+    "freelance": {
+      "label": "Visas de freelance y autónomo",
+      "desc": "Visas para profesiones liberales y trabajadores autónomos. Clientes locales normalmente permitidos."
+    }
   }
 }

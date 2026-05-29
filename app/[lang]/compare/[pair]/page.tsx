@@ -63,10 +63,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = resolveSide(comp.a, comp.type, params.lang);
   const b = resolveSide(comp.b, comp.type, params.lang);
   if (!a || !b) return {};
+  const dict = await getDictionary(params.lang);
+  const title = dict.meta.compareTitleTpl
+    .replace('{a}', a.name)
+    .replace('{b}', b.name);
+  const description = dict.meta.compareDescTpl
+    .replace('{a}', a.name)
+    .replace('{b}', b.name)
+    .replace('{verdict}', comp.verdict.slice(0, 100));
   return buildPageMetadata({
     locale: params.lang,
-    title: `${a.name} vs ${b.name} for digital nomads (2026)`,
-    description: `${a.name} vs ${b.name}: cost, internet, safety, weather, visa. ${comp.verdict.slice(0, 100)}...`,
+    title,
+    description,
     pathForLocale: (l) => `/${l}/compare/${comp.slug}`,
   });
 }

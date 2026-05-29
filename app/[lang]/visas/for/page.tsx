@@ -12,10 +12,11 @@ export const runtime = 'edge';
 type Props = { params: { lang: Locale } };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const dict = await getDictionary(params.lang);
   return buildPageMetadata({
     locale: params.lang,
-    title: 'Digital nomad visas by nationality (2026)',
-    description: 'Best digital nomad visas for US, EU, UK, Canadian, Australian, Indian, South African and Brazilian passports.',
+    title: dict.meta.visasForTitle,
+    description: dict.meta.visasForDesc,
     pathForLocale: (l) => `/${l}/visas/for`,
   });
 }

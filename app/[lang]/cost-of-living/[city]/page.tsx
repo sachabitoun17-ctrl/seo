@@ -26,12 +26,19 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = getCity(params.city);
   if (!city) return {};
+  const dict = await getDictionary(params.lang);
   const name = getCityName(city, params.lang);
   const cost = estimateForCity(city);
+  const title = dict.meta.costCityTitleTpl
+    .replace('{name}', name)
+    .replace('{total}', String(cost.total.solo));
+  const description = dict.meta.costCityDescTpl
+    .replace('{name}', name)
+    .replace('{total}', String(cost.total.solo));
   return buildPageMetadata({
     locale: params.lang,
-    title: `Cost of living in ${name} 2026: $${cost.total.solo}/month`,
-    description: `Real monthly cost breakdown for ${name} as a digital nomad in 2026: rent, food, coworking, internet, transport. Solo nomad budget around $${cost.total.solo}.`,
+    title,
+    description,
     pathForLocale: (l) => `/${l}/cost-of-living/${city.slug}`,
   });
 }

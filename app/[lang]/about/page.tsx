@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildPageMetadata({
     locale: params.lang,
     title: `${dict.nav.about} ${SITE_NAME}`,
-    description: `About ${SITE_NAME}: long-stay country and city guides for digital nomads who travel slowly.`,
+    description: dict.meta.aboutDesc.replace('{site}', SITE_NAME),
     pathForLocale: (l) => `/${l}/about`,
   });
 }

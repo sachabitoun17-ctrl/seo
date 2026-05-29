@@ -154,7 +154,29 @@ export type Dictionary = {
     visaDescTpl: string;
     visaIncomeFrom: string;
     visaIncomeNone: string;
+    legalDesc: string;
+    aboutDesc: string;
+    contactDesc: string;
+    toolsTitle: string;
+    toolsDesc: string;
+    visasForTitle: string;
+    visasForDesc: string;
+    coworkingCityTitleTpl: string;
+    coworkingCityDescTpl: string;
+    costCityTitleTpl: string;
+    costCityDescTpl: string;
+    compareTitleTpl: string;
+    compareDescTpl: string;
+    regionTitleTpl: string;
+    roleTitleTpl: string;
+    nationalityTitleTpl: string;
+    nationalityDescTpl: string;
+    visaTypeTitleSuffix: string;
   };
+  visaType: Record<
+    'digital-nomad' | 'passive-income' | 'investor' | 'freelance',
+    { label: string; desc: string }
+  >;
 };
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {

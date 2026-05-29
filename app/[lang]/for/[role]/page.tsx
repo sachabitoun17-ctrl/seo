@@ -25,10 +25,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const r = getRole(params.role);
   if (!r) return {};
+  const dict = await getDictionary(params.lang);
   const name = getRoleName(r, params.lang);
+  const title = dict.meta.roleTitleTpl.replace('{role}', name.toLowerCase());
   return buildPageMetadata({
     locale: params.lang,
-    title: `Best digital nomad cities for ${name.toLowerCase()} (2026)`,
+    title,
     description: r.description,
     pathForLocale: (l) => `/${l}/for/${r.slug}`,
   });

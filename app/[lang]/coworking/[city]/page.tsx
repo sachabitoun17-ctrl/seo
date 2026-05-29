@@ -27,11 +27,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const co = getCoworking(params.city);
   const city = getCity(params.city);
   if (!co || !city) return {};
+  const dict = await getDictionary(params.lang);
   const name = getCityName(city, params.lang);
+  const title = dict.meta.coworkingCityTitleTpl
+    .replace('{name}', name)
+    .replace('{count}', String(co.topSpaces.length));
+  const description = dict.meta.coworkingCityDescTpl
+    .replace('{name}', name)
+    .replace('{min}', String(co.monthlyMin))
+    .replace('{max}', String(co.monthlyPremium));
   return buildPageMetadata({
     locale: params.lang,
-    title: `Best coworking spaces in ${name} (2026): ${co.topSpaces.length} picks`,
-    description: `Curated list of the best coworking spaces in ${name}: hot-desk rates from $${co.monthlyMin} to $${co.monthlyPremium}/month, what each space is best for.`,
+    title,
+    description,
     pathForLocale: (l) => `/${l}/coworking/${co.citySlug}`,
   });
 }

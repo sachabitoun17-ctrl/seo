@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildPageMetadata({
     locale: params.lang,
     title: `${dict.footer.contact} ${SITE_NAME}`,
-    description: `Contact ${SITE_NAME}: corrections, partnerships, custom research.`,
+    description: dict.meta.contactDesc.replace('{site}', SITE_NAME),
     pathForLocale: (l) => `/${l}/contact`,
   });
 }

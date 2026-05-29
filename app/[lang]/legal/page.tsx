@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildPageMetadata({
     locale: params.lang,
     title: `${dict.footer.legal} ${SITE_NAME}`,
-    description: 'Legal notice, terms of use, privacy and cookie policy.',
+    description: dict.meta.legalDesc,
     pathForLocale: (l) => `/${l}/legal`,
   });
 }

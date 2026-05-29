@@ -27,11 +27,16 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const n = getNationality(params.nationality);
   if (!n) return {};
+  const dict = await getDictionary(params.lang);
   const name = getNationalityName(n, params.lang);
+  const title = dict.meta.nationalityTitleTpl.replace('{name}', name);
+  const description = dict.meta.nationalityDescTpl
+    .replace('{count}', String(n.eligibleVisaSlugs.length))
+    .replace('{nameLower}', name.toLowerCase());
   return buildPageMetadata({
     locale: params.lang,
-    title: `Best digital nomad visas for ${name} (2026)`,
-    description: `${n.eligibleVisaSlugs.length} digital nomad visa programs ranked for ${name.toLowerCase()}: income, duration, tax, ease of application.`,
+    title,
+    description,
     pathForLocale: (l) => `/${l}/visas/for/${n.slug}`,
   });
 }
