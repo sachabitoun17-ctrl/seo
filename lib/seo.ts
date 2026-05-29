@@ -8,6 +8,10 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/og`;
 const TITLE_MAX = 60;
 const DESCRIPTION_MIN = 110;
 const DESCRIPTION_MAX = 158;
+// The root layout applies a `%s · {SITE_NAME}` title template, so the rendered
+// <title> is longer than the page title we pass here. Reserve room for it so
+// the full title stays within TITLE_MAX.
+const BRAND_SUFFIX_LEN = ` · ${SITE_NAME}`.length;
 
 type AlternateBuilder = (locale: Locale) => string;
 
@@ -31,11 +35,12 @@ type PageMetaInput = {
 
 function clampTitle(t: string): string {
   const trimmed = t.trim();
-  if (trimmed.length <= TITLE_MAX) return trimmed;
+  const budget = TITLE_MAX - BRAND_SUFFIX_LEN;
+  if (trimmed.length <= budget) return trimmed;
   // Truncate at word boundary if possible
-  const slice = trimmed.slice(0, TITLE_MAX - 1);
+  const slice = trimmed.slice(0, budget - 1);
   const lastSpace = slice.lastIndexOf(' ');
-  return (lastSpace > 30 ? slice.slice(0, lastSpace) : slice).replace(/[,;:.\s]+$/, '') + '…';
+  return (lastSpace > 24 ? slice.slice(0, lastSpace) : slice).replace(/[,;:.\s]+$/, '') + '…';
 }
 
 function clampDescription(d: string): string {
