@@ -53,6 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     pathForLocale: (l) => `/${l}/cities/${city.slug}`,
     ogType: 'article',
+    ogImage: cityPhoto(city.slug),
   });
 }
 

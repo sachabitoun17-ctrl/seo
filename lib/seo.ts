@@ -3,6 +3,7 @@ import { LOCALES, type Locale } from './i18n';
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://slowmadly.com';
 export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Slowmadly';
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og`;
 
 const TITLE_MAX = 60;
 const DESCRIPTION_MIN = 110;
@@ -55,6 +56,7 @@ export function buildPageMetadata(input: PageMetaInput): Metadata {
   const title = clampTitle(input.title);
   const description = clampDescription(input.description);
   const alternateLocales = LOCALES.filter((l) => l !== input.locale);
+  const ogImage = input.ogImage || DEFAULT_OG_IMAGE;
   return {
     title,
     description,
@@ -70,15 +72,13 @@ export function buildPageMetadata(input: PageMetaInput): Metadata {
       locale: input.locale,
       alternateLocale: alternateLocales,
       type: input.ogType || 'website',
-      images: input.ogImage
-        ? [{ url: input.ogImage, width: 1200, height: 630, alt: title }]
-        : undefined,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: input.ogImage ? [input.ogImage] : undefined,
+      images: [ogImage],
     },
     robots: input.noindex
       ? { index: false, follow: false }

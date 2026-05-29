@@ -1,11 +1,10 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Slowmadly: country guides for slow nomads';
-export const size = { width: 1200, height: 630 };
-export const contentType = 'image/png';
 
-export default async function OpenGraphImage() {
+const size = { width: 1200, height: 630 };
+
+export async function GET() {
   return new ImageResponse(
     (
       <div
