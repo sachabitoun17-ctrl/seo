@@ -39,6 +39,7 @@ const BY_TOPIC: Record<Guide['topic'], Callout[]> = {
     { partnerId: 'claude', text: 'Claude is the closest thing to a senior collaborator that fits in a window. Long context, careful reasoning — built for the writing/research/code mix nomads run.' },
     { partnerId: 'fireflies', text: 'When you stack 4-5 client calls in a day, Fireflies transcribes and summarises so your evenings stop being "writing notes about the day".' },
     { partnerId: 'beehiiv', text: 'If your client base ever asks "how do I keep up with what you are doing", Beehiiv is the fastest way to spin up a newsletter that monetises later.' },
+    { partnerId: 'appsumo', text: 'Most of the tools nomads pay monthly for show up on AppSumo as one-time lifetime deals. Skim the deals page before you sign up for a new SaaS — a $59 lifetime often beats $19/month forever.' },
   ],
   freelancing: [
     { partnerId: 'fiverr', text: 'The fastest way to test a gig idea is to publish it where buyers already search. Fiverr puts your offer in front of millions of clients on day one — no audience, no cold outreach needed.' },

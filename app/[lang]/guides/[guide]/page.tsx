@@ -171,7 +171,7 @@ export default async function GuideDetailPage({ params }: Props) {
         locale={params.lang}
         categories={
           guide.topic === 'tools'
-            ? ['productivity', 'ai-llm', 'voice-ai', 'newsletter', 'vpn', 'esim']
+            ? ['productivity', 'ai-llm', 'voice-ai', 'newsletter', 'marketplace', 'vpn', 'esim']
             : guide.topic === 'freelancing'
             ? ['earn-while-traveling', 'banking', 'ai-llm', 'newsletter']
             : guide.topic === 'tax' || guide.topic === 'visas'

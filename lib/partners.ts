@@ -300,6 +300,15 @@ export const PARTNERS: Partner[] = [
 
   // Marketplace
   {
+    id: 'appsumo',
+    name: 'AppSumo',
+    url: process.env.NEXT_PUBLIC_AFF_APPSUMO || 'https://appsumo.8odi.net/gRgbDg',
+    blurb: 'Lifetime deals on SaaS tools for freelancers, creators and nomads. Pay once, use forever — build your stack for a fraction of subscription cost.',
+    category: 'marketplace',
+    tier: 'primary',
+    active: true,
+  },
+  {
     id: 'amazon-fr',
     name: 'Amazon',
     url: 'https://amzn.to/4v8i8tB',
